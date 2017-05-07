@@ -9,7 +9,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var paths = {
 	html:['./index.html'],
-	scss:['./src/sass/*.+scss'],
+	scss:['./src/sass/**/*.scss'],
 	js:['./src/js/**/*.js'],
 	img: ['./src/img/**/*.+(jpg|png|svg|jpeg)']
 };
