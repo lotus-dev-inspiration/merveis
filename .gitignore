@@ -1,3 +1,4 @@
-# packages ignore
+# packages and files ignore
 
 node_modules
+variables.css
