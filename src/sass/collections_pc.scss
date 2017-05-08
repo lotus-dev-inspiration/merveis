@@ -1,5 +1,176 @@
 @import "./variables.scss";
 
-div {
-	color: $blue;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	// background: $lightgray;
+
+	header {
+		position: fixed;
+		width: 80%;
+		padding-top: 40px;
+		background: $lightgrad;
+
+		.logo {
+			position: absolute;
+			top: 15px;
+			left: 2%;
+
+			img {
+				width: 20%;
+			}
+		}
+
+		.search {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 12px;
+			right: 2%;
+
+			&:hover {
+				border: 1px solid $turquoise;
+				border-radius: 50%;
+			}
+
+			img {
+				width: 70%;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -35% 0 0 -35%;	
+			}
+		}
+
+		.menu {
+			display: flex;
+			justify-content: center;
+
+			.menu_link {
+				display:block;
+				padding: 5px;
+				margin: 0 0.2vw;
+				height: 50px;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: bold;
+				line-height: 50px;
+				// background: $white;
+
+				&:hover {
+					color: $pink;
+				}
+			}
+
+		}
+	}
+
+	.main {
+		display: flex;
+		padding-top: 120px;
+		// height: 400px;
+		// background: $gray;
+
+		aside {
+			position: fixed;
+			width: 200px;
+			height: 100%;
+			// background: $turquoise;
+
+			.side_menu {
+				margin: 40px 0 0 10%;
+
+				.side_link {
+					display: block;
+					padding: 10px;
+					text-transform: uppercase;
+					color: $gray;
+
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+		}
+
+		.content {
+			width: 100%;
+			height: 100%;
+			padding-left: 200px;
+			background: $mustard;
+
+			.content_logic {
+				width: 100%;
+				height: 80px;
+				background: $green;
+			}
+
+			.content_items {
+				
+				.items_block {
+					display: flex;
+
+					.content_item {
+						width: 31%;
+						margin: 20px 3%;
+						// background: $red;
+
+						.item_img {
+							img {
+								width: 100%;
+							}
+						}
+
+						.item_info {
+							margin-top: 10px;
+							text-transform: uppercase;
+							text-align: center;
+
+							.price {
+								margin-top: 5px;
+							}
+						}
+					}
+
+				}
+				
+			}
+		}
+	}
+}
+
+footer {
+	height: 400px;
+	background: $superlightgray;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+
+    header {
+    	width: 100%;
+    }
+  }
 }

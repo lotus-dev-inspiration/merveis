@@ -1,8 +1,29 @@
-$font-stack: Tahoma, sans-serif;
+@font-face {
+    font-family: 'Myriad';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Myriad'),
+    url(../fonts/Myriad/myriad.woff2) format('woff2'), 
+    url(../fonts/Myriad/myriad.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ProximaNova'),
+    url(../ProximaNova/Myriad/proximanova-regular.woff2) format('woff2'), 
+    url(../ProximaNova/Myriad/proximanova-regular.woff) format('woff');
+}
+
+
+
+$font-stack: 'Myriad', sans-serif;
 
 $black: #000;
 $gray: #a1a1a1;
 $lightgray: #dddddd;
+$superlightgray: #f5f5f5;
 $white: #fff;
 $mustard: #ffe485;
 $green: #b5c965;
@@ -10,3 +31,4 @@ $turquoise: #56d2b1;
 $blue: #4a76b9;
 $pink: #f22b47;
 $red: #9c2727;
+$lightgrad: linear-gradient(to bottom, $white, transparent);
