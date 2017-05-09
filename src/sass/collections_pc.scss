@@ -25,6 +25,7 @@ a {
 	margin: 0 auto;
 
 	header {
+		z-index: 100;
 		position: fixed;
 		width: 80%;
 		padding-top: 40px;
@@ -47,9 +48,20 @@ a {
 			top: 12px;
 			right: 2%;
 
+
+			input[name="search"] {
+				visibility: hidden;
+				opacity: 0;
+				transition: visibility 0.5s, opacity 1s linear;
+			}
+
 			&:hover {
 				border: 1px solid $turquoise;
 				border-radius: 50%;
+				input[name="search"] {
+					visibility: visible;
+					opacity: 1;
+				}
 			}
 
 			img {
@@ -75,11 +87,12 @@ a {
 				text-align: center;
 				font-weight: bold;
 				line-height: 50px;
-				// background: $white;
 
-				&:hover {
+				&:hover,
+				&:focus {
 					color: $pink;
 				}
+
 			}
 
 		}
@@ -88,14 +101,13 @@ a {
 	.main {
 		display: flex;
 		padding-top: 120px;
-		// height: 400px;
-		// background: $gray;
+
 
 		aside {
 			position: fixed;
 			width: 200px;
 			height: 100%;
-			// background: $turquoise;
+			
 
 			.side_menu {
 				margin: 40px 0 0 10%;
@@ -106,7 +118,8 @@ a {
 					text-transform: uppercase;
 					color: $gray;
 
-					&:hover {
+					&:hover,
+					&:focus {
 						color: $black;
 					}
 				}
@@ -117,23 +130,135 @@ a {
 			width: 100%;
 			height: 100%;
 			padding-left: 200px;
-			background: $mustard;
+			
 
 			.content_logic {
+				position: relative;
 				width: 100%;
-				height: 80px;
-				background: $green;
+				height: 60px;
+
+				div {
+					position: absolute;
+					right: 0%;
+					margin-right: 10%;
+					display: inline-block;
+					height: 100%;
+					
+					a {
+						display: block;
+						line-height: 60px;
+						text-transform: uppercase;
+						color: $gray;
+
+						&:hover,
+						&:focus {
+							color: $black;
+						}
+					}
+				}
+
+				.filter {
+
+					margin-right: 57%;
+					a {
+						font-weight: bold;
+						color: $black;
+
+						&:hover,
+						&:focus {
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.by_price {
+					margin-right: 20%;
+				}
+
+				.language {
+					margin-right: 2%;
+					a {
+						display: block;
+						font-weight: bold;
+						line-height: 30px;
+						transform: rotate(90deg);
+					}
+				}
 			}
 
 			.content_items {
-				
+				position: relative;
+
+				.filter_items {
+					display: none;
+					position: absolute;
+					left: 3%;
+					top: 20px;
+					width: 94%;
+					height: 300px;
+					background: $white;
+
+					.filter_size {
+
+						.size {
+							display: inline-block; 
+
+							a {
+								text-decoration: none;
+								color: grey;
+								margin-right: 5px;
+								font-weight:bold;
+								font-size:12px;
+								padding: 12px 12px 12px 12px;
+								border-radius: 25px;
+
+								&:focus {
+									background: $black;
+									color: $white; 
+								}
+
+								&:hover {
+									background: $black;
+									color: $white; 
+									transition: all 2s;
+								}
+
+								&:not(:hover) {
+									transition: all 3s;
+								}
+							}
+						}
+
+						.size_s,
+						.size_m,
+						.size_l {
+							@extend .size;
+						}
+
+						.size_s a {
+							padding: 12px 15px 12px 15px;
+							border-radius: 25px; 
+						}
+
+						.size_m a {
+							padding: 12px 14px 12px 14px;
+							border-radius: 26px; 
+						}
+
+						.size_l a {
+							padding: 12px 16px 12px 16px;
+							border-radius: 25px; 
+						}
+					}
+				}
+
 				.items_block {
 					display: flex;
 
 					.content_item {
 						width: 31%;
 						margin: 20px 3%;
-						// background: $red;
+						
 
 						.item_img {
 							img {
@@ -149,9 +274,52 @@ a {
 							.price {
 								margin-top: 5px;
 							}
+
+							.color {
+								display: block;
+								width: 10px;
+								height: 10px;
+								border-radius: 50%;
+								margin: 0 auto;
+								margin-top: 5px;
+								&:focus {
+									width: 7px;
+									height: 7px;
+									border: 3px solid $gray;
+								}
+							}
+
+							.col_blue {
+								background: $blue;
+							}
 						}
 					}
 
+				}
+
+				.show_more {
+					margin: 10px 0 20px 0;
+					text-align: center;
+					a {
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+
+					.arrow {
+						margin: 0 auto;
+						width: 22px;
+						height: 15px;
+						background: url("../img/arrow.png") no-repeat;
+						background-size: cover;
+					}
+
+					&:hover {
+						cursor: pointer;
+						a {
+							text-decoration: underline;
+						}
+					}
+					
 				}
 				
 			}
@@ -160,16 +328,65 @@ a {
 }
 
 footer {
+	display: flex;
 	height: 400px;
 	background: $superlightgray;
+
+
+	.footer_links {
+		border-top: 3px solid $turquoise;
+		width: 50%;
+
+		.foot_menu_block {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			top: 50px;
+			left: 15%;
+
+			h3 {
+				text-transform: uppercase;
+				margin-bottom: 5px;
+			}
+
+			.foot_link {
+				display: block;
+				padding: 7px 0;
+			}
+
+			.foot_link:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.foot_block_2 {
+			left: 25%;
+		}
+	}
+
+	.footer_subscribe {
+		width: 25%;
+	}
+
+	.footer_comment {
+		width: 25%;
+		background: url("../img/005.jpg") no-repeat;
+		background-size: cover;
+
+		.dark_layer {
+			height: 100%;
+			background-color: rgba(0,0,0,0.7);
+		}
+	}	
 }
 
-@media (max-width: 1200px) {
-  .wrapper {
-    width: 100%;
 
-    header {
-    	width: 100%;
-    }
-  }
+@media (max-width: 1200px) {
+	.wrapper {
+		width: 100%;
+
+		header {
+			width: 100%;
+		}
+	}
 }

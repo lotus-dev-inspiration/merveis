@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Merveis</title>
 	<link rel="stylesheet" type="text/css" href="dist/css/collections_pc.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="dist/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -23,6 +24,7 @@
 				<li class="menu_item"><a href="#" class="menu_link">Скидки</a></li>
 			</ul>
 			<div class="search">
+				<input type="text" name="search">
 				<a href="#">
 					<img src="dist/img/search-icon.png">
 				</a>
@@ -39,12 +41,34 @@
 			</aside>
 			<div class="content">
 				<div class="content_logic">
-					
+					<div class="filter">
+						<a href="#">Фильтр</a>
+					</div>
+					<div class="by_price">
+						<a href="#">По Цене</a>
+					</div>
+					<div class="by_date">
+						<a href="#">По Дате</a>
+					</div>
+					<div class="language">
+						<a href="#">ru</a>
+						<a href="#">en</a>
+					</div>
 				</div>
 				<div class="content_items">
+					<div class="filter_items">
+					<div class="filter_size">
+							<ul>
+								<li class="size size_xs"><a href="#">XS</a></li>
+								<li class="size size_s"><a href="#">S</a></li>
+								<li class="size size_m"><a href="#">M</a></li>
+								<li class="size size_l"><a href="#">L</a></li>
+							</ul>
+						</div>
+					</div>
 					<div class="items_block">
 						<div class="content_item">
-							<div class="item_img"><a href="#"><img src="dist/img/005.jpg"></a>
+							<div class="item_img"><a href="col_detailed.html"><img src="dist/img/005.jpg"></a>
 							</div>
 							<div class="item_info">
 								<p>Square T-Shirt Mint</p>
@@ -120,13 +144,51 @@
 							</div>
 						</div>
 					</div>
-					
+					<div class="show_more">
+						<a>Хочу ещё</a>
+						<div class="arrow"></div>
+					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
 	<footer>
-
+		<div class="footer_links">
+			<div class="foot_menu_block">
+				<h3>Merveis</h3>
+				<ul class="footer_menu">
+					<li class="foot_item"><a href="#" class="foot_link">О Бренде</a></li>
+					<li class="foot_item"><a href="#" class="foot_link">Магазины</a></li>
+					<li class="foot_item"><a href="#" class="foot_link">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="foot_menu_block foot_block_2">
+				<h3>Помощь</h3>
+				<ul class="footer_menu">
+					<li class="foot_item"><a href="#" class="foot_link">Платежи</a></li>
+					<li class="foot_item"><a href="#" class="foot_link">Доставка</a></li>
+					<li class="foot_item"><a href="#" class="foot_link">Возврат-Обмен</a></li>
+					<li class="foot_item"><a href="#" class="foot_link">Уход</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_subscribe">
+			<h3>Подпишитесь</h3>
+			<div class="subscribe_mail">
+				
+			</div>
+			<div class="subscribe_networks">
+				<div class="networks_insta"></div>
+				<div class="networks_pinterest"></div>
+				<div class="networks_vk"></div>
+				<div class="networks_fb"></div>
+			</div>
+		</div>
+		<div class="footer_comment">
+			<div class="dark_layer">
+				
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
