@@ -1,9 +1,10 @@
+ @import "./variables.scss";
 *{
 	padding: 0;
 	margin: 0;
 }
 body{
-	font-family: Tahoma, sans-serif;
+	font-family:$font-stack, sans-serif;
 }
 .popup{
 	position: fixed;
@@ -14,7 +15,7 @@ body{
 	display: none;
 	.window{
 		margin:15% 0 0 25%; 
-		background:white;
+		background:$white;
 		width:630px;
 		position:relative;
 		.close{
@@ -24,7 +25,6 @@ body{
 				width:30px;
 			}
 		}
-  	// height:400px;
   	p{
   		text-align:center;
   		padding-top:20px;
@@ -61,7 +61,7 @@ body{
   		background:#3281c7;
   		border:none;
   		font-size:15px;
-  		color:white;
+  		color:$white;
   		box-shadow:0 0 12px #4d88b2;
   		width:147px;
   		height:35px;
@@ -70,31 +70,16 @@ body{
 }
 .fixed_menu{
 	float:right;
-	vertical-align: middle;
 	p{
-		-ms-transform: rotate(90deg);
-		-moz-transform: rotate(90deg);
-		-webkit-transform: rotate(90deg);
+	position:fixed;
+	a{
+		display:block;
 		transform: rotate(90deg);
-
-		-ms-transform-origin: right top 0;
-		-moz-transform-origin: right top 0;
-		-webkit-transform-origin: right top 0;
-		transform-origin: right top 0;
-        // text-align:center;
-		// margin-top: 30%;
-		// float: left;
-		height:80px;
-		width:5px;
-		vertical-align: middle;
-		// position:fixed;
-		// color:red;
-		white-space: nowrap;
+		margin-top:50%;
 	}
 }
+}
 .wrapper{
-	// border-right: 1px solid black;
-	// border-left: 1px solid black;
 	width:80%;
 	margin:0 auto;
 	height:800px;
@@ -160,13 +145,13 @@ body{
 	.menu_crumb li{
 		display:inline-block;
 		list-style-type: none;
-		font-size:12px;
-		color:grey;
+		font-size:13px;
+		color:$gray;
 		a{
-			color:grey;
+			color:$gray;
 		}
 		a:hover{
-			color:black;
+			color:$black;
 		}
 	}
 	h1{
@@ -175,8 +160,8 @@ body{
 		margin: 20px 0 14px 0;
 	}
 	span{
-		color:grey;
-		font-size:12px;
+		color:$gray;
+		font-size:13px;
 	}
 }
 .size_grid{
@@ -190,16 +175,16 @@ body{
 			display:flex;
 			padding-top:10px;
 			.left_block{
-				color:grey;
+				color:$gray;
 				width:200px;
-				font-size:10px;
+				font-size:11px;
 				font-weight:bold;
 				text-transform:uppercase;
 				text-align:center;
 			}
 			h6{
 				width:80px;
-				font-size: 13px;
+				font-size: 14px;
 				text-align:center;
 				text-transform:uppercase;
 			}
@@ -210,14 +195,14 @@ body{
 			}
 		}
 		.row2{
-			background:pink;
+			background:$lightgray;
 			@extend .row1;
 		}
 		.row3{
 			@extend .row1;
 		}
 		.row4{
-			background:pink;
+			background:$lightgray;
 			@extend .row1;
 		}
 		.row5{
@@ -225,7 +210,7 @@ body{
 		}
 	}
 	p{
-		font-size:12px;
+		font-size:13px;
 	}
 	.between_two_size{
 		margin:20px 0 20px 0;
@@ -234,8 +219,8 @@ body{
 		text-align:center;
 		margin-top:10px;
 	.hide_button{
-		color:black;
-		font-size:14px;
+		color:$black;
+		font-size:15px;
 	}
 }
 }
@@ -247,20 +232,20 @@ body{
 		margin:24px 0 30px 0;
 	}
 	p{
-		font-size:12px;
+		font-size:13px;
 	}
 	.model{
 		margin:5px 0 32px 0;
 	}
 	.model_pants a{
-		color:black;
+		color:$black;
 	}
 	.shirt_color{
 		display:flex;
 		.white_circle1{
 			position:relative;
             	padding:11px 11px 11px 11px;
-            	border:1px solid white;
+            	border:1px solid $white;
             	border-radius:12px;
             	margin-right:37px;
             }
@@ -271,11 +256,11 @@ body{
             	@extend .white_circle1;
             }
             .circle:hover{
-            	border:1px solid grey;
+            	border:1px solid $gray;
             	transition:all 2s;
             }
             .circle:focus{
-            	border:1px solid grey;
+            	border:1px solid $gray;
             	transition: all 1s;
             }
             .black_circle{
@@ -283,16 +268,16 @@ body{
             	width:14px;
             	border-radius:7px;
             	position:absolute;
-            	background:black;
+            	background:$black;
             	top:3.5px;
             	left:3.5px;
             }
             .grey_circle{
-            	background:grey;
+            	background:$gray;
             	@extend .black_circle;
             }
             .green_circle{
-            	background:green;
+            	background:$green;
             	@extend .black_circle;
             }
         }
@@ -304,11 +289,10 @@ body{
 
         	.shirt_size a {
         		text-decoration: none;
-        		color: grey;
+        		color: $gray;
         		margin-right: 5px;
-        	// border: 2px solid white; 
         	font-weight:bold;
-        	font-size:12px;
+        	font-size:13px;
         }
 
         .one a {
@@ -318,11 +302,11 @@ body{
 
         .one a:focus {
         	background: black;
-        	color:white; 
+        	color:$white; 
         }
         .one a:hover{
-        	background: black;
-        	color:white; 
+        	background: $black;
+        	color:$white; 
         	transition: all 2s;
         }
         
@@ -353,8 +337,8 @@ body{
         .more_size{
         	margin-left:24px;
         	a{
-                color:grey;
-                font-size:12px;
+                color:$gray;
+                font-size:13px;
         	}
         }
     }
@@ -366,18 +350,18 @@ body{
     			text-decoration:none;
     			text-transform:uppercase;
     			padding:15px 43px 15px 43px;
-    			color:white;
-    			background:black;
+    			color:$white;
+    			background:$black;
     			font-weight:bold;
-    			font-size:12px;
+    			font-size:13px;
     			letter-spacing: 3px;
     		}
     	}
     	.price{
     		p{
     			font-weight:bold;
-    			color:black;
-    			font-size:17px;
+    			color:$black;
+    			font-size:18px;
     			margin-left:40px;
     		}
     	}
@@ -390,10 +374,10 @@ body{
     		padding-top:12px;
     		position:relative;
     		a{
-    			color:black;
+    			color:$black;
     			text-transform:uppercase;
     			font-weight:bold;
-    			font-size:12px;
+    			font-size:13px;
     			img{
     				width:30px;
     				margin-top:-7px;
@@ -426,7 +410,7 @@ body{
     		}
     	}
     	.share:hover{
-    		border:1px solid grey;
+    		border:1px solid $gray;
     	}
     }
 

@@ -2,10 +2,10 @@ $(function(){
 
   // BUY
   $('.basket_buy').on('click',function(){
-  	$('.popup').css('display','block');
+  	$('.popup').show(500);
   });
   $('.close').on('click',function(){
-  	$('.popup').css('display','none');
+  	$('.popup').hide(500);
   });
   $('.butdg').on('click',function(){
   	$('.popup').css('display','none');
@@ -31,11 +31,11 @@ $(function(){
 
    // SIZE
     $('.not_sure').on('click',function(){
-    	$('.hide_box').hide();
-    	$('.size_grid').show();
+    	$('.hide_box').hide(1000);
+    	$('.size_grid').show(1000);
     });
     $('.hide_button').on('click',function(){
-    	$('.hide_box').show();
-    	$('.size_grid').hide();
+    	$('.hide_box').show(1000);
+    	$('.size_grid').hide(1000);
     });
 });
