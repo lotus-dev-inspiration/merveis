@@ -21,6 +21,7 @@ $(function(){
 	});
 
 	var count = 0;
+	var count2 = 0;
 
 	$(".filter").on("click", function() {
 		if(count%2 == 0) {
@@ -31,6 +32,24 @@ $(function(){
 			count++;
 		}
 	});
+
+	$(".search_link").on("click", function() {
+		if(count2%2 == 0) {
+			$("#search_input").show(2000);
+			$(".search").css({
+				"right":"8%"
+			});
+			count2++;
+		} else {
+			$("#search_input").hide(2000);
+			$(".search").css("right","2%");
+			count2++;
+		}
+	});
+
+
+
+
 });
 
 
