@@ -374,7 +374,7 @@ footer {
 
 		.subscribe_text {
 			margin-top: 20px;
-			width: 300px;
+			width: 200px;
 			font-style: italic;
 			font-size: 10px;
 			font-color: $lightgray;
@@ -432,6 +432,10 @@ footer {
 		background: url("../img/005.jpg") no-repeat;
 		background-size: cover;
 
+		.leave_call {
+			color: $white;
+		}
+		
 		.dark_layer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);
