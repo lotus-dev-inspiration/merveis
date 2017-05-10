@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Detail</title>
 	<link rel="stylesheet" href="dist/css/col_detailed_pc.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script>
-
+	<script src="js/jquery.simslider.js"></script>
+	<script>
+		jQuery( function($){
+			$('.sliderBox').SimSlider( {
+				next: '.nextBtn', 
+				prev: '.prevBtn', 
+				item: '.SimSlider .slide', 
+				speed: 1200, 
+				delay: 1000 
+			} );
+		} );
+	</script>
 </head>
 <body>
 	<div class="popup">
@@ -14,154 +25,169 @@
 			<div class="close"><a href="#"><img src="dist/img/close.png"></a></div>
 			<p>Чтобы приобрести товар , заполните пожайлуста форму</p>
 			<form class="center_form" action="" method="POST">
-				<div class="forms"><input type="text" name="First Name" id="First Name" placeholder="    Имя"></div>
-				<div class="forms"><input type="text" name="Last Name" id="Last Name" placeholder="    Фамилия"></div>
-				<div class="forms"><input type="text" name="email" id="Email Address" placeholder="    Почта"></div>
-				<div class="forms"><input type="text" name="Password Confirm" placeholder="    Телефон"></div>
+				<div class="forms"><input type="text" name="First Name" id="First Name" placeholder="Имя"></div>
+				<div class="forms"><input type="text" name="Last Name" id="Last Name" placeholder="Фамилия"></div>
+				<div class="forms"><input type="text" name="email" id="Email Address" placeholder="Почта"></div>
+				<div class="forms"><input type="text" name="Password Confirm" placeholder="Телефон"></div>
 				<div class="but"><button>Спасибо</button></div>	
 			</form>
 		</div>
 	</div>
-	<div class="fixed_menu">
-		<p>открыть категории</p>
+	<div class="link_block_fixed">
+		<a class="open_categories" href="#">открыть категории</a>
 	</div>
-	<div class="wrapper">
-		<header></header>
-		<div class="content">
-			<div class="content_up">
-				<div class="myjcarousel">
-
-					<div class="jcarousel">
-						<ul>				
-							<li><a href="#"><img src="dist/img/first.jpg" alt="" /></a></li>
-							<li><a href="#"><img src="dist/img/second_photo.jpg" alt="" /></a></li>
-							<li><a href="#"><img src="dist/img/third_photo.jpg" alt="" /></a></li>
-							<li><a href="#"><img src="dist/img/four_photo.jpg" alt="" /></a></li>			
-						</ul>
-					</div>
-					<p class="jcarousel-pagination" data-jcarouselpagination="true">
-						<a href="#1" class="active">1</a>
-						<a href="#2">2</a>
-						<a href="#3">3</a>
-						<a href="#4">4</a>
-					</p>
-				</div>
-				<div class="describsion">
-					<div class="menu_crumb">
-						<ul>
-							<li><a href="#">Главная</a> /</li>
-							<li><a href="#">Все</a> /</li>
-							<li><a href="#">Женское</a> /</li>
-							<li><a href="#">Вверх</a> /</li>
-							<li class="square">Square Shirt</li>
-						</ul>
-					</div>
-					<h1>square shirt</h1>
-					<span>#WBL005</span>
-				</div>
-				<div class="size_grid">
-				
-                    <div class="table">
-                    	<div class="row1">
-                    		<p class="left_block">измерения</p>
-                    		<h6>xs</h6>
-                    	    <h6>s</h6>
-                    	    <h6>m</h6>
-                    	    <h6>l</h6>
-                    	</div>
-                    	<div class="row2">
-                    		<p class="left_block">российский размер</p>
-                    		<h5>42</h5>
-                    	    <h5>44</h5>
-                    	    <h5>46</h5>
-                    	    <h5>48</h5>
-                    	</div>
-                    	<div class="row3">
-                    		<p class="left_block">обхват груди, см</p>
-                    		<h5>84</h5>
-                    	    <h5>88</h5>
-                    	    <h5>92</h5>
-                    	    <h5>96</h5>
-                    	</div>
-                    	<div class="row4">
-                    		<p class="left_block">обхват талии, см</p>
-                    		<h5>63</h5>
-                    	    <h5>67</h5>
-                    	    <h5>71</h5>
-                    	    <h5>75</h5>
-                    	</div>
-                    	<div class="row5">
-                    		<p class="left_block">обхват бедер, см</p>
-                    		<h5>92</h5>
-                    	    <h5>96</h5>
-                    	    <h5>100</h5>
-                    	    <h5>104</h5>
-                    	</div>
-                    </div> 
-					<p>ONE SIZE - подойдходит для размеров XS, S и M</p>
-					<p class="between_two_size">Если по меркам вы находитесь между двумя размерами то, можно выбрать вещь меньшего размера, тогда вы добъетесь более облегающего силуэта, или большего, чтобы изделие имело более свободный силуэт.</p>
-					<p>Выбирая вещь из плечевого ассортимента (платья, свитшоты, верхняя одежда), ориентируетесь на обхват груди.</p> 
-					<p>При выборе вещи из поясного ассортимента (юбки, брюки, шорты), ориентируетесь на обхват талии и обхват бедер.
-					</p>
-					<div class="hide_size"><a class="hide_button" href="#">Скрыть</a></div>
-				</div>
-				<div class="hide_box">
-					<h5>описание</h5>
-					<p>Материал: 100% хлопок</p>
-					<p class="model">Модель: 85-63-89 см, рост 178 см, размер S</p>
-					<p class="model_pants">На модели также брюки NNedre <a href="#"> #WSH008</a></p>	
-					<h5>цвет</h5>
-					<div class="shirt_color">
-						<a class="white_circle1 circle" href="#">
-							<div class="black_circle">
-							</div>
-						</a>
-						<a class="circle white_circle2" href="#">
-							<div class="grey_circle">	
-							</div>
-						</a>
-						<a class="circle white_circle3" href="#">
-							<div class="green_circle"></div>
-						</a>
-					</div>
-					<h5>размер</h5>
-					<div class="size">
-						<div class="shirt_size">
-							<ul>
-								<li class="one"><a href="#">XS</a></li>
-								<li class="two"><a href="#">S</a></li>
-								<li class="tree"><a href="#">M</a></li>
-								<li class="four"><a href="#">L</a></li>
-							</ul>
+	<div class="fixed_menu">
+	    <div class="close_link">
+	    	<a class="back" href="#">назад к товару</a>
+	    </div>
+		<div class="open_col">
+			<div><a href="#">вверх</a></div>
+			<div><a href="#">низ</a></div>
+			<div><a href="#">платья</a></div>
+			<div><a href="#">верхняя одежда</a></div>
+		</div>
+</div>
+<div class="wrapper">
+	<header></header>
+	<div class="content">
+		<div class="content_up">
+			<div class="myjcarousel">
+				<div class="sliderBox">
+					<a href="#" class="prevBtn"> </a>
+					<a href="#" class="nextBtn"> </a>
+					<div class="SimSlider">
+						<div class="slide">
+							<a href="#"><img src="dist/img/005.jpg"></a>
 						</div>
-						<div class="more_size">
-							<a class="not_sure" href="#">Не уверены? Размерная сетка</a>
+						<div class="slide">
+							<a href="#"><img src="dist/img/006.jpg"></a>
 						</div>
-					</div>
-					<div class="basket_and_price">
-						<div class="basket">
-							<a class="basket_buy" href="#">купить</a>
+						<div class="slide">
+							<a href="#"><img src="dist/img/007.jpg"></a>
 						</div>
-						<div class="price"><p>3900 грн</p></div>
-					</div>
-					<div class="favourites_and_share">
-						<div class="favourites">
-							<a href="#"><img src="dist/img/heart.jpg"></a>
-							<a href="#">в избранное</a>
-						</div>
-						<div class="share">
-							<a href="#"><img src="dist/img/rss.jpg"></a>
-							<div class="share_text"><a href="#">поделиться</a></div>
-							<div class="an insta"><a href="#"><img src="dist/img/insta.png"></a></div>
-							<div class="an pinterest"><a href="#"><img src="dist/img/pinterest.png"></a></div>
-							<div class="an vkontakte"><a href="#"><img src="dist/img/vkontakte.png"></a></div> 
-							<div class="an facebook"><a href="#"><img src="dist/img/facebook.png"></a></div> 
+						<div class="slide">
+							<a href="#"><img src="dist/img/008.jpg"></a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="describsion">
+				<div class="menu_crumb">
+					<ul>
+						<li><a href="collections.html">Коллекция</a> /</li>
+						<li><a class="up" href="#">Вверх</a> /</li>
+						<li class="square">Square Shirt</li>
+					</ul>
+				</div>
+				<h1>square shirt</h1>
+				<span>#WBL005</span>
+			</div>
+			<div class="size_grid">
+
+				<div class="table">
+					<div class="row1">
+						<p class="left_block">измерения</p>
+						<h6>xs</h6>
+						<h6>s</h6>
+						<h6>m</h6>
+						<h6>l</h6>
+					</div>
+					<div class="row2">
+						<p class="left_block">российский размер</p>
+						<h5>42</h5>
+						<h5>44</h5>
+						<h5>46</h5>
+						<h5>48</h5>
+					</div>
+					<div class="row3">
+						<p class="left_block">обхват груди, см</p>
+						<h5>84</h5>
+						<h5>88</h5>
+						<h5>92</h5>
+						<h5>96</h5>
+					</div>
+					<div class="row4">
+						<p class="left_block">обхват талии, см</p>
+						<h5>63</h5>
+						<h5>67</h5>
+						<h5>71</h5>
+						<h5>75</h5>
+					</div>
+					<div class="row5">
+						<p class="left_block">обхват бедер, см</p>
+						<h5>92</h5>
+						<h5>96</h5>
+						<h5>100</h5>
+						<h5>104</h5>
+					</div>
+				</div> 
+				<p>ONE SIZE - подойдходит для размеров XS, S и M</p>
+				<p class="between_two_size">Если по меркам вы находитесь между двумя размерами то, можно выбрать вещь меньшего размера, тогда вы добъетесь более облегающего силуэта, или большего, чтобы изделие имело более свободный силуэт.
+				</p>
+				<p>Выбирая вещь из плечевого ассортимента (платья, свитшоты, верхняя одежда), ориентируетесь на обхват груди.
+				</p> 
+				<p>При выборе вещи из поясного ассортимента (юбки, брюки, шорты), ориентируетесь на обхват талии и обхват бедер.
+				</p>
+				<div class="hide_size"><a class="hide_button" href="#">Скрыть</a>
+				</div>
+			</div>
+			<div class="hide_box">
+				<h5>описание</h5>
+				<p>Материал: 100% хлопок</p>
+				<p class="model">Модель: 85-63-89 см, рост 178 см, размер S</p>
+				<p class="model_pants">На модели также брюки Merveis <a href="#"> #WSH008</a></p>	
+				<h5>цвет</h5>
+				<div class="shirt_color">
+					<a class="white_circle1 circle" href="#">
+						<div class="black_circle">
+						</div>
+					</a>
+					<a class="circle white_circle2" href="#">
+						<div class="grey_circle">	
+						</div>
+					</a>
+					<a class="circle white_circle3" href="#">
+						<div class="green_circle"></div>
+					</a>
+				</div>
+				<h5>размер</h5>
+				<div class="size">
+					<div class="shirt_size">
+						<ul>
+							<li class="one"><a href="#">XS</a></li>
+							<li class="two"><a href="#">S</a></li>
+							<li class="tree"><a href="#">M</a></li>
+							<li class="four"><a href="#">L</a></li>
+						</ul>
+					</div>
+					<div class="more_size">
+						<a class="not_sure" href="#">Не уверены? Размерная сетка</a>
+					</div>
+				</div>
+				<div class="basket_and_price">
+					<div class="basket">
+						<a class="basket_buy" href="#">купить</a>
+					</div>
+					<div class="price"><p>3900 грн</p></div>
+				</div>
+				<div class="favourites_and_share">
+					<div class="favourites">
+						<a href="#"><img src="dist/img/heart.jpg"></a>
+						<a href="#">в избранное</a>
+					</div>
+					<div class="share">
+						<a href="#"><img src="dist/img/rss.jpg"></a>
+						<div class="share_text"><a href="#">поделиться</a></div>
+						<div class="insta"><a href="#"><img src="dist/img/insta.png"></a></div>
+						<div class="pinterest"><a href="#"><img src="dist/img/pinterest.png"></a></div>
+						<div class="vkontakte"><a href="#"><img src="dist/img/vkontakte.png"></a></div> 
+						<div class="facebook"><a href="#"><img src="dist/img/facebook.png"></a></div> 
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer></footer>
 	</div>
+	<footer></footer>
+</div>
 </body>
 </html>
