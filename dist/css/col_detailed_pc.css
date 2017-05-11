@@ -10,14 +10,21 @@
 .popup .window .center_form span{color:#ccc;font-size:14px}.popup .window .but{padding:15px}
 .popup .window button{background:#3281c7;border:0;font-size:15px;color:#fff;box-shadow:0 0 12px #4d88b2;width:147px;height:35px}
 .link_block_fixed{position:fixed;margin:20% 0 0 93%}.link_block_fixed a{display:block;transform:rotate(90deg);margin-right:0;font-size:13px;color:#a1a1a1;white-space:nowrap}
-.link_block_fixed a:hover{color:#000}.fixed_menu{display:none;width:699px;height:600px;position:fixed;margin:0 0 0 55%;background:#fff;z-index:1200}
+.link_block_fixed a:hover{color:#000}.fixed_menu{display:none;width:699px;height:550px;position:fixed;margin:7% 0 0 55%;background:#fff;z-index:1200}
 .fixed_menu .open_col{display:block;float:left;margin:20% 10% 0 10%}.fixed_menu .open_col a{font-weight:bold;color:#a1a1a1;font-size:15px;text-transform:uppercase;line-height:45px}
 .fixed_menu .open_col a:hover{color:#000}.fixed_menu .close_link{float:left;margin:30% 0 0 -2%}
 .fixed_menu .close_link a{display:block;transform:rotate(90deg);margin-right:0;font-size:13px;color:#a1a1a1;white-space:nowrap}
-.fixed_menu .close_link a:hover{color:#000}.wrapper{width:80%;margin:0 auto;height:660px}
+.fixed_menu .close_link a:hover{color:#000}.wrapper{width:80%;margin:0 auto;height:800px}
+header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(to bottom,#fff,transparent)}
+header .logo{position:absolute;top:15px;left:2%}header .logo img{width:20%}header .search{position:absolute;width:40px;height:40px;top:12px;right:2%;transition:right 3s}
+header .search .search_link{display:block;width:100%;height:100%}header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
+header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%}
+header .menu{display:flex;justify-content:center}header .menu .menu_item{list-style-type:none}
+header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px;font-size:12px;color:#000;text-decoration:none}
+header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.content{padding-top:100px}
 .myjcarousel{float:left;width:45%}.sliderBox{height:660px;width:450px;top:24px;left:50px}
-.sliderBox .prevBtn{position:absolute;z-index:100;top:240px;left:120px;height:80px;width:80px;text-decoration:none;background:url("../img/left.png") left top no-repeat}
-.sliderBox .nextBtn{z-index:100;position:absolute;top:240px;left:515px;height:80px;width:80px;text-decoration:none;background:url("../img/right.png") left top no-repeat}
+.sliderBox .prevBtn{position:absolute;z-index:100;top:400px;left:120px;height:80px;width:80px;text-decoration:none;background:url("../img/left.png") left top no-repeat}
+.sliderBox .nextBtn{z-index:100;position:absolute;top:400px;left:515px;height:80px;width:80px;text-decoration:none;background:url("../img/right.png") left top no-repeat}
 .SimSlider{position:relative;overflow:hidden;height:660px;width:450px}.SimSlider .slide{z-index:0;position:absolute;top:0;left:0}
 .SimSlider .slide img{height:660px;width:450px}a.active{background:#4e443c;color:#fff;opacity:1;box-shadow:0 0 2px #f0efe7}
 .describsion{width:40%;float:right}.describsion .menu_crumb li{display:inline-block;list-style-type:none;font-size:13px;color:#a1a1a1}
@@ -31,7 +38,9 @@
 .size_grid .table .row2{background:#ddd}.size_grid .table .row4{background:#ddd}.size_grid p{font-size:13px}
 .size_grid .between_two_size{margin:20px 0 20px 0}.size_grid .hide_size{text-align:center;margin-top:10px}
 .size_grid .hide_size .hide_button{color:#000;font-size:15px}.hide_box{width:40%;float:right}
-.hide_box h5{text-transform:uppercase;margin:24px 0 30px 0}.hide_box p{font-size:13px}
+.hide_box h5{text-transform:uppercase;margin:24px 0 30px 0}.hide_box .describe_and_lang{display:flex}
+.hide_box .describe_and_lang .language{margin-left:300px}.hide_box .describe_and_lang .language a{color:#a1a1a1;text-transform:uppercase;display:block;font-size:12px;font-weight:bold;line-height:30px;transform:rotate(90deg)}
+.hide_box .describe_and_lang .language a:hover{color:black}.hide_box p{font-size:13px}
 .hide_box .model{margin:5px 0 32px 0}.hide_box .model_pants a{color:#000}.hide_box .shirt_color{display:flex}
 .hide_box .shirt_color .white_circle1,.hide_box .shirt_color .white_circle2,.hide_box .shirt_color .white_circle3{position:relative;padding:11px 11px 11px 11px;border:1px solid #fff;border-radius:12px;margin-right:37px}
 .hide_box .shirt_color .circle:hover{border:1px solid #a1a1a1;transition:all 2s}.hide_box .shirt_color .circle:focus{border:1px solid #a1a1a1;transition:all 1s}
