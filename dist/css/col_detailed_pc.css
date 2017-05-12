@@ -1,6 +1,6 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../ProximaNova/Myriad/proximanova-regular.woff2) format("woff2"),url(../ProximaNova/Myriad/proximanova-regular.woff) format("woff")}
-*{padding:0;margin:0}body{font-family:"Myriad",sans-serif,sans-serif}
+*{padding:0;margin:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 .popup{position:fixed;height:100%;width:100%;background:rgba(0,0,0,0.9);z-index:1000;display:none}
 .popup .window{margin:15% 0 0 25%;background:#fff;width:630px;position:relative}.popup .window .close{float:right;margin:-15px -15px 0 0}
 .popup .window .close img{width:30px}.popup .window p{text-align:center;padding-top:20px;font-weight:bold;margin-bottom:30px}
@@ -20,7 +20,7 @@ header .logo{position:absolute;top:15px;left:2%}header .logo img{width:20%}heade
 header .search .search_link{display:block;width:100%;height:100%}header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
 header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%}
 header .menu{display:flex;justify-content:center}header .menu .menu_item{list-style-type:none}
-header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px;font-size:14px;color:#000;text-decoration:none}
+header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px;color:#000;text-decoration:none}
 header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.content{padding-top:100px}
 .myjcarousel{float:left;width:45%}.sliderBox{height:660px;width:450px;top:24px;left:50px}
 .sliderBox .prevBtn{position:absolute;z-index:100;top:400px;left:120px;height:80px;width:80px;text-decoration:none;background:url("../img/left.png") left top no-repeat}

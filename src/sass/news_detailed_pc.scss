@@ -14,7 +14,7 @@ body {
 	p{
 		text-align:justify;
 		text-indent: 20px;
-		// font-size:12px;
+		// font-size: 12px;
 	}
 }
 header {
@@ -139,6 +139,7 @@ header {
 		}
 		.img_plan{
 			margin-top:30px; 
+			text-align:center;
 			img{
 				width:100%;
 			}
@@ -148,17 +149,98 @@ header {
 			font-size: 12px;
 			line-height:18px;
 		}
-		.read_more{
+		.double_img{
+			position:relative;
+			height:500px;
+			img{
+
+				width:320px;
+			}
+			.left_img{
+				float:left;
+			}
+			.right_img{
+				float:right;
+			}
+		}
+		.favourites_and_share{
+			display:flex;
+			margin-top:50px;
+			.favourites{
+				display:flex;
+				padding-top:12px;
+				position:relative;
+				a{
+					color:$black;
+					text-transform:uppercase;
+					font-weight:bold;
+					font-size:13px;
+					letter-spacing:2px;
+					img{
+						width:25px;
+						margin:-3px 5px 0 0;
+					}
+				}
+			}
+			.share{
+				margin:0 0 35px 60px;
+				padding:8px 20px 8px 20px;
+				border-radius:20px;
+				border:1px solid transparent;
+				@extend .favourites;
+				a{
+					img{
+						margin:-1px 10px 0 0;
+						width:22px;
+
+					}
+				}
+				.insta{
+					margin-left: 20px;
+					display:none;
+				}
+				.pinterest{
+					display:none;
+				}
+				.vkontakte{
+					display:none;
+				}
+				.facebook{
+					display:none;
+				}
+			}
+			.share:hover{
+				padding: 8px 20px 8px 20px;
+				border:1px solid $gray;
+			}
+		}
+		span{
+			color:$gray;
+			text-transform: uppercase;
+			font-weight:bold;
+			font-size:11px;
+		}
+		.textarea{
+			height:110px;
+			textarea{
+				margin:10px 0 0 0;
+				resize:none;
+				border-radius:18px;
+				padding:15px 0 0 15px;
+				outline:0;
+			}
+		}
+		.leave_comment {
+			 margin:60px 0 50px 0;
 			a{
-				color:$blue;
 				text-decoration:none;
 				text-transform:uppercase;
-				padding:8px 20px 8px 20px;
-				border:1px solid $blue;
-				font-size:13px;
+				padding:15px 43px 15px 43px;
+				color:$white;
+				background:$black;
 				font-weight:bold;
-				border-radius:17px;
-				letter-spacing:4px;
+				font-size:13px;
+				letter-spacing: 3px;
 			}
 		}
 	}
@@ -180,6 +262,7 @@ header {
         }
 	}
 }
+
 footer {
 	margin-top:50px;
 	display: flex;
