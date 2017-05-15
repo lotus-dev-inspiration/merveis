@@ -1,24 +1,24 @@
 $(function(){
 
-	// change_img_function //
+	// // change_img_function //
 
-	var collect_img_item = $(".content_item");
-	var collect_cur_price;
-	collect_img_item.hover(
-		function() {
-			$(this).find("img").attr("src","dist/img/006.jpg");
-			// collect_cur_price = $(this).find(".price").html();
-			// $(this).find(".price").empty();
-			// $("<a href='col_detailed.html' class='color col_blue'></a>").appendTo($(this).find(".price"));
-		},
-		function() {
-			$(this).find("img").attr("src","dist/img/005.jpg");
-			// $(this).find(".price").empty();
-			// $(this).find(".price").html(collect_cur_price);
-		}
-		);
+	// var collect_img_item = $(".content_item");
+	// var collect_cur_price;
+	// collect_img_item.hover(
+	// 	function() {
+	// 		$(this).find("img").attr("src","dist/img/006.jpg");
+	// 		// collect_cur_price = $(this).find(".price").html();
+	// 		// $(this).find(".price").empty();
+	// 		// $("<a href='col_detailed.html' class='color col_blue'></a>").appendTo($(this).find(".price"));
+	// 	},
+	// 	function() {
+	// 		$(this).find("img").attr("src","dist/img/005.jpg");
+	// 		// $(this).find(".price").empty();
+	// 		// $(this).find(".price").html(collect_cur_price);
+	// 	}
+	// 	);
 
-	// end_of_change_img_function //
+	// // end_of_change_img_function //
 
 	// filter_show_function //
 	var collect_count = 0;
