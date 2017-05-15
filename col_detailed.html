@@ -10,15 +10,15 @@
 	<script src="js/jquery.simslider.js"></script>
 	<script>
 		jQuery( function($){
-		$('.sliderBox').SimSlider( {
-		next: '.nextBtn', 
-		prev: '.prevBtn', 
-		item: '.SimSlider .slide', 
-		speed: 1200, 
-		delay: 1000 
-	} );
-} );
-</script>
+			$('.sliderBox').SimSlider( {
+				next: '.nextBtn', 
+				prev: '.prevBtn', 
+				item: '.SimSlider .slide', 
+				speed: 1200, 
+				delay: 1000 
+			} );
+		} );
+	</script>
 </head>
 <body>
 	<div class="popup">
@@ -76,7 +76,11 @@
 				
 			</div>
 		</header>
-		<div class="content">
+
+
+
+
+		<div class="content main">
 			<div class="content_up">
 				<div class="myjcarousel">
 					<div class="sliderBox">
@@ -160,7 +164,7 @@
 				</div>
 				<div class="hide_box">
 					<div class="describe_and_lang">
-						<div class="describe"><h5>описание</h5></div>
+					<div class="describe"><h5>описание</h5></div>
 						<div class="language">
 							<a href="#">ru</a>
 							<a href="#">en</a>
@@ -244,9 +248,12 @@
 		<div class="footer_subscribe">
 			<h3>Подпишитесь</h3>
 			<div class="subscribe_mail">
-				<input type="email" name="email" placeholder="account@gmail.com">
+				<form method="get" action="">
+					<input type="email" name="email" placeholder="account@gmail.com">
+					<img class="mail_img" src="dist/img/mail_arrow.png">
+					<button class="mail_link" type="submit"></button>
+				</form>
 			</div>
-			<a class="mail_link" href="#"></a>
 			<p class="subscribe_text">Подпишитесь на наши обновления, чтобы быть в курсе всех последних событий</p>
 			<div class="subscribe_networks">
 				<div class="networks_fb"><a href="#"></a></div>
