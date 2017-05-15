@@ -1,6 +1,3 @@
 $(function(){
-	$('.pgwSlider').pgwSlider({
-		displayControls: true,
-		transitionDuration: 3000	
-	});
+	$( '#mi-slider' ).catslider();
 });

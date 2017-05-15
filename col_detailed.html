@@ -10,15 +10,15 @@
 	<script src="js/jquery.simslider.js"></script>
 	<script>
 		jQuery( function($){
-			$('.sliderBox').SimSlider( {
-				next: '.nextBtn', 
-				prev: '.prevBtn', 
-				item: '.SimSlider .slide', 
-				speed: 1200, 
-				delay: 1000 
-			} );
-		} );
-	</script>
+		$('.sliderBox').SimSlider( {
+		next: '.nextBtn', 
+		prev: '.prevBtn', 
+		item: '.SimSlider .slide', 
+		speed: 1200, 
+		delay: 1000 
+	} );
+} );
+</script>
 </head>
 <body>
 	<div class="popup">
@@ -57,16 +57,23 @@
 				<li class="menu_item"><a href="collections.html" class="menu_link">Коллекции</a></li>
 				<li class="menu_item"><a href="philosophy.html" class="menu_link">Философия</a></li>
 				<li class="menu_item"><a href="news.html" class="menu_link">Новости</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Доставка и оплата</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Где купить?</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Скидки</a></li>
+				<li class="menu_item"><a href="contacts.html" class="menu_link">Контакты</a></li>
+				<li class="menu_item"><a href="delivery.html" class="menu_link">Доставка и оплата</a></li>
+				<li class="menu_item"><a href="sales.html" class="menu_link">Скидки</a></li>
 			</ul>
 			<div class="search">
-				<input id="search_input" type="text" name="search" placeholder="ПОИСК...">
-				<a class="search_link" href="#">
-					<img src="dist/img/search-icon.png">
-				</a>
+				<form method="get" action="">
+					<input id="search_input" type="text" name="search" placeholder="ПОИСК...">
+					<img class="search_img search_not_out" src="dist/img/search-icon.png">
+					<button type="submit search_not_out" class="search_link" href="#">
+					</button>
+					<img class="search_img img_hide" src="dist/img/search-icon.png">
+				</form>
+			</div>
+			<div class="busket">
+				<a href="#"></a>
+				<div><span>10</span></div>
+				
 			</div>
 		</header>
 		<div class="content">
@@ -153,7 +160,7 @@
 				</div>
 				<div class="hide_box">
 					<div class="describe_and_lang">
-					<div class="describe"><h5>описание</h5></div>
+						<div class="describe"><h5>описание</h5></div>
 						<div class="language">
 							<a href="#">ru</a>
 							<a href="#">en</a>

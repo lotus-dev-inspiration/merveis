@@ -14,15 +14,18 @@
 .fixed_menu .open_col{display:block;float:left;margin:20% 10% 0 10%}.fixed_menu .open_col a{font-weight:bold;color:#a1a1a1;font-size:15px;text-transform:uppercase;line-height:45px}
 .fixed_menu .open_col a:hover{color:#000}.fixed_menu .close_link{float:left;margin:30% 0 0 -2%}
 .fixed_menu .close_link a{display:block;transform:rotate(90deg);margin-right:0;font-size:13px;color:#a1a1a1;white-space:nowrap}
-.fixed_menu .close_link a:hover{color:#000}.wrapper{width:80%;margin:0 auto;height:800px}
-header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
-header .logo{position:absolute;top:15px;left:2%}header .logo img{width:20%}header .search{position:absolute;width:40px;height:40px;top:12px;right:2%;transition:right 3s}
-header .search .search_link{display:block;width:100%;height:100%}header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
-header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%}
-header .menu{display:flex;justify-content:center}header .menu .menu_item{list-style-type:none}
-header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px;color:#000;text-decoration:none}
-header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.content{padding-top:100px}
-.myjcarousel{float:left;width:45%}.sliderBox{height:660px;width:450px;top:24px;left:50px}
+.fixed_menu .close_link a:hover{color:#000}.wrapper{width:80%;margin:0 auto}.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
+.wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
+.wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
+.wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
+.wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:44%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
+.wrapper header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%;cursor:pointer}
+.wrapper header .busket{position:absolute;top:14px;right:3%}.wrapper header .busket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
+.wrapper header .busket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
+.wrapper header .busket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
+.wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
+.wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
+.content{padding-top:100px}.myjcarousel{float:left;width:45%}.sliderBox{height:660px;width:450px;top:24px;left:50px}
 .sliderBox .prevBtn{position:absolute;z-index:100;top:400px;left:120px;height:80px;width:80px;text-decoration:none;background:url("../img/left.png") left top no-repeat}
 .sliderBox .nextBtn{z-index:100;position:absolute;top:400px;left:515px;height:80px;width:80px;text-decoration:none;background:url("../img/right.png") left top no-repeat}
 .SimSlider{position:relative;overflow:hidden;height:660px;width:450px}.SimSlider .slide{z-index:0;position:absolute;top:0;left:0}
