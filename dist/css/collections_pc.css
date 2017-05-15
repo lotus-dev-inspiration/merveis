@@ -1,13 +1,16 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
-@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../ProximaNova/Myriad/proximanova-regular.woff2) format("woff2"),url(../ProximaNova/Myriad/proximanova-regular.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
-.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(to bottom,#fff,transparent)}
+.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 .wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
-.wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:2%;transition:right 3s}
+.wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
 .wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
-.wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
+.wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:44%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
 .wrapper header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%;cursor:pointer}
+.wrapper header .busket{position:absolute;top:14px;right:3%}.wrapper header .busket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
+.wrapper header .busket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
+.wrapper header .busket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
 .wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .main{display:flex;padding-top:120px}.wrapper .main aside{position:fixed;width:200px;height:100%}

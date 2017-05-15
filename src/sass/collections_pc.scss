@@ -46,7 +46,7 @@ a {
 			width: 40px;
 			height: 40px;
 			top: 12px;
-			right: 2%;
+			right: 7%;
 			transition: right 3s;
 			
 
@@ -65,7 +65,7 @@ a {
 				position: fixed;
 				left: 30%;
 				top: 30px;
-				width: 48%;
+				width: 44%;
 				padding-left: 15px;
 				border: none;
 				outline: none;
@@ -81,6 +81,41 @@ a {
 				margin: -35% 0 0 -35%;
 				cursor: pointer;	
 			}
+		}
+
+		.busket {
+			position: absolute;
+			top: 14px;
+			right: 3%;
+
+			a {
+				display: block;
+				width: 33px;
+				height: 33px;
+				background: url("../img/busket-icon.png");
+				background-size: cover;
+			}
+
+			div {
+				position: relative;
+				bottom: 43px;
+				left: 30px;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background: $gray;
+
+				span {
+					display: block;
+					position: relative;
+					right: 1px;
+					text-align: center;
+					font-weight: bold;
+					color: $white;
+					letter-spacing: -1px;
+				}
+			}
+
 		}
 
 		.menu {
@@ -116,7 +151,7 @@ a {
 			position: fixed;
 			width: 200px;
 			height: 100%;
-			
+
 
 			.side_menu {
 				margin: 40px 0 0 10%;
@@ -139,7 +174,7 @@ a {
 			width: 100%;
 			height: 100%;
 			padding-left: 200px;
-			
+
 
 			.content_logic {
 				position: relative;
@@ -152,7 +187,7 @@ a {
 					margin-right: 10%;
 					display: inline-block;
 					height: 100%;
-					
+
 					a {
 						display: block;
 						line-height: 60px;

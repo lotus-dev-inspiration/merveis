@@ -1,8 +1,8 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
-@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../ProximaNova/Myriad/proximanova-regular.woff2) format("woff2"),url(../ProximaNova/Myriad/proximanova-regular.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
-.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(to bottom,#fff,transparent)}
+.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 .wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
 .wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:2%;transition:right 3s}
 .wrapper header .search .search_link{display:block;width:100%;height:100%}.wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}

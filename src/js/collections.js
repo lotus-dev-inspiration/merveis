@@ -42,7 +42,7 @@ $(function(){
 		$("#search_input").show(2000); 
 		$(this).css("display","none");
 		$(".search").css({
-			"right":"8%"
+			"right":"13%"
 		});
 	});
 
@@ -53,7 +53,7 @@ $(function(){
 
 	$(".main, .menu, .logo, footer").on("click", function() {
 			$("#search_input").hide(2000);
-			$(".search").css("right","2%");
+			$(".search").css("right","7%");
 			$(".img_hide").css("display","block");
 	});
 

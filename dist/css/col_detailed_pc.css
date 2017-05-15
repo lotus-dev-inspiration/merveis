@@ -1,5 +1,5 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
-@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../ProximaNova/Myriad/proximanova-regular.woff2) format("woff2"),url(../ProximaNova/Myriad/proximanova-regular.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{padding:0;margin:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 .popup{position:fixed;height:100%;width:100%;background:rgba(0,0,0,0.9);z-index:1000;display:none}
 .popup .window{margin:15% 0 0 25%;background:#fff;width:630px;position:relative}.popup .window .close{float:right;margin:-15px -15px 0 0}
@@ -15,7 +15,7 @@
 .fixed_menu .open_col a:hover{color:#000}.fixed_menu .close_link{float:left;margin:30% 0 0 -2%}
 .fixed_menu .close_link a{display:block;transform:rotate(90deg);margin-right:0;font-size:13px;color:#a1a1a1;white-space:nowrap}
 .fixed_menu .close_link a:hover{color:#000}.wrapper{width:80%;margin:0 auto;height:800px}
-header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(to bottom,#fff,transparent)}
+header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 header .logo{position:absolute;top:15px;left:2%}header .logo img{width:20%}header .search{position:absolute;width:40px;height:40px;top:12px;right:2%;transition:right 3s}
 header .search .search_link{display:block;width:100%;height:100%}header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:48%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
 header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%}

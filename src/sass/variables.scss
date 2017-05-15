@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('ProximaNova'),
-    url(../ProximaNova/Myriad/proximanova-regular.woff2) format('woff2'), 
-    url(../ProximaNova/Myriad/proximanova-regular.woff) format('woff');
+    url(../fonts/ProximaNova/proximanova-regular.woff2) format('woff2'), 
+    url(../fonts/ProximaNova/proximanova-regular.woff) format('woff');
 }
 
 
@@ -31,4 +31,4 @@ $turquoise: #56d2b1;
 $blue: #4a76b9;
 $pink: #f22b47;
 $red: #9c2727;
-$lightgrad: linear-gradient(to bottom, $white, transparent);
+$lightgrad: linear-gradient($white 80%, transparent 100%);
