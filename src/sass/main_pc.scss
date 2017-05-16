@@ -143,15 +143,14 @@ a {
 	}
 
 	.main {
-		padding-top: 120px;
-		margin-bottom: 40px;
-
+		padding-top: 180px;
+		
 		.mi-slider {
 			li {
 				img {
 					border: 1px solid $black;
 				}
-				
+
 			}	
 		}
 
@@ -161,7 +160,7 @@ a {
 				display: block;
 				width: 180px;
 				text-align: center;
-				margin: 0 auto 10px auto;
+				margin: 0 auto 30px auto;
 				text-transform:uppercase;
 				padding:15px 43px;
 				color:$white;
