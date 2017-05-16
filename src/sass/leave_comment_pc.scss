@@ -14,7 +14,6 @@ body {
 	p{
 		text-align:justify;
 		text-indent: 20px;
-		// font-size: 12px;
 	}
 }
 ul {
@@ -175,124 +174,41 @@ header {
 	display:flex;
 	padding-top:150px;
 	.left_block{
-		width:20%;
-		margin-right: 5%;
-		.comment{
-			margin-top:12px;
-			float:right;
-			p{
-				color:$gray;		
-				font-weight:bold;
-				font-size:12px; 
-				display:block;
-				height:20px;
-				margin:0 0 70px 20px;
-			}
-			a{
-			  // margin-left:20px;
-			  color:$gray;
-			  font-weight:bold;
-			  font-size: 14px;
-			  position:relative;
-			  img{
-			  	width:17px;
-			  }
-			}
-			.com_icon{
-				margin-top: 20px;
-			}
-			a:hover{
-				color:$black;
-			}
-		}
+		width:22%;
 	}
 	.right_block{
-		width:65%;
+		width:78%;
 		h1{
 			font-weight:normal;
+			margin-bottom:30px;
 		}
-		.img_plan{
-			margin-top:30px; 
-			text-align:center;
-			img{
-				width:100%;
-			}
+		input{
+			width:700px;
+			height:30px;
+			border-radius:15px;
+			outline:0;
+			padding-left:10px;
+			border:1px solid $gray; 
 		}
 		p{
 			margin:30px 0 40px;
 			font-size: 12px;
 			line-height:18px;
 		}
-		.double_img{
-			position:relative;
-			height:500px;
-			img{
-
-				width:320px;
-			}
-			.left_img{
-				float:left;
-			}
-			.right_img{
-				float:right;
-			}
-		}
-		.favourites_and_share{
-			display:flex;
-			margin-top:50px;
-			.favourites{
-				display:flex;
-				padding-top:12px;
-				position:relative;
-				a{
-					color:$black;
-					text-transform:uppercase;
-					font-weight:bold;
-					font-size:13px;
-					letter-spacing:2px;
-					img{
-						width:25px;
-						margin:-3px 5px 0 0;
-					}
-				}
-			}
-			.share{
-				margin:0 0 35px 60px;
-				padding:8px 20px 8px 20px;
-				border-radius:20px;
-				border:1px solid transparent;
-				@extend .favourites;
-				a{
-					img{
-						margin:-1px 10px 0 0;
-						width:22px;
-
-					}
-				}
-				.insta{
-					margin-left: 20px;
-					display:none;
-				}
-				.pinterest{
-					display:none;
-				}
-				.vkontakte{
-					display:none;
-				}
-				.facebook{
-					display:none;
-				}
-			}
-			.share:hover{
-				padding: 8px 20px 8px 20px;
-				border:1px solid $gray;
-			}
-		}
 		span{
 			color:$gray;
 			text-transform: uppercase;
 			font-weight:bold;
-			font-size:11px;
+			font-size:10px;
+		}
+		.your_name{
+			margin-bottom:10px;
+		}
+		.your_email{
+			margin:20px 0 10px 0;
+		}
+		.your_message{
+			margin:20px 0 0 0;
 		}
 		.textarea{
 			height:110px;
