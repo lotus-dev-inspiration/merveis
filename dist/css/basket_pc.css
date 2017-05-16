@@ -1,0 +1,62 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+*{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
+ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
+.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
+.wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
+.wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
+.wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
+.wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:44%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
+.wrapper header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%;cursor:pointer}
+.wrapper header .basket{position:absolute;top:14px;right:3%}.wrapper header .basket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
+.wrapper header .basket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
+.wrapper header .basket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
+.wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
+.wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
+.wrapper .main{padding-top:150px;margin-bottom:50px;min-height:600px}.wrapper .main .basket_inscription{position:relative;margin-bottom:30px}
+.wrapper .main .basket_inscription .inscription{margin-left:20%}.wrapper .main .basket_inscription .inscription h1{text-transform:uppercase;font-weight:normal;font-size:30px}
+.wrapper .main .basket_inscription .language a{display:block;position:absolute;right:20px;top:-22px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg)}
+.wrapper .main .basket_inscription .language a:hover,.wrapper .main .basket_inscription .language a:focus{color:#000}
+.wrapper .main .basket_inscription .language .en{top:8px;right:21px}.wrapper .main .good_item{display:flex;margin-bottom:40px}
+.wrapper .main .good_item div{width:10%}.wrapper .main .good_item h5,.wrapper .main .good_item h4{color:#a1a1a1;text-transform:uppercase}
+.wrapper .main .good_item h5{margin-bottom:50px}.wrapper .main .good_item .item_st_font{font-size:16px;text-transform:uppercase}
+.wrapper .main .good_item .item_photo{width:20%}.wrapper .main .good_item .item_photo img{margin-left:20px;width:70%}
+.wrapper .main .good_item .item_info{width:30%}.wrapper .main .good_item .item_info .item_name{display:block;font-size:22px;text-transform:uppercase;margin-bottom:30px}
+.wrapper .main .good_item .item_info .item_color{display:block;margin-top:20px;text-transform:uppercase;font-weight:bold}
+.wrapper .main .good_item .item_delete img{width:20%;cursor:pointer}.wrapper .main .good_item .item_quantity select{width:50px;height:30px;padding-left:5px;border:1px solid #a1a1a1;border-radius:15px;outline:0;cursor:pointer}
+.wrapper .main .empty_basket{display:none;margin:20px auto;text-align:center;text-transform:uppercase;font-size:50px;font-style:italic}
+.wrapper .main .items_buy .pay_info{display:flex}.wrapper .main .items_buy .pay_info .back{width:50%}
+.wrapper .main .items_buy .pay_info .back a{display:block;margin-left:20px;color:#a1a1a1;text-decoration:underline}
+.wrapper .main .items_buy .pay_info .back a:hover{color:#000}.wrapper .main .items_buy .pay_info .pay{width:50%}
+.wrapper .main .items_buy .pay_info .pay .pay_sum{text-transform:uppercase;font-size:30px;width:300px;margin:0 auto 30px auto}
+.wrapper .main .items_buy .pay_info .pay a{display:block;width:250px;text-align:center;margin:0 auto 30px auto;text-transform:uppercase;padding:15px 43px;color:#fff;background:#000;font-weight:bold;font-size:13px;letter-spacing:3px;border:1px solid transparent;cursor:pointer}
+.wrapper .main .items_buy .pay_info .pay a:hover{background:#fff;color:#000;border:1px solid #000}
+footer{display:flex;height:300px;background:#f5f5f5}footer .footer_links{border-top:3px solid #56d2b1;width:40%}
+footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
+footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
+footer .footer_links .foot_menu_block .foot_link{display:block;padding:7px 0}footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
+footer .footer_links .foot_block_2{left:25%}footer .footer_subscribe{position:relative;width:35%}
+footer .footer_subscribe h3{margin-top:50px;text-transform:uppercase}footer .footer_subscribe .mail_link{position:absolute;display:none;left:40%;top:92px;width:30px;height:20px}
+footer .footer_subscribe .mail_img{position:absolute;cursor:pointer;left:42%;top:95px;display:block;width:10px;height:15px}
+footer .footer_subscribe .subscribe_text{margin-top:20px;width:200px;font-style:italic;font-size:10px;font-color:#ddd}
+footer .footer_subscribe .subscribe_mail{margin-top:20px}footer .footer_subscribe .subscribe_mail input[type="email"]{width:45%;height:20px;padding:5px;border:1px solid #a1a1a1;background:#f5f5f5;border-radius:15px;outline:0}
+footer .footer_subscribe .subscribe_networks{margin-top:40px}footer .footer_subscribe .subscribe_networks div{display:inline-block;width:37px;height:37px;border:1px solid #000;border-radius:50%;background:url("../img/soc_sprite.png") no-repeat;background-position:14px 8px}
+footer .footer_subscribe .subscribe_networks div a{display:block;width:100%;height:100%}
+footer .footer_subscribe .subscribe_networks .networks_insta{background-position:-19px 8px}
+footer .footer_subscribe .subscribe_networks .networks_vk{background-position:-55px 8px}
+footer .footer_subscribe .subscribe_networks .networks_pinterest{background-position:-92px 8px}
+footer .footer_comment{position:relative;width:25%;background:url("../img/005.jpg") no-repeat;background-size:cover}
+footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
+footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
+footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}.popup{display:none;width:100vw;height:100vh;z-index:1000;position:fixed;top:0;left:0;background:rgba(0,0,0,0.9)}
+.popup .window{position:absolute;width:630px;height:550px;top:50%;left:50%;margin:-275px 0 0 -315px;background:#fff;text-align:center}
+.popup .window .close{cursor:pointer;float:right;margin:-15px -15px 0 0}.popup .window .close img{width:30px}
+.popup .window p{text-align:center;padding-top:20px;font-weight:bold;margin-bottom:30px;font-size:20px}
+.popup .window form{width:630px;text-align:center}.popup .window form .forms{margin:17px 0 17px 0}
+.popup .window form .forms input{background:#fff;color:#000;width:275px;height:33px;border:1px solid #000;padding-left:20px;outline:0}
+.popup .window form .forms input:focus{outline:1px solid #000}.popup .window form .forms input:hover{color:#000}
+.popup .window form .center_form span{color:#ccc;font-size:14px}.popup .window form p{font-size:16px}
+.popup .window form textarea{resize:none;padding:5px 10px;background:#fff;color:#000;outline:0;border:1px solid #000}
+.popup .window form textarea:focus{outline:1px solid #000}.popup .window form button{margin:15px 0;background:#000;border:0;font-size:15px;color:#fff;box-shadow:0 0 12px #000;width:147px;height:35px;text-transform:uppercase;cursor:pointer}
+.popup .window form button:hover{background:#fff;color:#000}@media(max-width:1200px){.wrapper{width:100%}
+.wrapper header{width:100%}}

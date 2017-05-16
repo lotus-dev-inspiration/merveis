@@ -8,9 +8,9 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
 .wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:44%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
 .wrapper header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%;cursor:pointer}
-.wrapper header .busket{position:absolute;top:14px;right:3%}.wrapper header .busket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
-.wrapper header .busket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
-.wrapper header .busket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
+.wrapper header .basket{position:absolute;top:14px;right:3%}.wrapper header .basket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
+.wrapper header .basket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
+.wrapper header .basket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
 .wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .main{display:flex;padding-top:120px}.wrapper .main aside{position:fixed;width:200px;height:100%}
@@ -46,8 +46,13 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper .main .content .content_items .filter_items .filter_color .color_pink a{background:#f22b47}
 .wrapper .main .content .content_items .filter_items .filter_color .color_red a{background:#9c2727}
 .wrapper .main .content .content_items .filter_items .filter_price{margin-top:-10px}
+.wrapper .main .content .content_items .filter_items .filter_button a{display:block;text-align:center;line-height:34px;background:#000;border:0;font-size:15px;color:#fff;border:1px solid transparent;width:147px;height:34px;text-transform:uppercase;cursor:pointer}
+.wrapper .main .content .content_items .filter_items .filter_button a:hover{border:1px solid #000;background:#fff;color:#000}
+.wrapper .main .content .content_items .filter_items .filter_button button{background:#000;border:0;font-size:15px;color:#fff;border:1px solid transparent;width:147px;height:35px;text-transform:uppercase;cursor:pointer}
+.wrapper .main .content .content_items .filter_items .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
 .wrapper .main .content .content_items .content_item{display:inline-block;width:28%;margin:20px 2%}
 .wrapper .main .content .content_items .content_item .item_img img{width:100%}.wrapper .main .content .content_items .content_item .item_info{margin-top:10px;text-transform:uppercase;text-align:center}
+.wrapper .main .content .content_items .content_item .item_info p{min-height:30px}
 .wrapper .main .content .content_items .content_item .item_info .price{width:100px;height:30px;margin:0 auto;margin-top:5px}
 .wrapper .main .content .content_items .content_item .item_info .color{display:block;width:10px;height:10px;border-radius:50%;margin:0 auto;margin-top:5px}
 .wrapper .main .content .content_items .content_item .item_info .color:focus{width:7px;height:7px;border:3px solid #a1a1a1}

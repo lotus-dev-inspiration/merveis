@@ -83,7 +83,7 @@ a {
 			}
 		}
 
-		.busket {
+		.basket {
 			position: absolute;
 			top: 14px;
 			right: 3%;
@@ -364,6 +364,45 @@ a {
 						margin-top: -10px;
 					}
 
+					.filter_button {
+						a {
+							display: block;
+							text-align: center;
+							line-height: 34px;
+							background:$black;
+							border:none;
+							font-size:15px;
+							color:$white;
+							border: 1px solid transparent;
+							width:147px;
+							height:34px;
+							text-transform: uppercase;
+							cursor: pointer;
+							&:hover {
+								border: 1px solid $black;
+								background: $white;
+								color: $black;
+							}
+						}
+
+						button{
+							background:$black;
+							border:none;
+							font-size:15px;
+							color:$white;
+							border: 1px solid transparent;
+							width:147px;
+							height:35px;
+							text-transform: uppercase;
+							cursor: pointer;
+							&:hover {
+								border: 1px solid $black;
+								background: $white;
+								color: $black;
+							}
+						}
+					}
+
 				}
 
 
@@ -383,6 +422,10 @@ a {
 						margin-top: 10px;
 						text-transform: uppercase;
 						text-align: center;
+
+						p {
+							min-height: 30px;
+						}
 
 						.price {
 							width: 100px;
