@@ -13,71 +13,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;  
   color: $black;
-}
-.popup{
-  z-index:1000;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.9);
-  z-index: 1000;
-  display: none;
-  .window{
-    margin:15% 0 0 25%; 
-    background:$white;
-    width:630px;
-    position:relative;
-    .close{
-     float:right;
-     margin:-15px -15px 0 0 ;
-     img{
-      width:30px;
-    }
-  }
-  p{
-    text-align:center;
-    padding-top:20px;
-    font-weight:bold;
-    margin-bottom: 30px;
-  }
-  .center_form{
-    text-align:center;
-  }
-  .forms {
-    margin:17px 0 17px 0;
-  }
-  .forms input{
-    background:#111111;
-    color:#cccccc;
-    width:275px;
-    height:33px;
-    border:none;
-    padding-left: 20px;
-  }
-  .forms input:hover{
-    background:#1b5286;
-    box-shadow:0 0 12px #4d88b2;
-    color:white;
-  }
-  .center_form span{
-    color:#cccccc;
-    font-size:14px;
-  }
-  .but{
-    padding:15px;
-  }
-  button{
-    background:#3281c7;
-    border:none;
-    font-size:15px;
-    color:$white;
-    box-shadow:0 0 12px #4d88b2;
-    width:147px;
-    height:35px;
-  }
-}
 }
 .link_block_fixed{
   position:fixed;
@@ -136,8 +73,7 @@ a {
 .wrapper{
   width:80%;
   margin:0 auto;
-  height:800px;
-  // position:relative;
+  height:830px;
 
 
   header {
@@ -266,8 +202,6 @@ a {
 .myjcarousel{
   float:left;
   width:45%;
-  margin-left:50px;
-   position:relative;
 }
 
 .sliderBox {
@@ -275,6 +209,7 @@ a {
   width: 450px;
   top: 24px;
   left: 50px;
+  position:relative;
 }
 .sliderBox .prevBtn {
   position: absolute;
@@ -290,7 +225,7 @@ a {
   z-index: 100;
   position: absolute;
   top: 270px;
-  left:73%;
+  left:77%;
   height: 80px;
   width: 80px;
   text-decoration: none;
@@ -777,19 +712,46 @@ footer {
       width: 380px;
       top: 24px;
       left: 50px;
-  // position:relative;
+}
+.sliderBox .prevBtn {
+  position: absolute;
+  z-index: 100;
+  top: 270px;
+  left: 2%;
+  height: 80px;
+  width: 80px;
+  text-decoration: none;
+  background: url("../img/left.png") left top no-repeat;
+}
+.sliderBox .nextBtn {
+  z-index: 100;
+  position: absolute;
+  top: 270px;
+  left:68%;
+  height: 80px;
+  width: 80px;
+  text-decoration: none;
+  background: url("../img/right.png") left top no-repeat;
+}
+.SimSlider {
+  position: relative;
+  overflow: hidden;
+  height: 560px;
+  width: 350px;
+}
+.SimSlider .slide {
+  z-index:0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  img{
+    height: 560px;
+    width: 350px;
+  }
 }
 .myjcarousel{
   margin-left:20px;
-  width:40%;
-}
-.sliderBox .prevBtn {
-  top: 350px;
-  left: 25px;
-}
-.sliderBox .nextBtn {
-  top: 350px;
-  left:395px;
+  width:30%;
 }
 .link_block_fixed{
   position:fixed;
