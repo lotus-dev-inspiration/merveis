@@ -24,7 +24,7 @@ a {
 	width: 80%;
 	margin: 0 auto;
 
-	header {
+header {
 		z-index: 100;
 		position: fixed;
 		width: 80%;
@@ -46,14 +46,18 @@ a {
 			width: 40px;
 			height: 40px;
 			top: 12px;
-			right: 2%;
+			right: 7%;
 			transition: right 3s;
 			
 
 			.search_link {
-				display: block;
-				width: 100%;
-				height: 100%;	
+				display: none; // adjusment for button instead of link
+				position: absolute;
+				left: 11px;
+				top: 5px;
+				width: 60%;
+				height: 25px;
+				cursor: pointer;	
 			}
 
 			#search_input {
@@ -61,7 +65,7 @@ a {
 				position: fixed;
 				left: 30%;
 				top: 30px;
-				width: 48%;
+				width: 44%;
 				padding-left: 15px;
 				border: none;
 				outline: none;
@@ -74,8 +78,44 @@ a {
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				margin: -35% 0 0 -35%;	
+				margin: -35% 0 0 -35%;
+				cursor: pointer;	
 			}
+		}
+
+		.basket {
+			position: absolute;
+			top: 14px;
+			right: 3%;
+
+			a {
+				display: block;
+				width: 33px;
+				height: 33px;
+				background: url("../img/busket-icon.png");
+				background-size: cover;
+			}
+
+			div {
+				position: relative;
+				bottom: 43px;
+				left: 30px;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background: $gray;
+
+				span {
+					display: block;
+					position: relative;
+					right: 1px;
+					text-align: center;
+					font-weight: bold;
+					color: $white;
+					letter-spacing: -1px;
+				}
+			}
+
 		}
 
 		.menu {
@@ -103,10 +143,34 @@ a {
 	}
 
 	.main {
-		padding-top: 120px;
+		padding-top: 150px;
 		margin-bottom: 40px;
+		min-height: 300px;
+		position: relative;
 
-		.main_text {
+		.language {
+			a {
+				display: block;
+				position: absolute;
+				right: 20px;
+				top: 127px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $gray;
+				transform: rotate(90deg);
+
+				&:hover, &:focus {
+					color: $black;
+				}
+			}
+			.en {
+				top: 157px;
+				right: 21px;
+			}
+		}
+
+		p {
+			font-size: 14px;
 			margin: 10px 5%; 
 			text-indent: 3%;
 		}
@@ -116,6 +180,7 @@ a {
 
 footer {
 	display: flex;
+	width: 100%;
 	height: 300px;
 	background: $superlightgray;
 
@@ -163,12 +228,21 @@ footer {
 
 		.mail_link {
 			position: absolute;
+			display: none;
+			left: 40%;
+			top: 92px;
+			width: 30px;
+			height: 20px;
+		}
+
+		.mail_img {
+			position: absolute;
+			cursor: pointer;
 			left: 42%;
 			top: 95px;
 			display: block;
 			width: 10px;
 			height: 15px;
-			background: url("../img/mail_arrow.png") no-repeat;
 		}
 
 		.subscribe_text {
@@ -251,7 +325,7 @@ footer {
 				color: $lightgray;
 			}
 		}
-
+		
 		.dark_layer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);

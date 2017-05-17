@@ -17,21 +17,37 @@
 			<ul class="menu">
 				<li class="menu_item"><a href="collections.html" class="menu_link">Коллекции</a></li>
 				<li class="menu_item"><a href="philosophy.html" class="menu_link">Философия</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Новости</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Доставка и оплата</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Где купить?</a></li>
-				<li class="menu_item"><a href="#" class="menu_link">Скидки</a></li>
+				<li class="menu_item"><a href="news.html" class="menu_link">Новости</a></li>
+				<li class="menu_item"><a href="contacts.html" class="menu_link">Контакты</a></li>
+				<li class="menu_item"><a href="delivery.html" class="menu_link">Доставка и оплата</a></li>
+				<li class="menu_item"><a href="sales.html" class="menu_link">Скидки</a></li>
 			</ul>
 			<div class="search">
-				<input id="search_input" type="text" name="search" placeholder="ПОИСК...">
-				<a class="search_link" href="#">
-					<img src="dist/img/search-icon.png">
-				</a>
+				<form method="get" action="">
+					<input id="search_input" type="text" name="search" placeholder="ПОИСК...">
+					<img class="search_img search_not_out" src="dist/img/search-icon.png">
+					<button type="submit search_not_out" class="search_link" href="#">
+					</button>
+					<img class="search_img img_hide" src="dist/img/search-icon.png">
+				</form>
+			</div>
+			<div class="basket">
+				<a href="basket.html"></a>
+				<div><span>10</span></div>
+				
 			</div>
 		</header>
+		</header>
 		<div class="main">
-			
+			<div class="language">
+				<a href="#">ru</a>
+				<a class="en" href="#">en</a>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt aut, atque temporibus numquam aliquam rem. Cupiditate provident ut necessitatibus, optio expedita eaque fuga velit minus! Quos voluptatem expedita quae?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt aut, atque temporibus numquam aliquam rem. Cupiditate provident ut necessitatibus, optio expedita eaque fuga velit minus! Quos voluptatem expedita quae?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt aut, atque temporibus numquam aliquam rem. Cupiditate provident ut necessitatibus, optio expedita eaque fuga velit minus! Quos voluptatem expedita quae?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt aut, atque temporibus numquam aliquam rem. Cupiditate provident ut necessitatibus, optio expedita eaque fuga velit minus! Quos voluptatem expedita quae?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt aut, atque temporibus numquam aliquam rem. Cupiditate provident ut necessitatibus, optio expedita eaque fuga velit minus! Quos voluptatem expedita quae?</p>
 		</div>
 	</div>
 	<footer>
@@ -57,9 +73,12 @@
 		<div class="footer_subscribe">
 			<h3>Подпишитесь</h3>
 			<div class="subscribe_mail">
-				<input type="email" name="email" placeholder="account@gmail.com">
+				<form method="get" action="">
+					<input type="email" name="email" placeholder="account@gmail.com">
+					<img class="mail_img" src="dist/img/mail_arrow.png">
+					<button class="mail_link" type="submit"></button>
+				</form>
 			</div>
-			<a class="mail_link" href="#"></a>
 			<p class="subscribe_text">Подпишитесь на наши обновления, чтобы быть в курсе всех последних событий</p>
 			<div class="subscribe_networks">
 				<div class="networks_fb"><a href="#"></a></div>

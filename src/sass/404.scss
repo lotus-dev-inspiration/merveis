@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+.wrapper {
+
+	._404_info {
+		margin-top: 80px;
+		h1 {
+			text-align: center;
+			font-size: 100px;
+		}
+
+		p {
+			font-size: 20px; 
+			text-align: center;
+		}
+	}
+
+}

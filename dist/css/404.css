@@ -1,0 +1,5 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+*{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
+ul{list-style:none}a{text-decoration:none;color:#000}.wrapper ._404_info{margin-top:80px}
+.wrapper ._404_info h1{text-align:center;font-size:100px}.wrapper ._404_info p{font-size:20px;text-align:center}
