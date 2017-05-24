@@ -50,6 +50,8 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper .main .content .content_items .filter_items .filter_button button{background:#000;border:0;font-size:15px;color:#fff;border:1px solid transparent;width:147px;height:35px;text-transform:uppercase;cursor:pointer}
 .wrapper .main .content .content_items .filter_items .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
 .wrapper .main .content .content_items .content_item{display:inline-block;width:28%;margin:20px 2%}
+.wrapper .main .content .content_items .content_item .item_img{position:relative}
+.wrapper .main .content .content_items .content_item .item_img .sale{position:absolute;right:0;top:0;width:50px;height:30px;background:#000;color:#fff;text-transform:uppercase;text-align:center;line-height:30px}
 .wrapper .main .content .content_items .content_item .item_img img{width:100%}.wrapper .main .content .content_items .content_item .item_info{margin-top:10px;text-transform:uppercase;text-align:center}
 .wrapper .main .content .content_items .content_item .item_info p{min-height:30px}
 .wrapper .main .content .content_items .content_item .item_info .price{width:100px;height:30px;margin:0 auto;margin-top:5px}
