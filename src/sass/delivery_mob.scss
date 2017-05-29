@@ -1,0 +1,78 @@
+@import "./variables.scss";
+@media (max-width: 999px) {
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: $font-stack;
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			h2{
+				text-align:center;
+			}
+			img{
+				width:120px;
+			}
+			.new_post{
+				display:flex;
+				flex-direction:column;
+				.new_post_img{
+					text-align:center;
+					margin-bottom:20px;
+				}
+				p{
+					font-size:14px;
+					text-align:justify;
+					margin-left:-8px;
+				}
+			}
+			.ukrpochta{
+				@extend .new_post;
+				.ukrpochta_img{
+					text-align:center;
+					margin-bottom:20px;
+				}
+			}
+			.world{
+				@extend .new_post;
+				.world_img{
+					text-align:center;
+					margin-bottom:20px;
+				}
+			}
+			.privat{
+				@extend .new_post;
+				.privat_img{
+					text-align:center;
+					margin-bottom:20px;
+				}
+			}
+			.shops{
+				@extend .new_post;
+				.shops_img{
+					text-align:center;
+					margin-bottom:20px;
+				}
+			}
+		}
+	}
+}

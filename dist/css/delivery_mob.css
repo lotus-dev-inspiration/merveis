@@ -1,0 +1,10 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+@media(max-width:999px){*{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
+ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:100%}.wrapper .content .language{display:none}
+.wrapper .content h2{text-align:center}.wrapper .content img{width:120px}.wrapper .content .new_post,.wrapper .content .ukrpochta,.wrapper .content .world,.wrapper .content .privat,.wrapper .content .shops{display:flex;flex-direction:column}
+.wrapper .content .new_post .new_post_img,.wrapper .content .ukrpochta .new_post_img,.wrapper .content .world .new_post_img,.wrapper .content .privat .new_post_img,.wrapper .content .shops .new_post_img{text-align:center;margin-bottom:20px}
+.wrapper .content .new_post p,.wrapper .content .ukrpochta p,.wrapper .content .world p,.wrapper .content .privat p,.wrapper .content .shops p{font-size:14px;text-align:justify;margin-left:-8px}
+.wrapper .content .ukrpochta .ukrpochta_img{text-align:center;margin-bottom:20px}
+.wrapper .content .world .world_img{text-align:center;margin-bottom:20px}.wrapper .content .privat .privat_img{text-align:center;margin-bottom:20px}
+.wrapper .content .shops .shops_img{text-align:center;margin-bottom:20px}}

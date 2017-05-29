@@ -26,32 +26,32 @@ a {
 	}
 }
 header {
-		z-index: 100;
-		position: fixed;
-		width: 80%;
-		padding-top: 40px;
-		background: $lightgrad;
+	z-index: 100;
+	position: fixed;
+	width: 80%;
+	padding-top: 40px;
+	background: $lightgrad;
 
-		.logo {
-			position: absolute;
-			top: 15px;
-			left: 2%;
+	.logo {
+		position: absolute;
+		top: 15px;
+		left: 2%;
 
-			img {
-				width: 20%;
-			}
+		img {
+			width: 20%;
 		}
+	}
 
-		.search {
-			position: absolute;
-			width: 40px;
-			height: 40px;
-			top: 12px;
-			right: 7%;
-			transition: right 3s;
-			
+	.search {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 12px;
+		right: 7%;
+		transition: right 3s;
 
-			.search_link {
+
+		.search_link {
 				display: none; // adjusment for button instead of link
 				position: absolute;
 				left: 11px;
@@ -142,24 +142,46 @@ header {
 
 		}
 	}
-.content{
-	display:flex;
+	.content{
 	padding-top:150px;
-	.left_block{
-		width:20%;
-		margin-right: 5%;
-		.comment{
-			margin-top:12px;
-			float:right;
-			p{
-				color:$gray;		
-				font-weight:bold;
-				font-size:12px; 
-				display:block;
-				height:20px;
-				margin:0 0 70px 20px;
+	position:relative;
+	.language {
+		a {
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 127px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $gray;
+			transform: rotate(90deg);
+
+			&:hover, &:focus {
+				color: $black;
 			}
-			a{
+		}
+		.en {
+			top: 157px;
+			right: 21px;
+		}
+	}
+	.first_news{
+		display:flex;
+		.left_block{
+			width:20%;
+			margin-right: 5%;
+			.comment{
+				margin-top:12px;
+				float:right;
+				p{
+					color:$gray;		
+					font-weight:bold;
+					font-size:12px; 
+					display:block;
+					height:20px;
+					margin:0 0 70px 20px;
+				}
+				a{
 			  // margin-left:20px;
 			  color:$gray;
 			  font-weight:bold;
@@ -207,24 +229,11 @@ header {
 			}
 		}
 	}
-	.right_lang{
-		float:right;
-		margin:-30px 0 0 50px;
-		.language {
-          a {
-            color:$gray;
-            text-transform:uppercase;
-            display: block;
-            font-size:12px;
-            font-weight: bold;
-            line-height: 30px;
-            transform: rotate(90deg);
-          }
-          a:hover{
-            color:black;
-          }
-        }
-	}
+}
+.second_news{
+	margin-top:80px;
+}
+	
 }
 footer {
 	margin-top:50px;
