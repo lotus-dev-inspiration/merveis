@@ -25,7 +25,7 @@ a {
 	margin: 0 auto;
 
 	header {
-		z-index: 100;
+		z-index: 150;
 		position: fixed;
 		width: 80%;
 		padding-top: 40px;
@@ -168,6 +168,10 @@ a {
 				top: 157px;
 				right: 21px;
 			}
+		}
+
+		#catalogue {
+			display: none;
 		}
 
 		.mi-slider {

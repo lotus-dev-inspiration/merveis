@@ -1,0 +1,5 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+@media(max-width:1000px){.wrapper{width:100%}.wrapper header{display:none}.wrapper .main .language{display:none}
+.wrapper .main h1{margin-left:5%}.wrapper .main p{width:90%}footer{display:none}}
+@media(max-width:500px){.wrapper .main h1{text-align:center}}

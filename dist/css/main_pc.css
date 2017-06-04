@@ -2,7 +2,7 @@
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
-.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
+.wrapper header{z-index:150;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 .wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
 .wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
 .wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
@@ -15,7 +15,8 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .main{padding-top:180px;position:relative}.wrapper .main .language a{display:block;z-index:100;position:absolute;right:20px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg)}
 .wrapper .main .language a:hover{color:#000}.wrapper .main .language .en{top:157px;right:21px}
-.wrapper .main .mi-slider li img{border:1px solid #000}.wrapper .main .look_more a{display:block;width:180px;text-align:center;margin:0 auto 30px auto;text-transform:uppercase;padding:15px 43px;color:#fff;background:#000;font-weight:bold;font-size:13px;letter-spacing:3px;border:1px solid transparent}
+.wrapper .main #catalogue{display:none}.wrapper .main .mi-slider li img{border:1px solid #000}
+.wrapper .main .look_more a{display:block;width:180px;text-align:center;margin:0 auto 30px auto;text-transform:uppercase;padding:15px 43px;color:#fff;background:#000;font-weight:bold;font-size:13px;letter-spacing:3px;border:1px solid transparent}
 .wrapper .main .look_more a:hover{background:#fff;color:#000;border:1px solid #000}
 footer{display:flex;width:100%;height:300px;background:#f5f5f5}footer .footer_links{border-top:3px solid #56d2b1;width:40%}
 footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}

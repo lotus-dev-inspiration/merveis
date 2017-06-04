@@ -1,0 +1,10 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+@media(max-width:1000px){.wrapper{width:100%}.wrapper header{display:none}.wrapper .main .language{display:none}
+.wrapper .main #catalogue{display:block}.wrapper .main #catalogue div.cat_item{display:inline-block;width:46%;margin:0 1% 20px 1%;box-sizing:border-box}
+.wrapper .main #catalogue div.cat_item img{border:1px solid #000;display:block;width:90%;margin:0 auto}
+.wrapper .main #catalogue div.cat_item img:hover{opacity:.8}.wrapper .main #catalogue div.cat_item div.cat_name{margin-top:10px;text-align:center;font-style:italic;font-size:20px}
+.wrapper .main #mi-slider{display:none}.wrapper .main .look_more{margin-top:30px}
+footer{display:none}}@media(max-width:500px){.wrapper .main #catalogue{display:block}
+.wrapper .main #catalogue div.cat_item{display:block;width:96%;margin:0 auto;margin-bottom:20px}
+.wrapper .main #catalogue div.cat_item img{width:70%}}

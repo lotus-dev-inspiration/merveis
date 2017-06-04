@@ -15,16 +15,16 @@ $(function(){
 			// end_of_change_img_function //
 
 			// filter_show_function //
-			var collect_count = 0;
 
 			$(".filter, .filter_button_link").on("click", function() {
-				if(collect_count%2 == 0) {
-					$(".filter_items").show(1000);
-					collect_count++;
-				} else {
-					$(".filter_items").hide(1000);
-					collect_count++;
-				}
+				// if(collect_count%2 == 0) {
+				// 	$(".filter_items").show(1000);
+				// 	collect_count++;
+				// } else {
+				// 	$(".filter_items").hide(1000);
+				// 	collect_count++;
+				// }
+				$(".filter_items").slideToggle();
 			});
 
 			// end_of_filter_show_function //
@@ -78,5 +78,14 @@ $(function(){
 			});
 
 			// end_of_show_more_function //
+
+			// show_menu_function //
+
+			$(".menu_sign").on("click",function() {
+				$(".menu" ).slideToggle( "slow", function() {
+				});
+			});
+
+			// end_of_show_menu_function //
 		});
 

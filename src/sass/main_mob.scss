@@ -1,0 +1,79 @@
+@import "./variables.scss";
+@media (max-width: 1000px) {
+	
+	.wrapper {
+		width: 100%;
+
+		header {
+			display: none;
+		}
+
+		.main {
+			.language {
+				display: none;
+			}
+			
+			#catalogue {
+				display: block;
+				div.cat_item {
+					display: inline-block;
+					width: 46%;
+					margin: 0 1% 20px 1%; 
+					box-sizing: border-box;
+					img {
+						border: 1px solid $black;
+						display: block;
+						width: 90%;
+						margin: 0 auto;
+						&:hover {
+							opacity: 0.8;
+						}
+					}
+					div.cat_name {
+						margin-top: 10px;
+						text-align: center;
+						font-style: italic;
+						font-size: 20px;
+					}
+				}
+			}
+
+			#mi-slider {
+				display: none;
+			}
+
+			.look_more {
+				margin-top: 30px;
+			}
+		}
+	} 
+
+	footer {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		.main {
+			#catalogue {
+				display: block;
+				div.cat_item {
+					display: block;
+					width: 96%;
+					margin: 0 auto;
+					margin-bottom: 20px;
+					img {
+						width: 70%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

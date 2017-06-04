@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@media (max-width: 1000px) {
+	
+	.wrapper {
+		width: 100%;
+
+
+		header {
+			display: none;
+		}
+
+		.main {
+			.language {
+				display: none;
+			}
+
+			h1 {
+				margin-left: 5%;
+			}
+
+			p {
+				width: 90%;
+			}
+		}
+	}
+	footer {
+		display: none;
+	}
+} 
+
+
+@media (max-width: 500px) {
+
+	.wrapper {
+		.main {
+			h1 {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+
+
+

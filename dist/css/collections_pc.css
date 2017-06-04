@@ -1,7 +1,7 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
-ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
+ul{list-style:none}a{text-decoration:none;color:#000}@media(min-width:1001px){.wrapper{width:80%;margin:0 auto}
 .wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 .wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
 .wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
@@ -11,7 +11,8 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .basket{position:absolute;top:14px;right:3%}.wrapper header .basket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
 .wrapper header .basket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
 .wrapper header .basket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
-.wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
+.wrapper header .menu_sign{display:none}.wrapper header .menu{display:flex;justify-content:center}
+.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .main{display:flex;padding-top:120px}.wrapper .main aside{position:fixed;width:200px;height:100%}
 .wrapper .main aside .side_menu{margin:40px 0 0 10%}.wrapper .main aside .side_menu .side_link{display:block;padding:10px;text-transform:uppercase;color:#a1a1a1}
@@ -24,7 +25,7 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper .main .content .content_logic .filter a:hover,.wrapper .main .content .content_logic .filter a:focus{text-decoration:underline}
 .wrapper .main .content .content_logic .by_price{margin-right:20%}.wrapper .main .content .content_logic .language{margin-right:2%}
 .wrapper .main .content .content_logic .language a{display:block;font-weight:bold;line-height:30px;transform:rotate(90deg)}
-.wrapper .main .content .content_items{position:relative}.wrapper .main .content .content_items .filter_items{display:none;position:absolute;left:2%;top:20px;width:94%;height:300px;background:#fff}
+.wrapper .main .content .content_items{position:relative}.wrapper .main .content .content_items .filter_items{z-index:50;display:none;position:absolute;left:2%;top:20px;width:94%;height:300px;background:#fff}
 .wrapper .main .content .content_items .filter_items div{display:inline-block;width:48%;vertical-align:top;margin-bottom:40px}
 .wrapper .main .content .content_items .filter_items div h3{margin-bottom:10px}.wrapper .main .content .content_items .filter_items .filter_size .size{display:inline-block;width:30px;height:30px;background:#fff;border-radius:50%;margin-top:20px}
 .wrapper .main .content .content_items .filter_items .filter_size .size input[type="radio"]{position:absolute;visibility:hidden}
@@ -79,5 +80,5 @@ footer .footer_subscribe .subscribe_networks .networks_pinterest{background-posi
 footer .footer_comment{position:relative;width:25%;background:url("../img/005.jpg") no-repeat;background-size:cover}
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
-footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(max-width:1200px){.wrapper{width:100%}
-.wrapper header{width:100%}}
+footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}}
+@media(max-width:1200px){.wrapper{width:100%}.wrapper header{width:100%}}
