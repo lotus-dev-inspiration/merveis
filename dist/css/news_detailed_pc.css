@@ -15,15 +15,19 @@ header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.main{
 .main aside{position:fixed;width:200px;height:100%}.main aside .side_menu{margin:40px 0 0 10%}
 .main aside .side_menu .side_link{display:block;padding:10px;text-transform:uppercase;color:#a1a1a1}
 .main aside .side_menu .side_link:hover,.main aside .side_menu .side_link:focus{color:#000}
-.content{display:flex;padding-top:150px}.content .left_block{width:20%;margin-right:5%}
-.content .left_block .comment{margin-top:12px;float:right}.content .left_block .comment p{color:#a1a1a1;font-weight:bold;font-size:12px;display:block;height:20px;margin:0 0 70px 20px}
+.content{display:flex;padding-top:150px}.content .language a{display:block;position:absolute;right:150px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg)}
+.content .language a:hover,.content .language a:focus{color:#000}.content .language .en{top:157px;right:150px}
+.content .left_block{width:20%;margin-right:5%}.content .left_block .comment{margin-top:12px;float:right}
+.content .left_block .comment p{color:#a1a1a1;font-weight:bold;font-size:12px;display:block;height:20px;margin:0 0 70px 20px}
 .content .left_block .comment a{color:#a1a1a1;font-weight:bold;font-size:14px;position:relative}
 .content .left_block .comment a img{width:17px}.content .left_block .comment .com_icon{margin-top:20px}
 .content .left_block .comment a:hover{color:#000}.content .right_block{width:65%}
+.content .right_block .data_mob{display:none}.content .right_block .com_mob{display:none}
 .content .right_block h1{font-weight:normal}.content .right_block .img_plan{margin-top:30px;text-align:center}
 .content .right_block .img_plan img{width:100%}.content .right_block p{margin:30px 0 40px;font-size:12px;line-height:18px}
-.content .right_block .double_img{position:relative;height:500px}.content .right_block .double_img img{width:320px}
+.content .right_block .double_img{position:relative}.content .right_block .double_img img{width:320px}
 .content .right_block .double_img .left_img{float:left}.content .right_block .double_img .right_img{float:right}
+.content .right_block .double_img:after{content:"";display:table;clear:both}
 .content .right_block .favourites_and_share{display:flex;margin-top:50px}.content .right_block .favourites_and_share .favourites,.content .right_block .favourites_and_share .share{display:flex;padding-top:12px;position:relative}
 .content .right_block .favourites_and_share .favourites a,.content .right_block .favourites_and_share .share a{color:#000;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:2px}
 .content .right_block .favourites_and_share .favourites a img,.content .right_block .favourites_and_share .share a img{width:25px;margin:-3px 5px 0 0}
@@ -33,13 +37,11 @@ header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.main{
 .content .right_block .favourites_and_share .share .pinterest{display:none}.content .right_block .favourites_and_share .share .vkontakte{display:none}
 .content .right_block .favourites_and_share .share .facebook{display:none}.content .right_block .favourites_and_share .share:hover{padding:8px 20px 8px 20px;border:1px solid #a1a1a1}
 .content .right_block span{color:#a1a1a1;text-transform:uppercase;font-weight:bold;font-size:11px}
-.content .right_block input{width:700px;height:30px;border-radius:15px;outline:0;padding-left:10px;border:1px solid #a1a1a1}
-.content .right_block .email{margin-top:10px}.content .right_block .email input{padding-bottom:50px}
+.content .right_block .email{margin-top:10px}.content .right_block .email textarea{border-radius:20px;outline:0;font-family:"Myriad",sans-serif;font-size:14px;resize:none;width:100%;height:80px;padding:5px 0 0 10px}
 .content .right_block .filter_button{margin-top:30px}.content .right_block .filter_button button{background:#000;border:0;font-size:15px;color:#fff;border:1px solid transparent;width:247px;height:35px;text-transform:uppercase;cursor:pointer}
 .content .right_block .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
-.content .right_lang{float:right;margin:-30px 0 0 50px}.content .right_lang .language a{color:#a1a1a1;text-transform:uppercase;display:block;font-size:12px;font-weight:bold;line-height:30px;transform:rotate(90deg)}
-.content .right_lang .language a:hover{color:black}footer{margin-top:50px;display:flex;height:300px;background:#f5f5f5}
-footer .footer_links{border-top:3px solid #56d2b1;width:40%}footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
+footer{margin-top:50px;display:flex;height:300px;background:#f5f5f5}footer .footer_links{border-top:3px solid #56d2b1;width:40%}
+footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
 footer .footer_links .foot_menu_block .foot_item{list-style-type:none}footer .footer_links .foot_menu_block .foot_link{display:block;padding:7px 0;color:#000;text-decoration:none;letter-spacing:2px;font-size:12px}
 footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
@@ -55,5 +57,7 @@ footer .footer_subscribe .subscribe_networks .networks_pinterest{background-posi
 footer .footer_comment{position:relative;width:25%;background:url("../img/005.jpg") no-repeat;background-size:cover}
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
-footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(max-width:1200px){.wrapper{width:100%}
-.wrapper header{width:100%}}
+footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}
+.wrapper header{width:100%}.wrapper .content .language a{right:10px;top:127px}.wrapper .content .language .en{top:157px;right:10px}
+.wrapper .content .email{margin-top:10px}.wrapper .content .email textarea{width:100%}
+}

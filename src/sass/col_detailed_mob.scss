@@ -1,25 +1,6 @@
 @import "./variables.scss";
-@media (max-width: 999px) {
+@media (min-width: 485px) and (max-width: 999px) {
 
-	* {
-		margin: 0;
-		padding: 0;
-	}
-
-	body {
-		font-family: $font-stack;
-		font-size: 12px;
-		letter-spacing: 2px;
-	}
-
-	ul {
-		list-style: none;
-	}
-
-	a {
-		text-decoration: none;
-		color: $black;
-	}
 	.link_block_fixed{
 		display:none;
 	}
@@ -72,6 +53,16 @@
 				.wbl p{
 					text-align:center;
 				}
+				.price_mob{
+					display:block;
+					p{
+						font-weight:bold;
+						color:$black;
+						font-size:18px;
+						text-align:center;
+						margin-top:20px;
+					}
+				}
 				.hide_box{
 					h5{
 						text-align:center;
@@ -81,7 +72,127 @@
 					}
 					.describe{
 						h5{
-                           text-align:center;
+							text-align:center;
+						}
+						
+					}
+					.filter_color{
+						text-align:center;
+					}
+					.sizes{
+						display:block;
+					}
+					.more_size{
+						display:none;
+					}
+					.filter_size{
+						text-align:center;
+					}
+					.basket_and_price{
+						display:block;
+						.price{
+							display:none;
+						}
+						.filter_button {
+                             text-align:center;
+							button{
+								font-size:15px;
+								color:$white;
+								width:387px;
+								height:45px;
+								text-transform: uppercase;
+								cursor: pointer;
+								letter-spacing:5px;
+								&:hover {
+									border: 1px solid $black;
+									background: $white;
+									color: $black;
+								}
+							}
+						}
+					}
+					.share{
+						margin-left:80px;
+					}
+				}
+
+			}
+		}
+	}
+}
+@media (max-width: 484px){
+	.wrapper{
+		height:1300px;
+		width: 100%;
+		.content_up{
+			flex-direction:column;
+			.myjcarousel{
+				width:100%;
+				height:100%;
+				margin-left: 0px;
+			}
+			.sliderBox {
+				height: 360px;
+				width: 240px;
+				// top: 24px;
+				left: 0px;
+				margin:0 auto;
+				position:relative;
+			}
+			.SimSlider {
+				position: relative;
+				overflow: hidden;
+				height: 360px;
+				width: 240px;
+			}
+			.SimSlider .slide {
+				z-index:0;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				img{
+					height: 360px;
+					width: 100%;
+				}
+			}
+			.sliderBox .prevBtn {
+				display:none;
+			}
+			.sliderBox .nextBtn {
+				display:none;
+			}
+			.left_describ{
+				margin:0 auto;
+				padding-top:60px;
+				.menu_crumb{
+					display:none;
+				}
+				h1{
+					text-align: center;
+				}
+				.wbl p{
+					text-align:center;
+				}
+				.price_mob{
+					display:block;
+					p{
+						font-weight:bold;
+						color:$black;
+						font-size:18px;
+						text-align:center;
+						margin-top:20px;
+					}
+				}
+				.hide_box{
+					h5{
+						text-align:center;
+					}
+					p{
+						text-align:center;
+					}
+					.describe{
+						h5{
+							text-align:center;
 						}
 					}
 					.filter_color{
@@ -96,6 +207,32 @@
 					.filter_size{
 						text-align:center;
 					}
+					.basket_and_price{
+						display:block;
+						.price{
+							display:none;
+						}
+						.filter_button {
+                             text-align:center;
+							button{
+								font-size:15px;
+								color:$white;
+								width:217px;
+								height:45px;
+								text-transform: uppercase;
+								cursor: pointer;
+								letter-spacing:5px;
+								&:hover {
+									border: 1px solid $black;
+									background: $white;
+									color: $black;
+								}
+							}
+						}
+					}
+				}
+				.share{
+					margin-left: 10px;
 				}
 
 			}

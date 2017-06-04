@@ -1,0 +1,12 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+@media(min-width:485px) and (max-width:999px){.wrapper{width:100%}.wrapper .content .language{display:none}
+.wrapper .content .three_box{display:block}.wrapper .content .three_box .shop{margin:0 auto}
+.wrapper .content .three_box .shop .shop_text p{text-align:center}.wrapper .content .three_box .email{padding-top:50px}
+.wrapper .content .three_box .email .text_letter p{text-align:center}.wrapper .content .three_box .phone{padding-top:50px}
+.wrapper .content .three_box .phone .phone_text p{text-align:center}}@media(max-width:484px){.wrapper{width:100%}
+.wrapper .content{width:100%}.wrapper .content .language{display:none}.wrapper .content .three_box{display:block}
+.wrapper .content .three_box .shop{width:100%;margin:0 auto}.wrapper .content .three_box .shop .shop_img{margin:0 auto}
+.wrapper .content .three_box .shop .shop_text{padding-top:30px;margin:0 auto}.wrapper .content .three_box .shop .shop_text p{text-align:center}
+.wrapper .content .three_box .email{width:100%;margin:0 auto;padding-top:60px}.wrapper .content .three_box .phone{padding-top:60px;width:100%;margin:0 auto}
+.wrapper .content .three_box .phone .phone_text p{text-align:center}}

@@ -1,0 +1,50 @@
+@font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
+@font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
+@media(min-width:485px) and (max-width:999px){.wrapper{width:100%}.wrapper .content .language{display:none}
+.wrapper .content .left_block{display:none}.wrapper .content .right_block{width:100%}
+.wrapper .content .right_block .data_mob{display:block}.wrapper .content .right_block .data_mob p{margin:0 0 15px -5px;color:#a1a1a1;font-weight:normal;font-size:12px;display:block;height:20px}
+.wrapper .content .right_block .com_mob{display:block;margin:12px 0 25px 12px;float:left}
+.wrapper .content .right_block .com_mob a{color:#a1a1a1;font-weight:normal;font-size:14px;position:relative}
+.wrapper .content .right_block .com_mob a img{width:17px}.wrapper .content .right_block .com_mob .com_icon{margin-top:20px}
+.wrapper .content .right_block .com_mob a:hover{color:#000}.wrapper .content .right_block h1{width:95%;margin:0 auto;font-weight:normal;padding-bottom:15px}
+.wrapper .content .right_block p{padding-top:25px;width:95%;margin:0 auto}.wrapper .content .right_block .double_img{padding-top:20px;width:95%;margin:0 auto;position:relative}
+.wrapper .content .right_block .double_img .left_img{float:left;width:40%}.wrapper .content .right_block .double_img .left_img img{width:100%;height:100%}
+.wrapper .content .right_block .double_img .right_img{float:right;width:40%}.wrapper .content .right_block .double_img .right_img img{width:100%;height:100%}
+.wrapper .content .right_block .favourites_and_share{display:block}.wrapper .content .right_block .favourites_and_share .favourites{width:68%;margin:0 0 5% 16%;text-align:center}
+.wrapper .content .right_block .favourites_and_share .favourites a{padding:8px 16px 8px 0}
+.wrapper .content .right_block .favourites_and_share .favourites .com_img{padding-left:30%}
+.wrapper .content .right_block .favourites_and_share .share{width:63.5%;margin:0 0 5% 15%;padding:8px 20px 8px 20px;border:1px solid transparent;border-radius:0}
+.wrapper .content .right_block .favourites_and_share .share a{padding:8px 16px 8px 0}
+.wrapper .content .right_block .favourites_and_share .share a img{margin:-1px 0 0 0;width:22px}
+.wrapper .content .right_block .favourites_and_share .share .rss_img{padding-left:30%}
+.wrapper .content .right_block .favourites_and_share .share .insta{margin:11px 0 0 13px;display:none}
+.wrapper .content .right_block .favourites_and_share .share .pinterest{margin:11px 0 0 13px;display:none}
+.wrapper .content .right_block .favourites_and_share .share .vkontakte{margin:11px 0 0 13px;display:none}
+.wrapper .content .right_block .favourites_and_share .share .facebook{margin:11px 0 0 13px;display:none}
+.wrapper .content .right_block .favourites_and_share .share .share_text{margin-top:11px}
+.wrapper .content .right_block .favourites_and_share .share:hover{border:1px solid transparent}
+.wrapper .content .right_block form{padding-top:10px;text-align:center}.wrapper .content .right_block form textarea{width:70%}
+}@media(max-width:484px){.wrapper{width:100%}.wrapper .content .language{display:none}
+.wrapper .content .left_block{display:none}.wrapper .content .right_block{width:100%}
+.wrapper .content .right_block .data_mob{display:block}.wrapper .content .right_block .data_mob p{margin:0 0 15px -5px;color:#a1a1a1;font-weight:normal;font-size:12px;display:block;height:20px}
+.wrapper .content .right_block .com_mob{display:block;margin:12px 0 25px 12px;float:left}
+.wrapper .content .right_block .com_mob a{color:#a1a1a1;font-weight:normal;font-size:14px;position:relative}
+.wrapper .content .right_block .com_mob a img{width:17px}.wrapper .content .right_block .com_mob .com_icon{margin-top:20px}
+.wrapper .content .right_block .com_mob a:hover{color:#000}.wrapper .content .right_block h1{width:95%;margin:0 auto;font-weight:normal;padding-bottom:15px}
+.wrapper .content .right_block p{padding-top:25px;width:95%;margin:0 auto}.wrapper .content .right_block .double_img{padding-top:20px;width:95%;margin:0 auto;position:relative}
+.wrapper .content .right_block .double_img .left_img{float:left;width:40%}.wrapper .content .right_block .double_img .left_img img{width:100%;height:100%}
+.wrapper .content .right_block .double_img .right_img{float:right;width:40%}.wrapper .content .right_block .double_img .right_img img{width:100%;height:100%}
+.wrapper .content .right_block .favourites_and_share{display:block}.wrapper .content .right_block .favourites_and_share .favourites{width:85%;text-align:center;margin:0 auto}
+.wrapper .content .right_block .favourites_and_share .favourites a{padding:8px 16px 8px 0}
+.wrapper .content .right_block .favourites_and_share .share{width:75%;box-sizing:border-box;margin:0 auto;padding:8px 20px 8px 20px;border:1px solid transparent;border-radius:0}
+.wrapper .content .right_block .favourites_and_share .share a{padding:8px 16px 8px 0}
+.wrapper .content .right_block .favourites_and_share .share a img{margin:-1px 0 0 0;width:22px}
+.wrapper .content .right_block .favourites_and_share .share .rss_img{padding-left:5%}
+.wrapper .content .right_block .favourites_and_share .share .insta{margin:11px 0 0 0;display:none}
+.wrapper .content .right_block .favourites_and_share .share .pinterest{margin:11px 0 0 0;display:none}
+.wrapper .content .right_block .favourites_and_share .share .vkontakte{margin:11px 0 0 0;display:none}
+.wrapper .content .right_block .favourites_and_share .share .facebook{margin:11px 0 0 0;display:none}
+.wrapper .content .right_block .favourites_and_share .share .share_text{margin-top:11px}
+.wrapper .content .right_block .favourites_and_share .share:hover{padding:8px 20px 8px 20px;border:1px solid transparent}
+.wrapper .content .right_block form{padding-top:10px;text-align:center}.wrapper .content .right_block form textarea{width:70%}
+.wrapper .content .right_block .filter_button button{width:247px}}

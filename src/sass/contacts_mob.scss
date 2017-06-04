@@ -1,0 +1,83 @@
+@import "./variables.scss";
+@media (min-width: 485px) and (max-width: 999px) {
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			.three_box{
+				display:block;
+				.shop{
+					margin:0 auto;
+					.shop_text{
+						p{
+							text-align:center;
+						}
+					}
+				}
+				.email{
+					padding-top: 50px;
+					.text_letter{
+						p{
+							text-align:center;
+						}
+					}
+				}
+				.phone{
+					padding-top: 50px;
+					.phone_text{
+						p{
+							text-align:center;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+@media (max-width: 484px){
+	.wrapper{
+		width:100%;
+		.content{
+			width:100%;
+			.language{
+				display:none;
+			}
+			.three_box{
+				display:block;
+				.shop{
+					width:100%;
+					margin:0 auto; 
+					.shop_img{
+						margin: 0 auto;
+					}
+					.shop_text{
+						padding-top:30px;
+						margin:0 auto;
+						p{
+                           text-align:center;
+						} 
+					}
+				}
+				.email{
+					width:100%;
+					margin:0 auto;
+					padding-top:60px;
+					.text_letter{
+					}
+				}
+				.phone{
+					padding-top: 60px;
+					width:100%;
+					margin:0 auto;
+					.phone_text{
+						p{
+							text-align:center;						}
+					}
+				}
+			}
+		}
+	}
+}

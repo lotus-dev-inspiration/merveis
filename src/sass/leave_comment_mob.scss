@@ -1,0 +1,58 @@
+@import "./variables.scss";
+@media (min-width: 485px) and (max-width: 999px) {
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			.left_block{
+				width:10%;
+			}
+			.right_block{
+				margin: 0 auto;
+				input{
+					width:400px;
+				}
+				.email{
+					textarea{
+						width:400px;
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
+@media (max-width: 484px){
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			.left_block{
+				width:2%;
+			}
+			.right_block{
+				margin: 0 auto;
+				input{
+					width:220px;
+				}
+				.email{
+					textarea{
+						width:220px;
+					}
+				}
+				.filter_button{
+					button{
+						width:230px;
+						height:35px;
+					}
+				}
+			}
+		}
+	}	
+}

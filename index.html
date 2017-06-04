@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Merveis - News_detailed</title>
 	<link rel="stylesheet" href="dist/css/news_detailed_pc.css">
+	<link rel="stylesheet" href="dist/css/news_detailed_mob.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script>
 </head>
@@ -38,6 +39,10 @@
 			</div>
 		</header>
 		<div class="content main">
+			<div class="language">
+				<a href="#">ru</a>
+				<a class="en" href="#">en</a>
+			</div>
 			<div class="left_block">
 				<div class="comment">
 					<p>06 АПРЕЛЯ, 2016</p>
@@ -48,7 +53,14 @@
 				</div>
 			</div>
 			<div class="right_block">
+				<div class="data_mob">
+					<p>06 АПРЕЛЯ, 2016</p>
+				</div>
 				<h1>Как все начиналось: первый бизнес-план, первые ошибки и первые успехи.</h1>
+				<div class="com_mob">
+					<a class="com_icon" href="#"><img src="dist/img/comment_icon.png"></a>
+					<a href="#">комментариев 0</a>
+				</div>
 				<div class="img_plan">
 					<img src="dist/img/plan.jpg">
 				</div>
@@ -90,11 +102,11 @@
 					</div>
 					<div class="favourites_and_share">
 						<div class="favourites">
-							<a href="#"><img src="dist/img/comment_icon.png"></a>
-							<a href="#">комментариев 0</a>
+							<a class="com_img" href="#"><img src="dist/img/comment_icon.png"></a>
+							<a class="com" href="#">комментариев 0</a>
 						</div>
 						<div class="share">
-							<a href="#"><img src="dist/img/rss.jpg"></a>
+							<a class="rss_img" href="#"><img src="dist/img/rss.jpg"></a>
 							<div class="share_text"><a href="#">поделиться</a></div>
 							<div class="insta"><a href="#"><img src="dist/img/insta.png"></a></div>
 							<div class="pinterest"><a href="#"><img src="dist/img/pinterest.png"></a></div>
@@ -102,13 +114,11 @@
 							<div class="facebook"><a href="#"><img src="dist/img/facebook.png"></a></div> 
 						</div>
 					</div>
-					<span>сообщение</span>
-					<!-- <div class="textarea"><textarea name="comment" id="" cols="96" rows="6" ></textarea></div>
-					<div class="leave_comment">
-						<a href="#">оставить комментарий</a>
-					</div> -->
 					<form method="get" action="">
-						<div class="email"><input  type="text" placeholder="Введите свое сообщение"></div>
+						<div class="your_message"><span>сообщение</span></div>
+						<div class="email">
+							<textarea></textarea>
+						</div>
 						<div class="filter_button">
 							<button class="filter_button_link" type="submit">
 								оставить комментарий
@@ -117,12 +127,6 @@
 
 					</form>
 				</div>
-				<!-- <div class="right_lang">
-					<div class="language">
-						<a href="#">ru</a>
-						<a href="#">en</a>
-					</div>
-				</div> -->
 			</div>
 		</div>
 		<footer>

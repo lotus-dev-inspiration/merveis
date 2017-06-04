@@ -1,0 +1,144 @@
+@import "./variables.scss";
+@media (min-width: 485px) and (max-width: 999px) {
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			.first_news{
+				display:block;
+				.left_block{
+					display:none;
+				}
+				.right_block{
+					width:100%;
+					.data_mob{
+						display:block;
+						p{
+							margin:0 0 15px -5px;
+							color:$gray;		
+							font-weight:normal;
+							font-size:12px; 
+							display:block;
+							height:20px;
+						}
+					}
+					.com_mob{
+						display:block;
+						margin:12px 0 25px 12px;
+						float:left;
+						a{
+							color:$gray;
+							font-weight:normal;
+							font-size: 14px;
+							position:relative;
+
+							img{
+								width:17px;
+							}
+						}
+						.com_icon{
+							margin-top: 20px;
+						}
+						a:hover{
+							color:$black;
+						}
+					}
+					h1{
+						width:95%;
+						margin:0 auto;
+						font-weight:normal;
+						padding-bottom: 15px;
+					}
+					p{
+						padding-top:25px;
+						width:95%;
+						margin:0 auto;
+					}
+					.read_more{
+						text-align:center;
+						margin-top:60px;
+						a{
+							padding:10px 120px 10px 120px;
+						}               	
+					}
+				}
+			}
+		}
+	}
+
+}
+@media (max-width: 484px){
+	.wrapper{
+		width:100%;
+		.content{
+			.language{
+				display:none;
+			}
+			.first_news{
+				display:block;
+				.left_block{
+					display:none;
+				}
+				.right_block{
+					width:100%;
+					.data_mob{
+						display:block;
+						p{
+							margin:0 0 15px -10px;
+							color:$gray;		
+							font-weight:normal;
+							font-size:12px; 
+							display:block;
+							height:20px;
+						}
+					}
+					.com_mob{
+						display:block;
+						margin:12px 0 25px 12px;
+						float:left;
+						a{
+							color:$gray;
+							font-weight:normal;
+							font-size: 14px;
+							position:relative;
+
+							img{
+								width:17px;
+							}
+						}
+						.com_icon{
+							margin-top: 20px;
+						}
+						a:hover{
+							color:$black;
+						}
+					}
+					h1{
+						width:95%;
+						margin:0 auto;
+						font-weight:normal;
+						padding-bottom: 15px;
+					}
+					p{
+						padding-top:25px;
+						width:95%;
+						margin:0 auto;
+					}
+					.read_more{
+						text-align:center;
+						margin-top:60px;
+						a{
+							padding:10px 40px 10px 40px;
+						}               	
+					}
+				}
+			}
+			.pagination {
+				margin:67px 0 40px 0;
+			}
+		}
+	}
+
+}

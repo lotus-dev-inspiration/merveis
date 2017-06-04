@@ -14,7 +14,6 @@ body {
 	p{
 		text-align:justify;
 		text-indent: 20px;
-		// font-size: 12px;
 	}
 }
 ul {
@@ -174,6 +173,26 @@ header {
 	.content{
 		display:flex;
 		padding-top:150px;
+		.language {
+			a {
+				display: block;
+				position: absolute;
+				right: 150px;
+				top: 127px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $gray;
+				transform: rotate(90deg);
+
+				&:hover, &:focus {
+					color: $black;
+				}
+			}
+			.en {
+				top: 157px;
+				right: 150px;
+			}
+		}
 		.left_block{
 			width:20%;
 			margin-right: 5%;
@@ -189,154 +208,140 @@ header {
 					margin:0 0 70px 20px;
 				}
 				a{
-			  // margin-left:20px;
-			  color:$gray;
-			  font-weight:bold;
-			  font-size: 14px;
-			  position:relative;
-			  img{
-			  	width:17px;
-			  }
-			}
-			.com_icon{
-				margin-top: 20px;
-			}
-			a:hover{
-				color:$black;
-			}
-		}
-	}
-	.right_block{
-		width:65%;
-		h1{
-			font-weight:normal;
-		}
-		.img_plan{
-			margin-top:30px; 
-			text-align:center;
-			img{
-				width:100%;
-			}
-		}
-		p{
-			margin:30px 0 40px;
-			font-size: 12px;
-			line-height:18px;
-		}
-		.double_img{
-			position:relative;
-			height:500px;
-			img{
-
-				width:320px;
-			}
-			.left_img{
-				float:left;
-			}
-			.right_img{
-				float:right;
-			}
-		}
-		.favourites_and_share{
-			display:flex;
-			margin-top:50px;
-			.favourites{
-				display:flex;
-				padding-top:12px;
-				position:relative;
-				a{
-					color:$black;
-					text-transform:uppercase;
+					color:$gray;
 					font-weight:bold;
-					font-size:13px;
-					letter-spacing:2px;
+					font-size: 14px;
+					position:relative;
 					img{
-						width:25px;
-						margin:-3px 5px 0 0;
+						width:17px;
 					}
 				}
+				.com_icon{
+					margin-top: 20px;
+				}
+				a:hover{
+					color:$black;
+				}
 			}
-			.share{
-				margin:0 0 35px 60px;
-				padding:8px 20px 8px 20px;
-				border-radius:20px;
-				border:1px solid transparent;
-				@extend .favourites;
-				a{
-					img{
-						margin:-1px 10px 0 0;
-						width:22px;
+		}
+		.right_block{
+			width:65%;
+			.data_mob{
+				display:none;
+			}
+			.com_mob{
+				display:none;
+			}
+			h1{
+				font-weight:normal;
+			}
+			.img_plan{
+				margin-top:30px; 
+				text-align:center;
+				img{
+					width:100%;
+				}
+			}
+			p{
+				margin:30px 0 40px;
+				font-size: 12px;
+				line-height:18px;
+			}
+			.double_img{
+				position:relative;
+				// height:500px;
+				img{
 
+					width:320px;
+				}
+				.left_img{
+					float:left;
+				}
+				.right_img{
+					float:right;
+				}
+			}
+
+			.double_img:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.favourites_and_share{
+				display:flex;
+				margin-top:50px;
+				.favourites{
+					display:flex;
+					padding-top:12px;
+					position:relative;
+					a{
+						color:$black;
+						text-transform:uppercase;
+						font-weight:bold;
+						font-size:13px;
+						letter-spacing:2px;
+						img{
+							width:25px;
+							margin:-3px 5px 0 0;
+						}
 					}
 				}
-				.insta{
-					margin-left: 20px;
-					display:none;
+				.share{
+					margin:0 0 35px 60px;
+					padding:8px 20px 8px 20px;
+					border-radius:20px;
+					border:1px solid transparent;
+					@extend .favourites;
+					a{
+						img{
+							margin:-1px 10px 0 0;
+							width:22px;
+
+						}
+					}
+					.insta{
+						margin-left: 20px;
+						display:none;
+					}
+					.pinterest{
+						display:none;
+					}
+					.vkontakte{
+						display:none;
+					}
+					.facebook{
+						display:none;
+					}
 				}
-				.pinterest{
-					display:none;
-				}
-				.vkontakte{
-					display:none;
-				}
-				.facebook{
-					display:none;
+				.share:hover{
+					padding: 8px 20px 8px 20px;
+					border:1px solid $gray;
 				}
 			}
-			.share:hover{
-				padding: 8px 20px 8px 20px;
-				border:1px solid $gray;
+			span{
+				color:$gray;
+				text-transform: uppercase;
+				font-weight:bold;
+				font-size:11px;
 			}
-		}
-		span{
-			color:$gray;
-			text-transform: uppercase;
-			font-weight:bold;
-			font-size:11px;
-		}
-		// .textarea{
-		// 	height:110px;
-		// 	textarea{
-		// 		margin:10px 0 0 0;
-		// 		resize:none;
-		// 		border-radius:18px;
-		// 		padding:15px 0 0 15px;
-		// 		outline:0;
-		// 	}
-		// }
-		// .leave_comment {
-		// 	 margin:60px 0 50px 0;
-		// 	a{
-		// 		text-decoration:none;
-		// 		text-transform:uppercase;
-		// 		padding:15px 43px 15px 43px;
-		// 		color:$white;
-		// 		background:$black;
-		// 		font-weight:bold;
-		// 		font-size:13px;
-		// 		letter-spacing: 3px;
-		// 	}
-		// }
-		input{
-			width:700px;
-			height:30px;
-			border-radius:15px;
-			outline:0;
-			padding-left:10px;
-			border:1px solid $gray; 
-		}
-		.email{
-			margin-top:10px;
-			input{
-				padding-bottom:50px;
+			.email{
+				margin-top:10px;
+				textarea{
+					border-radius: 20px;
+					outline:none;
+					font-family: $font-stack;
+					font-size:14px;
+					resize:none;
+					width:100%;
+					height:80px;
+					padding: 5px 0 0 10px;
+				}
 			}
-		}
-		.filter_button {
-			margin-top:30px;
-			button{
-				background:$black;
-				border:none;
-					// font-weight:bold;
+			.filter_button {
+				margin-top:30px;
+				button{
+					background:$black;
+					border:none;
 					font-size:15px;
 					color:$white;
 					border: 1px solid transparent;
@@ -349,24 +354,6 @@ header {
 						background: $white;
 						color: $black;
 					}
-				}
-			}
-		}
-		.right_lang{
-			float:right;
-			margin:-30px 0 0 50px;
-			.language {
-				a {
-					color:$gray;
-					text-transform:uppercase;
-					display: block;
-					font-size:12px;
-					font-weight: bold;
-					line-height: 30px;
-					transform: rotate(90deg);
-				}
-				a:hover{
-					color:black;
 				}
 			}
 		}
@@ -523,11 +510,29 @@ header {
 			}
 		} 
 	}
-	@media (max-width: 1200px) {
+	@media (min-width: 1000px) and (max-width: 1200px) {
 		.wrapper {
 			width: 100%;
 			header{
 				width:100%;
+			}
+			.content{
+				.language {
+					a {
+						right: 10px;
+						top: 127px;
+					}
+					.en {
+						top: 157px;
+						right: 10px;
+					}
+				}
+				.email{
+					margin-top:10px;
+					textarea{
+						width:100%;
+					}
+				}
 			}
 		}
 

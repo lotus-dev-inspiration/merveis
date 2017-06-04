@@ -1,14 +1,36 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
-@media(max-width:999px){*{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
-ul{list-style:none}a{text-decoration:none;color:#000}.link_block_fixed{display:none}
-.open_col{display:none}.wrapper{height:1600px;width:100%}.wrapper .content_up{flex-direction:column}
-.wrapper .content_up .myjcarousel{width:100%;height:100%;margin-left:0}.wrapper .content_up .sliderBox{height:660px;width:450px;left:0;margin:0 auto;position:relative}
+@media(min-width:485px) and (max-width:999px){.link_block_fixed{display:none}.open_col{display:none}
+.wrapper{height:1600px;width:100%}.wrapper .content_up{flex-direction:column}.wrapper .content_up .myjcarousel{width:100%;height:100%;margin-left:0}
+.wrapper .content_up .sliderBox{height:660px;width:450px;left:0;margin:0 auto;position:relative}
 .wrapper .content_up .SimSlider{position:relative;overflow:hidden;height:660px;width:450px}
 .wrapper .content_up .SimSlider .slide{z-index:0;position:absolute;top:0;left:0}.wrapper .content_up .SimSlider .slide img{height:660px;width:450px}
 .wrapper .content_up .left_describ{margin:0 auto;padding-top:60px}.wrapper .content_up .left_describ .menu_crumb{display:none}
 .wrapper .content_up .left_describ h1{text-align:center}.wrapper .content_up .left_describ .wbl p{text-align:center}
+.wrapper .content_up .left_describ .price_mob{display:block}.wrapper .content_up .left_describ .price_mob p{font-weight:bold;color:#000;font-size:18px;text-align:center;margin-top:20px}
 .wrapper .content_up .left_describ .hide_box h5{text-align:center}.wrapper .content_up .left_describ .hide_box p{text-align:center}
 .wrapper .content_up .left_describ .hide_box .describe h5{text-align:center}.wrapper .content_up .left_describ .hide_box .filter_color{text-align:center}
 .wrapper .content_up .left_describ .hide_box .sizes{display:block}.wrapper .content_up .left_describ .hide_box .more_size{display:none}
-.wrapper .content_up .left_describ .hide_box .filter_size{text-align:center}}
+.wrapper .content_up .left_describ .hide_box .filter_size{text-align:center}.wrapper .content_up .left_describ .hide_box .basket_and_price{display:block}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .price{display:none}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button{text-align:center}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button{font-size:15px;color:#fff;width:387px;height:45px;text-transform:uppercase;cursor:pointer;letter-spacing:5px}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
+.wrapper .content_up .left_describ .hide_box .share{margin-left:80px}}@media(max-width:484px){.wrapper{height:1300px;width:100%}
+.wrapper .content_up{flex-direction:column}.wrapper .content_up .myjcarousel{width:100%;height:100%;margin-left:0}
+.wrapper .content_up .sliderBox{height:360px;width:240px;left:0;margin:0 auto;position:relative}
+.wrapper .content_up .SimSlider{position:relative;overflow:hidden;height:360px;width:240px}
+.wrapper .content_up .SimSlider .slide{z-index:0;position:absolute;top:0;left:0}.wrapper .content_up .SimSlider .slide img{height:360px;width:100%}
+.wrapper .content_up .sliderBox .prevBtn{display:none}.wrapper .content_up .sliderBox .nextBtn{display:none}
+.wrapper .content_up .left_describ{margin:0 auto;padding-top:60px}.wrapper .content_up .left_describ .menu_crumb{display:none}
+.wrapper .content_up .left_describ h1{text-align:center}.wrapper .content_up .left_describ .wbl p{text-align:center}
+.wrapper .content_up .left_describ .price_mob{display:block}.wrapper .content_up .left_describ .price_mob p{font-weight:bold;color:#000;font-size:18px;text-align:center;margin-top:20px}
+.wrapper .content_up .left_describ .hide_box h5{text-align:center}.wrapper .content_up .left_describ .hide_box p{text-align:center}
+.wrapper .content_up .left_describ .hide_box .describe h5{text-align:center}.wrapper .content_up .left_describ .hide_box .filter_color{text-align:center}
+.wrapper .content_up .left_describ .hide_box .sizes{display:block}.wrapper .content_up .left_describ .hide_box .more_size{display:none}
+.wrapper .content_up .left_describ .hide_box .filter_size{text-align:center}.wrapper .content_up .left_describ .hide_box .basket_and_price{display:block}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .price{display:none}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button{text-align:center}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button{font-size:15px;color:#fff;width:217px;height:45px;text-transform:uppercase;cursor:pointer;letter-spacing:5px}
+.wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
+.wrapper .content_up .left_describ .share{margin-left:10px}}
