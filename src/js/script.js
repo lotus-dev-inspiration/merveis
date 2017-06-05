@@ -93,4 +93,15 @@ $(function(){
     $text_1.hide(2000);
   });
 
+  var $links=$('.menu_right a');
+  var handler=function(e){
+    var $link=$(this).siblings('.submenu');
+    e.preventDefault();
+    $link.slideToggle();
+  };
+ 
+
+
+  $links.bind('click',handler);
+
 });

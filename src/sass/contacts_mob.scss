@@ -6,6 +6,10 @@
 			.language{
 				display:none;
 			}
+			h1{
+				padding-left:10px; 
+				margin:0 auto; 
+			}
 			.three_box{
 				display:block;
 				.shop{
@@ -17,6 +21,7 @@
 					}
 				}
 				.email{
+					margin:0 auto;
 					padding-top: 50px;
 					.text_letter{
 						p{
@@ -25,6 +30,7 @@
 					}
 				}
 				.phone{
+					margin:0 auto;
 					padding-top: 50px;
 					.phone_text{
 						p{

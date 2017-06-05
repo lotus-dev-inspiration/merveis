@@ -17,13 +17,12 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper .content .language a{display:block;position:absolute;right:-88px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg);font-size:12px}
 .wrapper .content .language a:hover,.wrapper .content .language a:focus{color:#000}
 .wrapper .content .language .en{top:157px;right:-88px}.wrapper .content h1{text-align:center;margin-bottom:60px}
-.wrapper .content ul{margin:0 0 50px 220px}.wrapper .content li{display:inline-block}
-.wrapper .content a{font-size:18px;color:#a1a1a1}.wrapper .content a:focus{font-weight:bold;transition:3s;color:#000}
-.wrapper .content p{text-indent:30px;line-height:30px;font-size:14px}.wrapper .content .link2{margin-left:30px}
-.wrapper .content .link3{margin-left:30px}.wrapper .content .link4{margin-left:30px}
-.wrapper .content .one,.wrapper .content .two,.wrapper .content .three,.wrapper .content .four{display:none;width:70%;margin:0 auto;text-align:justify}
-.wrapper .content .right_lang{position:absolute;float:right;margin:-83% 0 0 77%}.wrapper .content .right_lang .language a{color:#a1a1a1;text-transform:uppercase;display:block;font-size:12px;font-weight:bold;line-height:30px;transform:rotate(90deg)}
-.wrapper .content .right_lang .language a:hover{color:black}footer{width:100%;display:flex;height:300px;background:#f5f5f5}
+.wrapper .content .care_pc ul{margin:0 0 50px 220px}.wrapper .content .care_pc li{display:inline-block}
+.wrapper .content .care_pc a{font-size:18px;color:#a1a1a1}.wrapper .content .care_pc a:focus{font-weight:bold;transition:3s;color:#000}
+.wrapper .content .care_pc p{text-indent:30px;line-height:30px;font-size:14px}.wrapper .content .care_pc .link2{margin-left:30px}
+.wrapper .content .care_pc .link3{margin-left:30px}.wrapper .content .care_pc .link4{margin-left:30px}
+.wrapper .content .care_pc .one,.wrapper .content .care_pc .two,.wrapper .content .care_pc .three,.wrapper .content .care_pc .four{display:none;width:70%;margin:0 auto;text-align:justify}
+.wrapper .content .care_mob{display:none}footer{width:100%;display:flex;height:300px;background:#f5f5f5}
 footer .footer_links{border-top:3px solid #56d2b1;width:40%}footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
 footer .footer_links .foot_menu_block .foot_link{display:block;padding:7px 0}footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
@@ -40,10 +39,7 @@ footer .footer_subscribe .subscribe_networks .networks_pinterest{background-posi
 footer .footer_comment{position:relative;width:25%;background:url("../img/005.jpg") no-repeat;background-size:cover}
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
-footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(max-width:1200px){.wrapper{width:100%}
-.wrapper header{width:100%}.wrapper .content{position:relative}.wrapper .content .language a{display:block;position:absolute;right:-70px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg);font-size:12px}
-.wrapper .content .language a:hover,.wrapper .content .language a:focus{color:#000}
-.wrapper .content .language .en{top:157px;right:-70px}}@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}
+footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}
 .wrapper header{width:100%}.wrapper .content{position:relative}.wrapper .content .language a{display:block;position:absolute;right:-70px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg);font-size:12px}
 .wrapper .content .language a:hover,.wrapper .content .language a:focus{color:#000}
 .wrapper .content .language .en{top:157px;right:-70px}}
