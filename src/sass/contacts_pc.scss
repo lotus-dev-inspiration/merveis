@@ -150,26 +150,6 @@ a {
 		margin : 0 auto;
 		padding-bottom: 100px;
 		position:relative;
-		.language {
-			a {
-				display: block;
-				position: absolute;
-				right: -87px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover, &:focus {
-					color: $black;
-				}
-			}
-			.en {
-				top: 157px;
-				right: -87px;
-			}
-		}
 		h1{
 			text-align:center;
 		}

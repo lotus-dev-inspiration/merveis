@@ -173,26 +173,6 @@ header {
 	.content{
 		display:flex;
 		padding-top:150px;
-		.language {
-			a {
-				display: block;
-				position: absolute;
-				right: 150px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover, &:focus {
-					color: $black;
-				}
-			}
-			.en {
-				top: 157px;
-				right: 150px;
-			}
-		}
 		.left_block{
 			width:20%;
 			margin-right: 5%;
@@ -327,7 +307,6 @@ header {
 			.email{
 				margin-top:10px;
 				textarea{
-					border-radius: 20px;
 					outline:none;
 					font-family: $font-stack;
 					font-size:14px;
@@ -517,16 +496,6 @@ header {
 				width:100%;
 			}
 			.content{
-				.language {
-					a {
-						right: 10px;
-						top: 127px;
-					}
-					.en {
-						top: 157px;
-						right: 10px;
-					}
-				}
 				.email{
 					margin-top:10px;
 					textarea{

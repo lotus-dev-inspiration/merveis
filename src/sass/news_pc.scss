@@ -144,26 +144,6 @@ a {
 	.content{
 		padding-top:150px;
 		position:relative;
-		.language {
-			a {
-				display: block;
-				position: absolute;
-				right: 20px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover, &:focus {
-					color: $black;
-				}
-			}
-			.en {
-				top: 157px;
-				right: 21px;
-			}
-		}
 		.first_news{
 			display:flex;
 			.left_block{

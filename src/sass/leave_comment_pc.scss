@@ -174,26 +174,6 @@ header {
 		display:flex;
 		padding-top:150px;
 		position:relative;
-		.language {
-			a {
-				display: block;
-				position: absolute;
-				right: 7px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover, &:focus {
-					color: $black;
-				}
-			}
-			.en {
-				top: 157px;
-				right: 7px;
-			}
-		}
 		.left_block{
 			width:22%;
 		}
@@ -206,7 +186,6 @@ header {
 			input{
 				width:700px;
 				height:30px;
-				border-radius:15px;
 				outline:0;
 				padding-left:10px;
 				border:1px solid $gray; 
@@ -234,7 +213,6 @@ header {
 			.email{
 				margin-top:10px;
 				textarea{
-					border-radius: 20px;
 					outline:none;
 					font-family: $font-stack;
 					font-size:14px;

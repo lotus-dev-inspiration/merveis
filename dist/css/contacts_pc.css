@@ -14,10 +14,7 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .content{width:80%;padding-top:120px;margin:0 auto;padding-bottom:100px;position:relative}
-.wrapper .content .language a{display:block;position:absolute;right:-87px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg)}
-.wrapper .content .language a:hover,.wrapper .content .language a:focus{color:#000}
-.wrapper .content .language .en{top:157px;right:-87px}.wrapper .content h1{text-align:center}
-.wrapper .content img{width:60px}.wrapper .content .three_box{margin-top:80px;margin-left:5%;display:flex}
+.wrapper .content h1{text-align:center}.wrapper .content img{width:60px}.wrapper .content .three_box{margin-top:80px;margin-left:5%;display:flex}
 .wrapper .content .three_box .shop{width:30%}.wrapper .content .three_box .shop .shop_img{text-align:center}
 .wrapper .content .three_box .shop .shop_text{margin-top:40px}.wrapper .content .three_box .shop .shop_text h3{text-align:center;margin:10px 0 10px 0}
 .wrapper .content .three_box .shop .shop_text p{margin-top:5px}.wrapper .content .three_box .email{width:30%}

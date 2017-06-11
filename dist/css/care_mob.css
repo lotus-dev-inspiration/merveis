@@ -1,8 +1,8 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
-@media(max-width:999px){.wrapper{width:100%}.wrapper .content .language{display:none}
-.wrapper .content .care_pc{display:none}.wrapper .content .care_mob{margin:0 auto;display:block}
-.wrapper .content .care_mob .menu_right{margin:0 auto}.wrapper .content .care_mob .menu_right li{list-style-type:none;background:white;line-height:37px}
+@media(max-width:999px){.wrapper{width:100%}.wrapper .content .care_pc{display:none}
+.wrapper .content .care_mob{margin:0 auto;display:block}.wrapper .content .care_mob .menu_right{margin:0 auto}
+.wrapper .content .care_mob .menu_right li{list-style-type:none;background:white;line-height:37px}
 .wrapper .content .care_mob .menu_right li a{color:#000;font-size:16px;text-decoration:none;height:36px;text-align:center;border:1px solid #e8e8e8;display:block;margin-bottom:8px;padding-left:8px}
 .wrapper .content .care_mob .menu_right li .submenu{display:none}.wrapper .content .care_mob .menu_right li .submenu p{text-align:justify;margin-top:-8px;padding:15px 0 15px 20px;font-size:15px;line-height:20px}
 }

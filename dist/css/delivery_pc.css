@@ -14,10 +14,8 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .content{width:80%;padding-top:120px;margin:0 auto;padding-bottom:100px;position:relative}
-.wrapper .content .language a{display:block;position:absolute;right:-87px;top:127px;font-weight:bold;text-transform:uppercase;color:#a1a1a1;transform:rotate(90deg)}
-.wrapper .content .language a:hover,.wrapper .content .language a:focus{color:#000}
-.wrapper .content .language .en{top:157px;right:-87px}.wrapper .content h1{text-align:center;margin-bottom:60px}
-.wrapper .content h2{margin-bottom:40px}.wrapper .content img{width:120px}.wrapper .content .new_post,.wrapper .content .ukrpochta,.wrapper .content .world,.wrapper .content .privat,.wrapper .content .shops{display:flex;margin-bottom:40px}
+.wrapper .content h1{text-align:center;margin-bottom:60px}.wrapper .content h2{margin-bottom:40px}
+.wrapper .content img{width:120px}.wrapper .content .new_post,.wrapper .content .ukrpochta,.wrapper .content .world,.wrapper .content .privat,.wrapper .content .shops{display:flex;margin-bottom:40px}
 .wrapper .content .new_post p,.wrapper .content .ukrpochta p,.wrapper .content .world p,.wrapper .content .privat p,.wrapper .content .shops p{font-size:14px;margin-left:40px}
 .wrapper .content .ukrpochta p{margin-top:10px}.wrapper .content .world p{margin-top:20px}
 .wrapper .content .privat .privat_img{margin-top:30px}.wrapper .content .shops .shops_img{margin-top:40px}
@@ -41,4 +39,4 @@ footer .footer_comment{position:relative;width:25%;background:url("../img/005.jp
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
 footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}
-.wrapper header{width:100%}.wrapper .right_lang{margin:-134.5% 0 0 94.5%}}
+.wrapper header{width:100%}}
