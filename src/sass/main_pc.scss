@@ -118,6 +118,10 @@ a {
 
 		}
 
+		.menu_open {
+			display: none;
+		}
+
 		.menu {
 			display: flex;
 			justify-content: center;
@@ -143,32 +147,8 @@ a {
 	}
 
 	.main {
-		padding-top: 180px;
+		padding-top: 140px;
 		position: relative;
-		
-		.language {
-			a {
-				display: block;
-				z-index: 100;
-				position: absolute;
-				right: 20px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover {
-					color: $black;
-				}
-			}
-
-
-			.en {
-				top: 157px;
-				right: 21px;
-			}
-		}
 
 		#catalogue {
 			display: none;
@@ -232,6 +212,24 @@ footer {
 				margin-bottom: 5px;
 			}
 
+			.language_head {
+				margin-top: 30px;
+			}
+
+			.language {
+				margin-top: 10px;
+				a {
+					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray;
+
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+
 			.foot_link {
 				display: block;
 				padding: 7px 0;
@@ -284,7 +282,6 @@ footer {
 				padding: 5px;
 				border: 1px solid $gray;
 				background: $superlightgray;
-				border-radius: 15px;
 				outline: none;	
 			}
 		}
@@ -352,6 +349,10 @@ footer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);
 		}
+	}
+
+	.leave_call_mob {
+		display: none;
 	}	
 }
 
