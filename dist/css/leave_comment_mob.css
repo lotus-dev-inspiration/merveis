@@ -1,9 +1,39 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
-@media(min-width:485px) and (max-width:999px){.wrapper{width:100%}.wrapper .content .language{display:none}
-.wrapper .content .left_block{width:10%}.wrapper .content .right_block{margin:0 auto}
+@media(max-width:999px){.wrapper{width:100%}.wrapper header{width:100%;height:50px}
+.wrapper header .logo{top:22px}.wrapper header .logo img{width:25%}.wrapper header .search{top:13px;right:110px}
+.wrapper header .search #search_input{width:36%}.wrapper header .busket{right:70px}
+.wrapper header .menu_open{display:block;position:absolute;right:10px;top:21px;cursor:pointer;width:44px}
+.wrapper header .menu_open img{display:block}.wrapper header .menu_open .menu_sign{width:80%}
+.wrapper header .menu_open .cross_sign{display:none;position:relative;bottom:3px;left:4px;width:65%}
+.wrapper header .menu{display:none;height:100vh;padding-top:50px;flex-direction:column;background:#fff}
+.wrapper .content .language{display:none}.wrapper .content .left_block{width:0}.wrapper .content .right_block{margin:0 auto}
 .wrapper .content .right_block input{width:400px}.wrapper .content .right_block .email textarea{width:400px}
-}@media(max-width:484px){.wrapper{width:100%}.wrapper .content .language{display:none}
-.wrapper .content .left_block{width:2%}.wrapper .content .right_block{margin:0 auto}
-.wrapper .content .right_block input{width:220px}.wrapper .content .right_block .email textarea{width:220px}
-.wrapper .content .right_block .filter_button button{width:230px;height:35px}}
+footer{min-height:620px;margin-top:50px;display:flex;flex-direction:column;width:100%;background:#fff;border-top:1px solid #a1a1a1;font-size:14px}
+footer .none{display:none}footer .footer_links{border-top:0;margin:0 auto}footer .footer_links .foot_menu_block{position:static;display:block;vertical-align:top;width:100%;margin:20px auto;text-align:center}
+footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
+footer .footer_links .foot_menu_block .language_head{margin-top:30px}footer .footer_links .foot_menu_block .language{margin-top:10px}
+footer .footer_links .foot_menu_block .language a{display:inline-block;font-weight:bold;text-transform:uppercase;color:#a1a1a1}
+footer .footer_links .foot_menu_block .language a:hover{color:#000}footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
+footer .footer_subscribe{position:relative;width:300px;text-align:center;margin:0 auto}
+footer .footer_subscribe h3{margin-top:10px;text-transform:uppercase}footer .footer_subscribe .subscribe_text{margin:20px auto;width:200px;font-style:italic;font-size:10px;font-color:#ddd}
+footer .footer_subscribe .subscribe_mail{width:200px;margin:0 auto;margin-top:20px}
+footer .footer_subscribe .subscribe_mail input[type="email"]{display:block;width:200px;height:20px;padding:5px;border:1px solid #000;background:#fff;outline:0;text-align:center}
+footer .footer_subscribe .subscribe_mail input[type="email"] :-moz-placeholder{text-align:center}
+footer .footer_subscribe .subscribe_mail ::-webkit-input-placeholder{text-align:center}
+footer .footer_subscribe .subscribe_mail .mail_link{position:relative;display:block;width:210px;height:30px;top:-1px;left:0;line-height:30px;background:#fff;text-align:center;border:1px solid #000}
+footer .footer_subscribe .subscribe_mail .mail_link:hover{background:#000;color:#fff}
+footer .footer_subscribe .subscribe_networks{margin-top:20px;width:200px;margin:0 auto}
+footer .footer_subscribe .subscribe_networks div{display:inline-block;width:37px;height:37px;border:1px solid #000;border-radius:50%;background:url("../img/soc_sprite.png") no-repeat;background-position:14px 8px}
+footer .footer_subscribe .subscribe_networks div a{display:block;width:100%;height:100%}
+footer .footer_subscribe .subscribe_networks .networks_insta{background-position:-19px 8px}
+footer .footer_subscribe .subscribe_networks .networks_vk{background-position:-55px 8px}
+footer .footer_subscribe .subscribe_networks .networks_pinterest{background-position:-92px 8px}
+footer .footer_comment{display:none}footer .leave_call_mob{display:block;margin:0 auto;margin-top:30px;width:300px;text-align:center;text-transform:uppercase;padding:10px;color:#000;background:#fff;font-weight:bold;font-size:12px;border:1px solid #000;text-decoration:none}
+footer .leave_call_mob:hover{background:#000;color:#fff;border:1px solid #000}}@media(max-width:484px){.wrapper{width:100%}
+.wrapper header{width:100%}.wrapper header .search{left:10px}.wrapper header .search #search_input{left:60px;width:36%}
+.wrapper header .logo{top:22px;left:70px}.wrapper header .logo img{width:47%}.wrapper .content .language{display:none}
+.wrapper .content .left_block{width:0}.wrapper .content .right_block{margin:0 auto}
+.wrapper .content .right_block input{width:200px}.wrapper .content .right_block .email textarea{width:200px}
+.wrapper .content .right_block .filter_button button{width:200px;height:35px}footer .footer_subscribe{width:230px}
+footer .leave_call_mob{width:200px}}

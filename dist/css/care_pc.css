@@ -2,32 +2,35 @@
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
 ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0 auto}
-.wrapper header{z-index:100;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
+.wrapper header{z-index:150;position:fixed;width:80%;padding-top:40px;background:linear-gradient(#fff 80%,transparent 100%)}
 .wrapper header .logo{position:absolute;top:15px;left:2%}.wrapper header .logo img{width:20%}
 .wrapper header .search{position:absolute;width:40px;height:40px;top:12px;right:7%;transition:right 3s}
 .wrapper header .search .search_link{display:none;position:absolute;left:11px;top:5px;width:60%;height:25px;cursor:pointer}
 .wrapper header .search #search_input{display:none;position:fixed;left:30%;top:30px;width:44%;padding-left:15px;border:0;outline:0;border-bottom:2px solid #ddd}
 .wrapper header .search img{width:70%;display:block;position:absolute;top:50%;left:50%;margin:-35% 0 0 -35%;cursor:pointer}
-.wrapper header .basket{position:absolute;top:14px;right:3%}.wrapper header .basket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
-.wrapper header .basket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
-.wrapper header .basket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
-.wrapper header .menu{display:flex;justify-content:center}.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
+.wrapper header .busket{position:absolute;top:14px;right:3%}.wrapper header .busket a{display:block;width:33px;height:33px;background:url("../img/busket-icon.png");background-size:cover}
+.wrapper header .busket div{position:relative;bottom:43px;left:30px;width:14px;height:14px;border-radius:50%;background:#a1a1a1}
+.wrapper header .busket div span{display:block;position:relative;right:1px;text-align:center;font-weight:bold;color:#fff;letter-spacing:-1px}
+.wrapper header .menu_open{display:none}.wrapper header .menu{display:flex;justify-content:center}
+.wrapper header .menu .menu_link{display:block;padding:5px;margin:0 .2vw;height:50px;text-transform:uppercase;text-align:center;font-weight:bold;line-height:50px}
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
-.wrapper .content{width:80%;height:300px;padding-top:120px;margin:0 auto;padding-bottom:100px;position:relative}
+.wrapper .content{width:80%;padding-top:120px;margin:0 auto;padding-bottom:100px;position:relative}
 .wrapper .content h1{text-align:center;margin-bottom:60px}.wrapper .content .care_pc ul{margin:0 0 50px 220px}
 .wrapper .content .care_pc li{display:inline-block}.wrapper .content .care_pc a{font-size:18px;color:#a1a1a1}
 .wrapper .content .care_pc a:focus{font-weight:bold;transition:3s;color:#000}.wrapper .content .care_pc p{text-indent:30px;line-height:30px;font-size:14px}
 .wrapper .content .care_pc .link2{margin-left:30px}.wrapper .content .care_pc .link3{margin-left:30px}
 .wrapper .content .care_pc .link4{margin-left:30px}.wrapper .content .care_pc .one,.wrapper .content .care_pc .two,.wrapper .content .care_pc .three,.wrapper .content .care_pc .four{display:none;width:70%;margin:0 auto;text-align:justify}
-.wrapper .content .care_mob{display:none}footer{width:100%;display:flex;height:300px;background:#f5f5f5}
+.wrapper .content .care_mob{display:none}footer{display:flex;width:100%;height:300px;background:#f5f5f5}
 footer .footer_links{border-top:3px solid #56d2b1;width:40%}footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
-footer .footer_links .foot_menu_block .foot_link{display:block;padding:7px 0}footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
+footer .footer_links .foot_menu_block .language_head{margin-top:30px}footer .footer_links .foot_menu_block .language{margin-top:10px}
+footer .footer_links .foot_menu_block .language a{display:inline-block;font-weight:bold;text-transform:uppercase;color:#a1a1a1}
+footer .footer_links .foot_menu_block .language a:hover{color:#000}footer .footer_links .foot_menu_block .foot_link{display:block;padding:7px 0}
+footer .footer_links .foot_menu_block .foot_link:hover{text-decoration:underline}
 footer .footer_links .foot_block_2{left:25%}footer .footer_subscribe{position:relative;width:35%}
-footer .footer_subscribe h3{margin-top:50px;text-transform:uppercase}footer .footer_subscribe .mail_link{position:absolute;display:none;left:40%;top:92px;width:30px;height:20px}
-footer .footer_subscribe .mail_img{position:absolute;cursor:pointer;left:42%;top:95px;display:block;width:10px;height:15px}
+footer .footer_subscribe h3{margin-top:50px;text-transform:uppercase}footer .footer_subscribe .mail_link{position:absolute;left:42%;top:95px;display:block;width:10px;height:15px;background:url("../img/mail_arrow.png") no-repeat}
 footer .footer_subscribe .subscribe_text{margin-top:20px;width:200px;font-style:italic;font-size:10px;font-color:#ddd}
-footer .footer_subscribe .subscribe_mail{margin-top:20px}footer .footer_subscribe .subscribe_mail input[type="email"]{width:45%;height:20px;padding:5px;border:1px solid #a1a1a1;background:#f5f5f5;border-radius:15px;outline:0}
+footer .footer_subscribe .subscribe_mail{margin-top:20px}footer .footer_subscribe .subscribe_mail input[type="email"]{width:45%;height:20px;padding:5px;border:1px solid #a1a1a1;background:#f5f5f5;outline:0}
 footer .footer_subscribe .subscribe_networks{margin-top:40px}footer .footer_subscribe .subscribe_networks div{display:inline-block;width:37px;height:37px;border:1px solid #000;border-radius:50%;background:url("../img/soc_sprite.png") no-repeat;background-position:14px 8px}
 footer .footer_subscribe .subscribe_networks div a{display:block;width:100%;height:100%}
 footer .footer_subscribe .subscribe_networks .networks_insta{background-position:-19px 8px}
@@ -36,5 +39,6 @@ footer .footer_subscribe .subscribe_networks .networks_pinterest{background-posi
 footer .footer_comment{position:relative;width:25%;background:url("../img/005.jpg") no-repeat;background-size:cover}
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
-footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}
-.wrapper header{width:100%}.wrapper .content{position:relative}}
+footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}footer .leave_call_mob{display:none}
+@media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}.wrapper header{width:100%}
+.wrapper .content{position:relative}}
