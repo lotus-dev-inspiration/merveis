@@ -1,0 +1,576 @@
+@import "./variables.scss";
+@media (max-width: 1000px) {
+	
+	.wrapper {
+		width: 100%;
+
+		.main {
+			.basket_inscription {
+				.inscription {
+					margin-left: 0;
+					h1 {
+						text-align: center;
+					}
+				}
+			}
+			.good_item {
+				box-sizing: border-box;
+				font-weight: none;
+				text-transform: uppercase;
+				position: relative;
+				display: block;
+				div {
+					display:inline-block;
+					vertical-align: top;
+				}
+				.item_photo {
+					width: 40%;
+					img {
+						width: 70%;
+					}
+				}
+				.item_info {
+					position: relative;
+					width: 40%;
+
+					.item_name {
+						font-size: 16px;
+					}
+
+					.item_color {
+						margin-top: 35px;
+					}
+
+					h4 {
+						display: none;
+					}
+
+					h5 {
+						display: none;
+					}
+				}
+
+				.item_quantity {
+					position: absolute;
+					left: 40%;
+					top: 100px;
+
+					h5 {
+						display: none;
+					}
+				}
+
+				.item_size {
+					display: block;
+					width: 30%;
+					position: absolute;
+					left: 41%;
+					top: 75px;
+					h5 {
+						display: inline-block;
+						color: $black;
+						margin: 0;
+					}
+
+					span {
+						display: inline-block;
+					}
+				}
+
+				.item_prise {
+					display: none;
+				}
+
+				.item_sum {
+					display: block;
+					position: absolute;
+					left: 41%;
+					top: 25px;
+					width: 30%;
+					h5 {
+						display: none;
+					}
+				}
+
+				.item_delete {
+					width: 15%;
+				}
+
+			}
+			.items_buy {
+				.pay_info {
+					.back {
+						button {
+							width: 34%;
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media (max-width: 800px) {
+	.wrapper {
+		header {
+			height: 50px;
+			.logo {
+				top: 22px;
+				img {
+					width: 25%;
+				}
+			}
+
+			.search {
+				top: 13px;
+				right: 110px;
+				#search_input {
+					width: 36%;
+				}
+			}
+
+			.busket {
+				right: 70px;
+			}
+
+			.menu_open {
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 21px;
+				cursor: pointer;
+				width: 44px;
+				img {
+					display: block;
+				}
+				.menu_sign {
+					width: 80%;
+				}
+				.cross_sign {
+					display: none;
+					position: relative;
+					bottom: 3px;
+					left: 4px;
+					width: 65%;
+				}
+			}
+
+			.menu {
+				display: none;
+				height: 100vh;
+				padding-top: 50px;
+				flex-direction: column;
+				background: $white;
+			}
+		}
+
+		.main {
+			.items_buy {
+				.pay_info {
+					display: block;
+					.back {
+						button {
+							width: 90%;
+						}
+					}
+					.pay {
+						.pay_sum {
+							margin: 0;
+							margin-bottom: 10px;
+						}
+						margin-top: 20px;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.popup{
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		z-index:1000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.9);
+		.window{
+			position:absolute;
+			width:88%;
+			height: 600px;
+			top: 50%;
+			left: 50%;
+			margin: -300px 0 0 -45%;
+			background:$white;
+			text-align: center;
+			.close{
+				cursor: pointer;
+				float:right;
+				margin:-15px -15px 0 0 ;
+				img{
+					width:30px;
+				}
+			}
+			p{
+				text-align:center;
+				padding-top:20px;
+				font-weight:bold;
+				margin-bottom: 30px;
+				font-size: 20px;
+			}
+
+			form {
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+
+				.forms input{
+					background:$white;
+					color: $black;
+					width:90%;
+					height:33px;
+					border: 1px solid $black;
+					padding-left: 20px;
+					outline: none;
+
+					&:focus {
+						outline: 1px solid $black;
+					}
+				}
+				.forms input:hover{
+					color:$black;
+				}
+				.center_form span{
+					color:#cccccc;
+					font-size:14px;
+				}
+				p {
+					font-size: 16px;
+				}
+				textarea {
+					width: 90%; 
+					resize: none;
+					padding: 5px 10px;
+					background: $white;
+					color: $black; 
+					outline: none;
+					border: 1px solid $black;
+
+					&:focus {
+						outline: 1px solid $black;
+					}
+				}
+				button{
+					margin: 15px 0;
+					background:$black;
+					border:none;
+					font-size:15px;
+					color:$white;
+					box-shadow:0 0 12px $black;
+					width:147px;
+					height:35px;
+					text-transform: uppercase;
+					cursor: pointer;
+					&:hover {
+						background: $white;
+						color: $black;
+					}
+				}
+			}
+
+		}
+	}
+
+	footer {
+		min-height: 620px;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background: $white;
+		border-top: 1px solid $gray;
+		font-size: 14px;
+
+		.none {
+			display: none;
+		}
+
+		.footer_links {
+			border-top: none;
+			margin: 0 auto;
+
+			.foot_menu_block {
+				position: static;
+				display: block;
+				vertical-align: top;
+				width: 100%;
+				margin: 20px auto;
+				text-align: center;
+
+				h3 {
+					text-transform: uppercase;
+					margin-bottom: 5px;
+				}
+
+				.language_head {
+					margin-top: 30px;
+				}
+
+				.language {
+					margin-top: 10px;
+					a {
+						display: inline-block;
+						font-weight: bold;
+						text-transform: uppercase;
+						color: $gray;
+
+						&:hover {
+							color: $black;
+						}
+					}
+				}
+
+
+				.foot_link:hover {
+					text-decoration: underline;
+				}
+			}
+
+		}
+
+		.footer_subscribe {
+			position: relative;
+			width: 300px;
+			text-align: center;
+			margin: 0 auto;
+
+			h3 {
+				margin-top: 10px;
+				text-transform: uppercase;
+			}
+
+			.subscribe_text {
+				margin: 20px auto;
+				width: 200px;
+				font-style: italic;
+				font-size: 10px;
+				font-color: $lightgray;
+			}
+
+			.subscribe_mail {
+				width: 200px;
+				margin: 0 auto;
+				margin-top: 20px;
+				
+
+				input[type="email"] {
+					display: block;
+					width: 200px;
+					height: 20px;
+					padding: 5px;
+					border: 1px solid $black;
+					background: $white;
+					outline: none;
+					text-align: center;
+					:-moz-placeholder { 
+						text-align:center; 
+					}	
+				}
+
+				::-webkit-input-placeholder { 
+					text-align:center; 
+				}
+
+				.mail_link {
+					position: relative;
+					display: block;
+					width: 210px;
+					height: 30px;
+					top: -1px;
+					left: 0;
+					line-height: 30px;
+					background: $white;
+					text-align: center;
+					border: 1px solid $black;
+					&:hover {
+						background: $black;
+						color: $white;
+					}
+
+				}
+			}
+
+			.subscribe_networks {
+				margin-top: 20px;
+				width: 200px;
+				margin: 0 auto;
+
+				div {
+					display: inline-block;
+					width: 37px;
+					height: 37px;
+					border: 1px solid $black;
+					border-radius: 50%;
+					background: url("../img/soc_sprite.png") no-repeat;
+					background-position: 14px 8px;
+
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.networks_insta {
+					background-position: -19px 8px;
+				}
+
+				.networks_vk {
+					background-position: -55px 8px;
+				}
+
+				.networks_pinterest {
+					background-position: -92px 8px;
+				}
+			}
+		}
+
+		.footer_comment {
+			display: none;
+		}	
+
+		.leave_call_mob {
+			display: block;
+			margin: 0 auto;
+			margin-top: 30px;
+			width: 300px;
+			text-align: center;
+			text-transform:uppercase;
+			padding:10px;
+			color:$black;
+			background:$white;
+			font-weight:bold;
+			font-size:12px;
+			border: 1px solid $black;
+			text-decoration: none;
+			&:hover {
+				background: $black;
+				color: $white;
+				border: 1px solid $black;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		header {
+			.search {
+				left: 10px;
+				#search_input {
+					left: 60px;
+					width: 36%;
+				}
+			}
+			.logo {
+				top: 22px;
+				left: 70px;
+				img {
+					width: 47%;
+				}
+			}
+		}
+		.main {
+
+			.good_item {
+				.item_delete {
+					img {
+						width: 50%;
+					}
+				}
+			}
+
+			.items_buy {
+				margin-bottom: -20px;
+				.pay_info {
+					.back {
+						width: 100%;
+						text-align: center;
+						margin: 0;
+						a {
+							margin-bottom: 10px;
+						}
+						button {
+							box-sizing: border-box;
+							margin: 0 auto;
+						}
+					}
+					.pay {
+						width: 100%;
+						text-align: center;
+						margin: 0 auto;
+						.pay_sum {
+							margin-top: 10px;
+							width: 90%;
+							font-size: 20px;
+						}
+						a {
+							box-sizing: border-box;
+							width: 90%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.footer_subscribe {
+			width: 230px;
+		}
+		.leave_call_mob {
+			width: 200px;
+		}
+	} 
+
+	.popup {
+		.window {
+			margin-left: -47%;
+		}
+	}
+}
+
+@media(max-width:319px) {
+	.wrapper {
+		.main {
+			.good_item {
+
+				.item_info {
+					.item_color {
+						margin-top: 30px;
+					}
+				}
+				
+				.item_size {
+					top: 90px;
+				}
+
+				.item_sum {
+					top: 40px;
+				}
+
+				.item_quantity {
+					top: 90px;
+					left: 70%;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

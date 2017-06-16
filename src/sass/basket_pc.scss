@@ -25,7 +25,7 @@ a {
 	margin: 0 auto;
 
 	header {
-		z-index: 100;
+		z-index: 150;
 		position: fixed;
 		width: 80%;
 		padding-top: 40px;
@@ -83,7 +83,7 @@ a {
 			}
 		}
 
-		.basket {
+		.busket {
 			position: absolute;
 			top: 14px;
 			right: 3%;
@@ -118,6 +118,10 @@ a {
 
 		}
 
+		.menu_open {
+			display: none;
+		}
+
 		.menu {
 			display: flex;
 			justify-content: center;
@@ -143,7 +147,7 @@ a {
 	}
 
 	.main {
-		padding-top: 150px;
+		padding-top: 100px;
 		margin-bottom: 50px;
 		min-height: 600px;
 
@@ -157,26 +161,7 @@ a {
 					font-size: 30px;
 				}
 			}
-			.language {
-				a {
-					display: block;
-					position: absolute;
-					right: 20px;
-					top: -22px;
-					font-weight: bold;
-					text-transform: uppercase;
-					color: $gray;
-					transform: rotate(90deg);
-
-					&:hover, &:focus {
-						color: $black;
-					}
-				}
-				.en {
-					top: 8px;
-					right: 21px;
-				}
-			}
+			
 			margin-bottom: 30px;
 		}
 		
@@ -333,8 +318,6 @@ a {
 	}
 }
 
-
-
 footer {
 	display: flex;
 	width: 100%;
@@ -356,6 +339,24 @@ footer {
 			h3 {
 				text-transform: uppercase;
 				margin-bottom: 5px;
+			}
+
+			.language_head {
+				margin-top: 30px;
+			}
+
+			.language {
+				margin-top: 10px;
+				a {
+					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray;
+
+					&:hover {
+						color: $black;
+					}
+				}
 			}
 
 			.foot_link {
@@ -385,21 +386,12 @@ footer {
 
 		.mail_link {
 			position: absolute;
-			display: none;
-			left: 40%;
-			top: 92px;
-			width: 30px;
-			height: 20px;
-		}
-
-		.mail_img {
-			position: absolute;
-			cursor: pointer;
 			left: 42%;
 			top: 95px;
 			display: block;
 			width: 10px;
 			height: 15px;
+			background: url("../img/mail_arrow.png") no-repeat;
 		}
 
 		.subscribe_text {
@@ -419,7 +411,6 @@ footer {
 				padding: 5px;
 				border: 1px solid $gray;
 				background: $superlightgray;
-				border-radius: 15px;
 				outline: none;	
 			}
 		}
@@ -482,11 +473,15 @@ footer {
 				color: $lightgray;
 			}
 		}
-		
+
 		.dark_layer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);
 		}
+	}
+
+	.leave_call_mob {
+		display: none;
 	}	
 }
 
@@ -555,7 +550,8 @@ footer {
 			p {
 				font-size: 16px;
 			}
-			textarea { 
+			textarea {
+				width: 90%; 
 				resize: none;
 				padding: 5px 10px;
 				background: $white;

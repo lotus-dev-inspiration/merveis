@@ -36,12 +36,13 @@
 					<img class="search_img img_hide" src="dist/img/search-icon.png">
 				</form>
 			</div>
-			<div class="basket">
+			<div class="busket">
 				<a href="basket.html"></a>
 				<div><span>10</span></div>
 			</div>
-			<div class="menu_sign">
-				<a nohref="nohref"><img src="dist/img/menu.png"></a>
+			<div class="menu_open">
+				<a nohref="nohref"><img class="menu_sign" src="dist/img/menu.png" alt="menu_open"></a>
+				<a nohref="nohref"><img class="cross_sign" src="dist/img/cross.png" alt="cross_close_menu"></a>
 			</div>
 		</header>
 		<div class="main">
@@ -64,9 +65,8 @@
 					<div class="by_date">
 						<a href="#">По Дате</a>
 					</div>
-					<div class="language">
-						<a href="#">ru</a>
-						<a href="#">en</a>
+					<div class="categories">
+						<a href="#">Тип</a>
 					</div>
 				</div>
 				<div class="content_items">
@@ -282,12 +282,17 @@
 	<footer>
 		<div class="footer_links">
 			<div class="foot_menu_block">
-				<h3>Merveis</h3>
-				<ul class="footer_menu">
+				<h3 class="none">Merveis</h3>
+				<ul class="footer_menu none">
 					<li class="foot_item"><a href="#" class="foot_link">О Бренде</a></li>
 					<li class="foot_item"><a href="#" class="foot_link">Магазины</a></li>
 					<li class="foot_item"><a href="#" class="foot_link">Контакты</a></li>
 				</ul>
+				<h3 class="language_head">Язык</h3>
+				<div class="language">
+					<a href="#">ru</a>
+					<a class="en" href="#">en</a>
+				</div>
 			</div>
 			<div class="foot_menu_block foot_block_2">
 				<h3>Помощь</h3>
@@ -302,11 +307,8 @@
 		<div class="footer_subscribe">
 			<h3>Подпишитесь</h3>
 			<div class="subscribe_mail">
-				<form method="get" action="">
-					<input type="email" name="email" placeholder="account@gmail.com">
-					<img class="mail_img" src="dist/img/mail_arrow.png">
-					<button class="mail_link" type="submit"></button>
-				</form>
+				<input type="email" name="email" placeholder="acc@gmail.com">
+				<a class="mail_link" href="#">Подписаться</a>
 			</div>
 			<p class="subscribe_text">Подпишитесь на наши обновления, чтобы быть в курсе всех последних событий</p>
 			<div class="subscribe_networks">
@@ -326,6 +328,7 @@
 			<div class="dark_layer">
 			</div>
 		</div>
+		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
 
 </body>

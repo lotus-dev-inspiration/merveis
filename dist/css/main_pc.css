@@ -37,5 +37,4 @@ footer .footer_comment{position:relative;width:25%;background:url("../img/005.jp
 footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;text-transform:uppercase;font-size:10px;font-weight:bold;text-align:center;left:50%;top:50%;margin:-50px 0 0 -100px;color:#fff}
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
 footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}footer .leave_call_mob{display:none}
-@media(max-width:1200px){.wrapper{width:100%}.wrapper .main .language a{right:10px}
-.wrapper .main .language .en{right:11px}.wrapper header{width:100%}}
+@media(max-width:1200px){.wrapper{width:100%}.wrapper header{width:100%}}

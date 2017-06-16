@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Merveis - Basket</title>
 	<link rel="stylesheet" type="text/css" href="dist/css/basket_pc.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/basket_mob.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script async type="text/javascript" src="dist/js/main.js"></script>
 </head>
@@ -32,19 +33,18 @@
 					<img class="search_img img_hide" src="dist/img/search-icon.png">
 				</form>
 			</div>
-			<div class="basket">
+			<div class="busket">
 				<a href="basket.html"></a>
 				<div><span>10</span></div>
-				
+			</div>
+			<div class="menu_open">
+				<a nohref="nohref"><img class="menu_sign" src="dist/img/menu.png" alt="menu_open"></a>
+				<a nohref="nohref"><img class="cross_sign" src="dist/img/cross.png" alt="cross_close_menu"></a>
 			</div>
 		</header>
 		<div class="main">
 			<div class="basket_inscription">
 				<div class="inscription"><h1>корзина</h1></div>
-				<div class="language">
-					<a href="#">ru</a>
-					<a class="en" href="#">en</a>
-				</div>
 			</div>
 			<div id="1" class="good_item">
 				<div class="item_photo">
@@ -141,33 +141,20 @@
 				
 			</div>
 		</div>
-		<div class="popup">
-			<div class="window">
-				<div class="close"><a><img src="dist/img/close.png"></a></div>
-				<p>Чтобы заказать товар, заполните пожайлуста форму</p>
-				<form action="" method="POST">
-					<div class="forms"><input type="text" name="First Name" id="First Name" placeholder="Имя"></div>
-					<div class="forms"><input type="text" name="Last Name" id="Last Name" placeholder="Фамилия"></div>
-					<div class="forms"><input type="text" name="email" id="Email Address" placeholder="Почта"></div>
-					<div class="forms"><input type="text" name="Password Confirm" placeholder="Телефон +380*********"></div>
-					<div class="forms">
-					<p>Поле для дополнительных данных</p>
-						<textarea cols="40" rows="5"></textarea>
-					</div>
-					<button type="submit">отправить</button>
-				</form>
-			</div>
-		</div>
-	</div>
 	<footer>
 		<div class="footer_links">
 			<div class="foot_menu_block">
-				<h3>Merveis</h3>
-				<ul class="footer_menu">
+				<h3 class="none">Merveis</h3>
+				<ul class="footer_menu none">
 					<li class="foot_item"><a href="#" class="foot_link">О Бренде</a></li>
 					<li class="foot_item"><a href="#" class="foot_link">Магазины</a></li>
 					<li class="foot_item"><a href="#" class="foot_link">Контакты</a></li>
 				</ul>
+				<h3 class="language_head">Язык</h3>
+				<div class="language">
+					<a href="#">ru</a>
+					<a class="en" href="#">en</a>
+				</div>
 			</div>
 			<div class="foot_menu_block foot_block_2">
 				<h3>Помощь</h3>
@@ -182,11 +169,8 @@
 		<div class="footer_subscribe">
 			<h3>Подпишитесь</h3>
 			<div class="subscribe_mail">
-				<form method="get" action="">
-					<input type="email" name="email" placeholder="account@gmail.com">
-					<img class="mail_img" src="dist/img/mail_arrow.png">
-					<button class="mail_link" type="submit"></button>
-				</form>
+				<input type="email" name="email" placeholder="acc@gmail.com">
+				<a class="mail_link" href="#">Подписаться</a>
 			</div>
 			<p class="subscribe_text">Подпишитесь на наши обновления, чтобы быть в курсе всех последних событий</p>
 			<div class="subscribe_networks">
@@ -206,7 +190,25 @@
 			<div class="dark_layer">
 			</div>
 		</div>
+		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
-
+	<div class="popup">
+			<div class="window">
+				<div class="close"><a><img src="dist/img/close.png"></a></div>
+				<p>Чтобы заказать товар, заполните пожайлуста форму</p>
+				<form action="" method="POST">
+					<div class="forms"><input type="text" name="First Name" id="First Name" placeholder="Имя" required></div>
+					<div class="forms"><input type="text" name="Last Name" id="Last Name" placeholder="Фамилия" required></div>
+					<div class="forms"><input type="email" name="email" id="Email Address" placeholder="Почта" required></div>
+					<div class="forms"><input type="tel" name="Password Confirm" placeholder="Телефон +380*********" required></div>
+					<div class="forms">
+						<p>Поле для дополнительных данных</p>
+						<textarea cols="40" rows="5"></textarea>
+					</div>
+					<button type="submit">отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

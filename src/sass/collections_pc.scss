@@ -20,137 +20,12 @@ a {
 	color: $black;
 }
 
-@media (min-width: 1001px) {
 
+@media(min-width: 1001px) {
 	.wrapper {
-		width: 80%;
-		margin: 0 auto;
-
-		header {
-			z-index: 100;
-			position: fixed;
-			width: 80%;
-			padding-top: 40px;
-			background: $lightgrad;
-
-			.logo {
-				position: absolute;
-				top: 15px;
-				left: 2%;
-
-				img {
-					width: 20%;
-				}
-			}
-
-			.search {
-				position: absolute;
-				width: 40px;
-				height: 40px;
-				top: 12px;
-				right: 7%;
-				transition: right 3s;
-
-
-				.search_link {
-				display: none; // adjusment for button instead of link
-				position: absolute;
-				left: 11px;
-				top: 5px;
-				width: 60%;
-				height: 25px;
-				cursor: pointer;	
-			}
-
-			#search_input {
-				display: none;
-				position: fixed;
-				left: 30%;
-				top: 30px;
-				width: 44%;
-				padding-left: 15px;
-				border: none;
-				outline: none;
-				border-bottom: 2px solid $lightgray;
-			}
-
-			img {
-				width: 70%;
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin: -35% 0 0 -35%;
-				cursor: pointer;	
-			}
-		}
-
-		.basket {
-			position: absolute;
-			top: 14px;
-			right: 3%;
-
-			a {
-				display: block;
-				width: 33px;
-				height: 33px;
-				background: url("../img/busket-icon.png");
-				background-size: cover;
-			}
-
-			div {
-				position: relative;
-				bottom: 43px;
-				left: 30px;
-				width: 14px;
-				height: 14px;
-				border-radius: 50%;
-				background: $gray;
-
-				span {
-					display: block;
-					position: relative;
-					right: 1px;
-					text-align: center;
-					font-weight: bold;
-					color: $white;
-					letter-spacing: -1px;
-				}
-			}
-
-		}
-
-		.menu_sign {
-			display: none;
-		}
-
-		.menu {
-			display: flex;
-			justify-content: center;
-
-			.menu_link {
-				display:block;
-				padding: 5px;
-				margin: 0 0.2vw;
-				height: 50px;
-				text-transform: uppercase;
-				text-align: center;
-				font-weight: bold;
-				line-height: 50px;
-
-				&:hover,
-				&:focus {
-					color: $pink;
-				}
-
-			}
-
-		}
-	}
-
-	.main {
+		.main {
 		display: flex;
-		padding-top: 120px;
+		padding-top: 100px;
 
 
 		aside {
@@ -225,14 +100,8 @@ a {
 					margin-right: 20%;
 				}
 
-				.language {
-					margin-right: 2%;
-					a {
-						display: block;
-						font-weight: bold;
-						line-height: 30px;
-						transform: rotate(90deg);
-					}
+				.categories {
+					display: none;
 				}
 			}
 
@@ -483,6 +352,135 @@ a {
 			}
 		}
 	}
+	}
+}
+
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+
+	header {
+		z-index: 150;
+		position: fixed;
+		width: 80%;
+		padding-top: 40px;
+		background: $lightgrad;
+
+		.logo {
+			position: absolute;
+			top: 15px;
+			left: 2%;
+
+			img {
+				width: 20%;
+			}
+		}
+
+		.search {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 12px;
+			right: 7%;
+			transition: right 3s;
+			
+
+			.search_link {
+				display: none; // adjusment for button instead of link
+				position: absolute;
+				left: 11px;
+				top: 5px;
+				width: 60%;
+				height: 25px;
+				cursor: pointer;	
+			}
+
+			#search_input {
+				display: none;
+				position: fixed;
+				left: 30%;
+				top: 30px;
+				width: 44%;
+				padding-left: 15px;
+				border: none;
+				outline: none;
+				border-bottom: 2px solid $lightgray;
+			}
+
+			img {
+				width: 70%;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -35% 0 0 -35%;
+				cursor: pointer;	
+			}
+		}
+
+		.busket {
+			position: absolute;
+			top: 14px;
+			right: 3%;
+
+			a {
+				display: block;
+				width: 33px;
+				height: 33px;
+				background: url("../img/busket-icon.png");
+				background-size: cover;
+			}
+
+			div {
+				position: relative;
+				bottom: 43px;
+				left: 30px;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background: $gray;
+
+				span {
+					display: block;
+					position: relative;
+					right: 1px;
+					text-align: center;
+					font-weight: bold;
+					color: $white;
+					letter-spacing: -1px;
+				}
+			}
+
+		}
+
+		.menu_open {
+			display: none;
+		}
+
+		.menu {
+			display: flex;
+			justify-content: center;
+
+			.menu_link {
+				display:block;
+				padding: 5px;
+				margin: 0 0.2vw;
+				height: 50px;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: bold;
+				line-height: 50px;
+
+				&:hover,
+				&:focus {
+					color: $pink;
+				}
+
+			}
+
+		}
+	}
 }
 
 footer {
@@ -506,6 +504,24 @@ footer {
 			h3 {
 				text-transform: uppercase;
 				margin-bottom: 5px;
+			}
+
+			.language_head {
+				margin-top: 30px;
+			}
+
+			.language {
+				margin-top: 10px;
+				a {
+					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray;
+
+					&:hover {
+						color: $black;
+					}
+				}
 			}
 
 			.foot_link {
@@ -535,21 +551,12 @@ footer {
 
 		.mail_link {
 			position: absolute;
-			display: none;
-			left: 40%;
-			top: 92px;
-			width: 30px;
-			height: 20px;
-		}
-
-		.mail_img {
-			position: absolute;
-			cursor: pointer;
 			left: 42%;
 			top: 95px;
 			display: block;
 			width: 10px;
 			height: 15px;
+			background: url("../img/mail_arrow.png") no-repeat;
 		}
 
 		.subscribe_text {
@@ -569,7 +576,6 @@ footer {
 				padding: 5px;
 				border: 1px solid $gray;
 				background: $superlightgray;
-				border-radius: 15px;
 				outline: none;	
 			}
 		}
@@ -632,15 +638,18 @@ footer {
 				color: $lightgray;
 			}
 		}
-		
+
 		.dark_layer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);
 		}
+	}
+
+	.leave_call_mob {
+		display: none;
 	}	
 }
 
-}
 
 @media (max-width: 1200px) {
 	.wrapper {

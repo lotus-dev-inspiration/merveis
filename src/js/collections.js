@@ -24,7 +24,12 @@ $(function(){
 				// 	$(".filter_items").hide(1000);
 				// 	collect_count++;
 				// }
-				$(".filter_items").slideToggle();
+				if($("aside").css("display") === "none") {
+					$(".filter_items").slideToggle();
+				} else {
+					$("aside").slideToggle();
+					$(".filter_items").slideToggle();
+				}
 			});
 
 			// end_of_filter_show_function //
@@ -39,7 +44,7 @@ $(function(){
 					$(".search").css("right","13%");
 				} else if($(document).width()<500) {
 					$("#search_input").show(1000);
-					$(".logo").slideToggle("slow");
+					$(".logo").hide(1000);
 				} else {
 					$("#search_input").show(2000);
 				}
@@ -57,7 +62,7 @@ $(function(){
 					$(".search").css("right","7%");
 					$("#search_input").hide(2000);
 				} else if($(document).width()<500) {
-					$(".logo").slideToggle("slow");
+					$(".logo").show(1000);
 					$("#search_input").hide(1000);
 				} else {
 					$("#search_input").hide(2000);
@@ -100,5 +105,23 @@ $(function(){
 			});
 
 			// end_of_show_menu_function //
+
+			// show_categories_function //
+			$(".categories, aside").on("click", function() {
+				if($(".filter_items").css("display") === "none") {
+					$("aside").slideToggle();
+				} else {
+					$(".filter_items").slideToggle();
+					$("aside").slideToggle();
+				}
+			});
+
+			if($(window).width()<=1000) {
+				window.onscroll = function() {
+					$("aside").hide(500);
+				}
+			}
+
+			// end_of_show_categories_function //
 		});
 
