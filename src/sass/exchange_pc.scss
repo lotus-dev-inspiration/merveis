@@ -24,8 +24,8 @@ a {
 	width: 80%;
 	margin: 0 auto;
 
-header {
-		z-index: 100;
+	header {
+		z-index: 150;
 		position: fixed;
 		width: 80%;
 		padding-top: 40px;
@@ -83,7 +83,7 @@ header {
 			}
 		}
 
-		.basket {
+		.busket {
 			position: absolute;
 			top: 14px;
 			right: 3%;
@@ -118,6 +118,10 @@ header {
 
 		}
 
+		.menu_open {
+			display: none;
+		}
+
 		.menu {
 			display: flex;
 			justify-content: center;
@@ -143,31 +147,10 @@ header {
 	}
 
 	.main {
-		padding-top: 150px;
+		padding-top: 120px;
 		margin-bottom: 150px;
 		min-height: 300px;
 		position: relative;
-
-		.language {
-			a {
-				display: block;
-				position: absolute;
-				right: 20px;
-				top: 127px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-				transform: rotate(90deg);
-
-				&:hover, &:focus {
-					color: $black;
-				}
-			}
-			.en {
-				top: 157px;
-				right: 21px;
-			}
-		}
 
 		h1 {
 			margin-bottom: 40px;
@@ -220,6 +203,24 @@ footer {
 				margin-bottom: 5px;
 			}
 
+			.language_head {
+				margin-top: 30px;
+			}
+
+			.language {
+				margin-top: 10px;
+				a {
+					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray;
+
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+
 			.foot_link {
 				display: block;
 				padding: 7px 0;
@@ -247,21 +248,12 @@ footer {
 
 		.mail_link {
 			position: absolute;
-			display: none;
-			left: 40%;
-			top: 92px;
-			width: 30px;
-			height: 20px;
-		}
-
-		.mail_img {
-			position: absolute;
-			cursor: pointer;
 			left: 42%;
 			top: 95px;
 			display: block;
 			width: 10px;
 			height: 15px;
+			background: url("../img/mail_arrow.png") no-repeat;
 		}
 
 		.subscribe_text {
@@ -281,7 +273,6 @@ footer {
 				padding: 5px;
 				border: 1px solid $gray;
 				background: $superlightgray;
-				border-radius: 15px;
 				outline: none;	
 			}
 		}
@@ -344,11 +335,15 @@ footer {
 				color: $lightgray;
 			}
 		}
-		
+
 		.dark_layer {
 			height: 100%;
 			background-color: rgba(0,0,0,0.7);
 		}
+	}
+
+	.leave_call_mob {
+		display: none;
 	}	
 }
 
