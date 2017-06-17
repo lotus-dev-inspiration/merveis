@@ -107,7 +107,7 @@ $(function(){
 			// end_of_show_menu_function //
 
 			// show_categories_function //
-			if($(document).width()<=1000) {
+			if(document.width<=1000) {
 				$(".categories, aside").on("click", function() {
 					if($(".filter_items").css("display") === "none") {
 						$("aside").slideToggle();
@@ -118,7 +118,7 @@ $(function(){
 				});
 			}
 
-			if($(document).width()<=1000) {
+			if(document.width<=1000) {
 				window.onscroll = function() {
 					$("aside").hide(500);
 				}
