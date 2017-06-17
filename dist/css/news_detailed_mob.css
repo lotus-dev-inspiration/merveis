@@ -31,6 +31,7 @@
 .wrapper .content .right_block .favourites_and_share .share .share_text{margin-top:11px}
 .wrapper .content .right_block .favourites_and_share .share:hover{border:1px solid transparent}
 .wrapper .content .right_block form{padding-top:10px;text-align:center}.wrapper .content .right_block form textarea{width:70%}
+.wrapper .content .right_block .comments{text-align:center}.wrapper .content .right_block .comments p{text-align:center}
 footer{min-height:620px;margin-top:50px;display:flex;flex-direction:column;width:100%;background:#fff;border-top:1px solid #a1a1a1;font-size:14px}
 footer .none{display:none}footer .footer_links{border-top:0;margin:0 auto}footer .footer_links .foot_menu_block{position:static;display:block;vertical-align:top;width:100%;margin:20px auto;text-align:center}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
@@ -77,5 +78,6 @@ footer .leave_call_mob:hover{background:#000;color:#fff;border:1px solid #000}}@
 .wrapper .content .right_block .favourites_and_share .share .share_text{margin-top:11px}
 .wrapper .content .right_block .favourites_and_share .share:hover{padding:8px 20px 8px 20px;border:1px solid transparent}
 .wrapper .content .right_block form{padding-top:10px;text-align:center}.wrapper .content .right_block form textarea{width:70%}
-.wrapper .content .right_block .filter_button button{width:247px}footer .footer_subscribe{width:230px}
+.wrapper .content .right_block .filter_button button{width:247px}.wrapper .content .right_block .comments span{display:block}
+.wrapper .content .right_block .comments p{margin-left:-50px}footer .footer_subscribe{width:230px}
 footer .leave_call_mob{width:200px}}

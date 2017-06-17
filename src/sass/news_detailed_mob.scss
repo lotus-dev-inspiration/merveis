@@ -190,6 +190,12 @@
 						width:70%;
 					}
 				}
+				.comments{
+					text-align:center;
+					p{
+						text-align:center;
+					}
+				}
 			}
 		}
 	}
@@ -533,6 +539,14 @@
 				.filter_button{
 					button{
 						width:247px;
+					}
+				}
+				.comments{
+					span{
+						display:block;
+					}
+					p{
+						margin-left:-50px;
 					}
 				}
 			}
