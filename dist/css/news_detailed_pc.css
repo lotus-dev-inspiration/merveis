@@ -35,6 +35,7 @@ header .menu .menu_link:hover,header .menu .menu_link:focus{color:#f22b47}.main{
 .content .right_block .favourites_and_share .share .pinterest{display:none}.content .right_block .favourites_and_share .share .vkontakte{display:none}
 .content .right_block .favourites_and_share .share .facebook{display:none}.content .right_block .favourites_and_share .share:hover{padding:8px 20px 8px 20px;border:1px solid #a1a1a1}
 .content .right_block span{color:#a1a1a1;text-transform:uppercase;font-weight:bold;font-size:11px}
+.content .right_block .your_name{margin-bottom:10px}.content .right_block input{width:100%;height:30px;outline:0;padding-left:10px;border:1px solid #a1a1a1;margin-bottom:30px}
 .content .right_block .email{margin-top:10px}.content .right_block .email textarea{outline:0;font-family:"Myriad",sans-serif;font-size:14px;resize:none;width:100%;height:80px;padding:5px 0 0 10px}
 .content .right_block .filter_button{margin:30px 0 70px 0}.content .right_block .filter_button button{background:#000;border:0;font-size:15px;color:#fff;border:1px solid transparent;width:247px;height:35px;text-transform:uppercase;cursor:pointer}
 .content .right_block .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
@@ -60,5 +61,5 @@ footer .footer_comment .leave_call{position:absolute;width:200px;height:100px;te
 footer .footer_comment .leave_call a{font-size:20px;text-decoration:underline;color:#ddd}
 footer .footer_comment .dark_layer{height:100%;background-color:rgba(0,0,0,0.7)}footer .leave_call_mob{display:none}
 @media(min-width:1000px) and (max-width:1200px){.wrapper{width:100%}.wrapper header{width:100%}
-.wrapper .content .email{margin-top:10px}.wrapper .content .email textarea{width:100%}
+.wrapper .content input{width:100%}.wrapper .content .email{margin-top:10px}.wrapper .content .email textarea{width:100%}
 }

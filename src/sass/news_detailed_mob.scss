@@ -186,6 +186,9 @@
 				form{
 					padding-top:10px;
 					text-align:center;
+					input{
+						width:70%;
+					}
 					textarea{
 						width:70%;
 					}
@@ -502,7 +505,7 @@
 								width:22px;
 
 							}
-						 }
+						}
 						.rss_img{padding-left:5%;}
 						.insta{
 							margin:11px 0 0 0;
@@ -532,8 +535,14 @@
 				form{
 					padding-top:10px;
 					text-align:center;
-					textarea{
+					input{
 						width:70%;
+					}
+
+					.email{
+						textarea{
+							width:70%;
+						}
 					}
 				}
 				.filter_button{
