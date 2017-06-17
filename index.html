@@ -46,25 +46,25 @@
 		<div class="main">
 			<div id="catalogue">
 				<div class="cat_item">
-					<a href=""><img src="dist/img/005.jpg"></a>
+					<a href=""><img class="item_up" src="dist/img/005.jpg"></a>
 					<div class="cat_name">
 						Верх
 					</div>
 				</div>
 				<div class="cat_item">
-					<a href=""><img src="dist/img/006.jpg"></a>
+					<a href=""><img class="item_down" src="dist/img/006.jpg"></a>
 					<div class="cat_name">
 						Низ
 					</div>
 				</div>	
 				<div class="cat_item">
-					<a href=""><img src="dist/img/007.jpg"></a>
+					<a href=""><img class="item_dress" src="dist/img/007.jpg"></a>
 					<div class="cat_name">
 						Платья
 					</div>
 				</div>	
 				<div class="cat_item">
-					<a href=""><img src="dist/img/008.jpg"></a>
+					<a href=""><img class="item_top" src="dist/img/008.jpg"></a>
 					<div class="cat_name">
 						Верхняя Одежда
 					</div>
@@ -157,5 +157,25 @@
 		</div>
 		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
+	<script type="text/javascript">
+		$(function() {
+			var imgArray = ['dist/img/005.jpg','dist/img/006.jpg','dist/img/007.jpg','dist/img/008.jpg'];
+			var elem = $(".item_up");
+
+			function changeImg(elem, imgArr) {
+				var i = 1;
+				var n = imgArr.length;
+				var timerId = setTimeout(function change() {
+					elem.fadeOut(1000, function() {
+						i = i<n ? i+1 : 1;
+						elem.attr("src",imgArr[i-1]);
+						elem.fadeIn(1000);
+					});
+					timerId = setTimeout(change, 4000);
+				}, 4000);
+			}
+			changeImg(elem, imgArray);
+		});
+	</script>
 </body>
 </html>
