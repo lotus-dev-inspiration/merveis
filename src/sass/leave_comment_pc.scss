@@ -194,6 +194,10 @@ header {
 				padding-left:10px;
 				border:1px solid $gray; 
 			}
+			input:valid{
+				background:$turquoise;
+			}
+
 			p{
 				margin:30px 0 40px;
 				font-size: 12px;
@@ -224,6 +228,9 @@ header {
 					width:700px;
 					height:80px;
 					padding: 5px 0 0 10px;
+				}
+				textarea:valid{
+					background:$turquoise;
 				}
 			}
 			.filter_button {
