@@ -107,14 +107,16 @@ $(function(){
 			// end_of_show_menu_function //
 
 			// show_categories_function //
-			$(".categories, aside").on("click", function() {
-				if($(".filter_items").css("display") === "none") {
-					$("aside").slideToggle();
-				} else {
-					$(".filter_items").slideToggle();
-					$("aside").slideToggle();
-				}
-			});
+			if($(window).width()<=1000) {
+				$(".categories, aside").on("click", function() {
+					if($(".filter_items").css("display") === "none") {
+						$("aside").slideToggle();
+					} else {
+						$(".filter_items").slideToggle();
+						$("aside").slideToggle();
+					}
+				});
+			}
 
 			if($(window).width()<=1000) {
 				window.onscroll = function() {
