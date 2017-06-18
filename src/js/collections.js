@@ -1,38 +1,37 @@
 $(function(){
 
-	// change_img_function //
 
-	// var collect_img_item = $(".content_item");
-	// collect_img_item.hover(
-	// 	function() {
-		// 		$(this).find("img").attr("src","dist/img/006.jpg");
-		// 	},
-		// 	function() {
-			// 		$(this).find("img").attr("src","dist/img/005.jpg");
-			// 	}
-			// 	);
+			// filter_aside_show_function //
 
-			// end_of_change_img_function //
-
-			// filter_show_function //
-
-			$(".filter, .filter_button_link").on("click", function() {
-				// if(collect_count%2 == 0) {
-				// 	$(".filter_items").show(1000);
-				// 	collect_count++;
-				// } else {
-				// 	$(".filter_items").hide(1000);
-				// 	collect_count++;
-				// }
-				if($("aside").css("display") === "none") {
+			if($(document).width()<=1000) {
+				window.onscroll = function() {
+					$("aside").hide(500);
+				}
+				$(".filter, .filter_button_link").on("click", function() {
+					if($("aside").css("display") === "none") {
+						$(".filter_items").slideToggle();
+					} else {
+						$("aside").slideToggle();
+						$(".filter_items").slideToggle();
+					}
+				});
+			} else {
+				$(".filter, .filter_button_link").on("click", function() {
 					$(".filter_items").slideToggle();
-				} else {
+				});
+			}
+
+			$(".categories, aside").on("click", function() {
+				if($(".filter_items").css("display") === "none") {
 					$("aside").slideToggle();
+				} else {
 					$(".filter_items").slideToggle();
+					$("aside").slideToggle();
 				}
 			});
 
-			// end_of_filter_show_function //
+
+			// end_of_filter_aside_show_function //
 
 			// search_function //
 
@@ -106,24 +105,5 @@ $(function(){
 
 			// end_of_show_menu_function //
 
-			// show_categories_function //
-			if(document.width<=1000) {
-				$(".categories, aside").on("click", function() {
-					if($(".filter_items").css("display") === "none") {
-						$("aside").slideToggle();
-					} else {
-						$(".filter_items").slideToggle();
-						$("aside").slideToggle();
-					}
-				});
-			}
-
-			if(document.width<=1000) {
-				window.onscroll = function() {
-					$("aside").hide(500);
-				}
-			}
-
-			// end_of_show_categories_function //
 		});
 
