@@ -1,7 +1,7 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 @media(max-width:1000px){.wrapper{width:100%}.wrapper .main{display:flex;padding-top:40px}
-.wrapper .main aside{display:none;position:fixed;background:#fff;top:190px;width:100%;height:70px;z-index:100}
+.wrapper .main h1{text-align:center;margin-top:40px}.wrapper .main aside{display:none;position:fixed;background:#fff;top:190px;width:100%;height:70px;z-index:100}
 .wrapper .main aside .side_menu{margin:0;width:100%}.wrapper .main aside .side_menu .side_item{display:inline-block;box-sizing:border-box;width:24%}
 .wrapper .main aside .side_menu .side_item .side_link{display:block;text-align:center;padding:10px;text-transform:uppercase;color:#000;font-size:14px}
 .wrapper .main aside .side_menu .side_item .side_link:hover,.wrapper .main aside .side_menu .side_item .side_link:focus{font-weight:bold}

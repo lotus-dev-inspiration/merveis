@@ -26,6 +26,12 @@ a {
 		.main {
 		display: flex;
 		padding-top: 100px;
+		min-height: 500px;
+
+		h1 {
+			text-align: center;
+			margin-top: 40px;
+		}
 
 
 		aside {

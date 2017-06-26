@@ -1,9 +1,9 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
 *{margin:0;padding:0}body{font-family:"Myriad",sans-serif;font-size:12px;letter-spacing:2px}
-ul{list-style:none}a{text-decoration:none;color:#000}@media(min-width:1001px){.wrapper .main{display:flex;padding-top:100px}
-.wrapper .main aside{position:fixed;width:200px;height:100%}.wrapper .main aside .side_menu{margin:40px 0 0 10%}
-.wrapper .main aside .side_menu .side_link{display:block;padding:10px;text-transform:uppercase;color:#a1a1a1}
+ul{list-style:none}a{text-decoration:none;color:#000}@media(min-width:1001px){.wrapper .main{display:flex;padding-top:100px;min-height:500px}
+.wrapper .main h1{text-align:center;margin-top:40px}.wrapper .main aside{position:fixed;width:200px;height:100%}
+.wrapper .main aside .side_menu{margin:40px 0 0 10%}.wrapper .main aside .side_menu .side_link{display:block;padding:10px;text-transform:uppercase;color:#a1a1a1}
 .wrapper .main aside .side_menu .side_link:hover,.wrapper .main aside .side_menu .side_link:focus{color:#000}
 .wrapper .main .content{width:100%;height:100%;padding-left:200px}.wrapper .main .content .content_logic{position:relative;width:100%;height:60px}
 .wrapper .main .content .content_logic div{position:absolute;right:0;margin-right:10%;display:inline-block;height:100%}

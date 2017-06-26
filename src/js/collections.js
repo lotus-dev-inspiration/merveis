@@ -1,35 +1,48 @@
 $(function(){
 
 
-			// filter_aside_show_function //
+			// checking_items_function //
 
-			if($(document).width()<=1000) {
-				window.onscroll = function() {
-					$("aside").hide(500);
-				}
-				$(".filter, .filter_button_link").on("click", function() {
-					if($("aside").css("display") === "none") {
-						$(".filter_items").slideToggle();
-					} else {
-						$("aside").slideToggle();
-						$(".filter_items").slideToggle();
-					}
-				});
-			} else {
-				$(".filter, .filter_button_link").on("click", function() {
-					$(".filter_items").slideToggle();
-				});
+			if(!document.getElementsByClassName('content_item').length) { 
+				var base = document.getElementsByClassName('content_items')[0];
+				var h1 = document.createElement('h1');
+				base.appendChild(h1);
+				h1.innerHTML = 'Товаров не найдено';
+				$(".show_more").css("display","none");
 			}
 
-			$(".categories, aside").on("click", function() {
-				if($(".filter_items").css("display") === "none") {
-					$("aside").slideToggle();
-				} else {
-					$(".filter_items").slideToggle();
-					$("aside").slideToggle();
-				}
-			});
+			// end_of_checking_items_function //
 
+			// filter_aside_show_function //
+
+			if(document.getElementsByClassName('content_item').length) {
+				if($(document).width()<=1000) {
+					window.onscroll = function() {
+						$("aside").hide(500);
+					}
+					$(".filter, .filter_button_link").on("click", function() {
+						if($("aside").css("display") === "none") {
+							$(".filter_items").slideToggle();
+						} else {
+							$("aside").slideToggle();
+							$(".filter_items").slideToggle();
+						}
+					});
+				} else {
+					$(".filter, .filter_button_link").on("click", function() {
+						$(".filter_items").slideToggle();
+					});
+				}
+
+				$(".categories, aside").on("click", function() {
+					if($(".filter_items").css("display") === "none") {
+						$("aside").slideToggle();
+					} else {
+						$(".filter_items").slideToggle();
+						$("aside").slideToggle();
+					}
+				});
+			}
 
 			// end_of_filter_aside_show_function //
 
