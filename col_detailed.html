@@ -6,20 +6,11 @@
 	<title>Merveis - Detail</title>
 	<link rel="stylesheet" href="dist/css/col_detailed_pc.css">
 	<link rel="stylesheet" href="dist/css/col_detailed_mob.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script>
-	<script src="js/jquery.simslider.js"></script>
-	<script>
-		jQuery( function($){
-			$('.sliderBox').SimSlider( {
-				next: '.nextBtn', 
-				prev: '.prevBtn', 
-				item: '.SimSlider .slide', 
-				speed: 1200, 
-				delay: 1000 
-			} );
-		} );
-	</script>
+	
+    <script src="src/js/swiper.js"></script>
 </head>
 <body>
 	<div class="link_block_fixed">
@@ -69,26 +60,20 @@
 		</header> 
 		<div class="content main">
 			<div class="content_up">
-				<div class="myjcarousel">
-					<div class="sliderBox">
-						<a href="#" class="prevBtn"> </a>
-						<a href="#" class="nextBtn"> </a>
-						<div class="SimSlider">
-							<div class="slide">
-								<a href="#"><img src="dist/img/005.jpg"></a>
-							</div>
-							<div class="slide">
-								<a href="#"><img src="dist/img/006.jpg"></a>
-							</div>
-							<div class="slide">
-								<a href="#"><img src="dist/img/007.jpg"></a>
-							</div>
-							<div class="slide">
-								<a href="#"><img src="dist/img/008.jpg"></a>
-							</div>
-						</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="#"><img src="dist/img/005.jpg"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="dist/img/006.jpg"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="dist/img/007.jpg"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="dist/img/007.jpg"></a></div>
 					</div>
-				</div>
+					<!-- Add Pagination -->
+					<!-- <div class="swiper-pagination"></div> -->
+				 <!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div> 
+
 				<div class="left_describ">
 					<div class="describsion">
 						<div class="menu_crumb">
@@ -273,5 +258,19 @@
 		</div>
 		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
+	 <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 50,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false,
+            speed: 1200, 
+            delay: 1000 
+        });
+    </script>
 </body>
 </html>

@@ -1,16 +1,15 @@
 @font-face{font-family:'Myriad';font-style:normal;font-weight:400;src:local("Myriad"),url(../fonts/Myriad/myriad.woff2) format("woff2"),url(../fonts/Myriad/myriad.woff) format("woff")}
 @font-face{font-family:'ProximaNova';font-style:normal;font-weight:400;src:local("ProximaNova"),url(../fonts/ProximaNova/proximanova-regular.woff2) format("woff2"),url(../fonts/ProximaNova/proximanova-regular.woff) format("woff")}
-@media(max-width:999px){.link_block_fixed{display:none}.open_col{display:none}.wrapper{height:1600px;width:100%}
+@media(max-width:599px){.link_block_fixed{display:none}.open_col{display:none}.wrapper{height:1600px;width:100%}
 .wrapper header{width:100%;height:50px}.wrapper header .logo{top:22px}.wrapper header .logo img{width:25%}
 .wrapper header .search{top:13px;right:110px}.wrapper header .search #search_input{width:36%}
 .wrapper header .busket{right:70px}.wrapper header .menu_open{display:block;position:absolute;right:10px;top:21px;cursor:pointer;width:44px}
 .wrapper header .menu_open img{display:block}.wrapper header .menu_open .menu_sign{width:80%}
 .wrapper header .menu_open .cross_sign{display:none;position:relative;bottom:3px;left:4px;width:65%}
 .wrapper header .menu{display:none;height:100vh;padding-top:50px;flex-direction:column;background:#fff}
-.wrapper .content_up{flex-direction:column}.wrapper .content_up .myjcarousel{width:100%;height:100%;margin-left:0}
-.wrapper .content_up .sliderBox{height:660px;width:450px;left:0;margin:0 auto;position:relative}
-.wrapper .content_up .SimSlider{position:relative;overflow:hidden;height:660px;width:450px}
-.wrapper .content_up .SimSlider .slide{z-index:0;position:absolute;top:0;left:0}.wrapper .content_up .SimSlider .slide img{height:660px;width:450px}
+.wrapper .content_up{flex-direction:column}.wrapper .content_up .swiper-container{width:80%;height:100%;margin:0 auto}
+.wrapper .content_up .swiper-slide{font-size:18px;background:#fff}.wrapper .content_up .swiper-slide img{width:100%}
+.wrapper .content_up .swiper-button-prev,.wrapper .content_up .swiper-button-next{display:none}
 .wrapper .content_up .left_describ{margin:0 auto;padding-top:60px}.wrapper .content_up .left_describ .menu_crumb{display:none}
 .wrapper .content_up .left_describ h1{text-align:center}.wrapper .content_up .left_describ .wbl p{text-align:center}
 .wrapper .content_up .left_describ .price_mob{display:block}.wrapper .content_up .left_describ .price_mob p{font-weight:bold;color:#000;font-size:18px;text-align:center;margin-top:20px}
