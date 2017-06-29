@@ -1,18 +1,5 @@
 $(function(){
 
-
-			// checking_items_function //
-
-			if(!document.getElementsByClassName('content_item').length) { 
-				var base = document.getElementsByClassName('content_items')[0];
-				var h1 = document.createElement('h1');
-				base.appendChild(h1);
-				h1.innerHTML = 'Товаров не найдено';
-				$(".show_more").css("display","none");
-			}
-
-			// end_of_checking_items_function //
-
 			// filter_aside_show_function //
 
 			if(document.getElementsByClassName('content_item').length) {
@@ -41,7 +28,6 @@ $(function(){
 						$(".filter_items").slideToggle();
 					});
 				}
-
 			}
 
 			// end_of_filter_aside_show_function //
@@ -112,8 +98,7 @@ $(function(){
 			// show_menu_function //
 
 			$(".menu_sign, .cross_sign").on("click",function() {
-				$(".menu" ).slideToggle( "slow", function() {
-				});
+				$(".menu" ).slideToggle( "slow" );
 			});
 
 			// end_of_show_menu_function //

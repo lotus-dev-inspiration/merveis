@@ -330,6 +330,14 @@
 		</div>
 		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
-
+	<script type="text/javascript">
+		if(!document.getElementsByClassName('content_item').length) { 
+			var base = document.getElementsByClassName('content_items')[0];
+			var h1 = document.createElement('h1');
+			base.appendChild(h1);
+			h1.innerText = 'Товаров не найдено';
+			$(".show_more").css("display","none");
+		}
+	</script>
 </body>
 </html>
