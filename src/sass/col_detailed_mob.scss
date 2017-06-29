@@ -65,21 +65,21 @@
 		.content_up{
 			flex-direction:column;
 			.swiper-container {
-            width: 80%;
-            height: 100%;
-            margin:0 auto;
+				width: 80%;
+				height: 100%;
+				margin:0 auto;
 
-        }
-        .swiper-slide {
-            font-size: 18px;
-            background: #fff;
-            img{
-              width:100%;
-            }
-          }
-          .swiper-button-prev,.swiper-button-next{
-          	display:none;
-          }
+			}
+			.swiper-slide {
+				font-size: 18px;
+				background: #fff;
+				img{
+					width:100%;
+				}
+			}
+			.swiper-button-prev,.swiper-button-next{
+				display:none;
+			}
 			.left_describ{
 				margin:0 auto;
 				padding-top:60px;
@@ -150,8 +150,70 @@
 							}
 						}
 					}
-					.share{
-						margin-left:80px;
+					// .share{
+					// 	margin-left:80px;
+					// 	.share_text{
+					// 		display:none;
+					// 	}
+					// 	.insta,.pinterest,.vkontakte,.facebook{
+					// 		display:block;
+					// 	}
+					// }
+					.favourites_and_share{
+						display:none;
+					}
+					.share_hidden{
+						text-align:center;
+						display:block;
+						p{
+							color:$black;
+							text-transform:uppercase;
+							font-weight:bold;
+							font-size:13px;
+							margin-top:30px;
+						}
+						.share_hid{
+							margin:10px 0 0 20px;
+
+							padding:8px 20px 8px 20px;
+							border-radius:20px;
+							// @extend .favourites;
+							display:flex;
+							padding-top:12px;
+							position:relative;
+							a{
+								color:$black;
+								text-transform:uppercase;
+								font-weight:bold;
+								font-size:13px;
+								img{
+									width:30px;
+									margin-top:-7px;
+								}
+							}
+							a{
+								img{
+									margin:-1px 10px 0 0;
+									width:22px;
+								}
+							}
+							.share_text{
+								display:none;
+							}
+							.insta{
+								margin-left: 20px;
+								display:block;
+							}
+							.pinterest{
+								display:block;
+							}
+							.vkontakte{
+								display:block;
+							}
+							.facebook{
+								display:block;
+							}
+						}
 					}
 				}
 
@@ -341,7 +403,7 @@
 }
 @media (max-width: 484px){
 	.wrapper{
-		height:1300px;
+		height:1350px;
 		width: 100%;
 		header {
 			width:100%;

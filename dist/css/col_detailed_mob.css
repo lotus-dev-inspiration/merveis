@@ -21,7 +21,18 @@
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button{text-align:center}
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button{font-size:15px;color:#fff;width:387px;height:45px;text-transform:uppercase;cursor:pointer;letter-spacing:5px}
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
-.wrapper .content_up .left_describ .hide_box .share{margin-left:80px}footer{min-height:620px;margin-top:50px;display:flex;flex-direction:column;width:100%;background:#fff;border-top:1px solid #a1a1a1;font-size:14px}
+.wrapper .content_up .left_describ .hide_box .favourites_and_share{display:none}.wrapper .content_up .left_describ .hide_box .share_hidden{text-align:center;display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden p{color:#000;text-transform:uppercase;font-weight:bold;font-size:13px;margin-top:30px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid{margin:10px 0 0 20px;padding:8px 20px 8px 20px;border-radius:20px;display:flex;padding-top:12px;position:relative}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a{color:#000;text-transform:uppercase;font-weight:bold;font-size:13px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a img{width:30px;margin-top:-7px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a img{margin:-1px 10px 0 0;width:22px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .share_text{display:none}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .insta{margin-left:20px;display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .pinterest{display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .vkontakte{display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .facebook{display:block}
+footer{min-height:620px;margin-top:50px;display:flex;flex-direction:column;width:100%;background:#fff;border-top:1px solid #a1a1a1;font-size:14px}
 footer .none{display:none}footer .footer_links{border-top:0;margin:0 auto}footer .footer_links .foot_menu_block{position:static;display:block;vertical-align:top;width:100%;margin:20px auto;text-align:center}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
 footer .footer_links .foot_menu_block .language_head{margin-top:30px}footer .footer_links .foot_menu_block .language{margin-top:10px}
@@ -42,7 +53,7 @@ footer .footer_subscribe .subscribe_networks .networks_insta{background-position
 footer .footer_subscribe .subscribe_networks .networks_vk{background-position:-55px 8px}
 footer .footer_subscribe .subscribe_networks .networks_pinterest{background-position:-92px 8px}
 footer .footer_comment{display:none}footer .leave_call_mob{display:block;margin:0 auto;margin-top:30px;width:300px;text-align:center;text-transform:uppercase;padding:10px;color:#000;background:#fff;font-weight:bold;font-size:12px;border:1px solid #000;text-decoration:none}
-footer .leave_call_mob:hover{background:#000;color:#fff;border:1px solid #000}}@media(max-width:484px){.wrapper{height:1300px;width:100%}
+footer .leave_call_mob:hover{background:#000;color:#fff;border:1px solid #000}}@media(max-width:484px){.wrapper{height:1350px;width:100%}
 .wrapper header{width:100%}.wrapper header .search{left:10px}.wrapper header .search #search_input{left:60px;width:36%}
 .wrapper header .logo{top:22px;left:70px}.wrapper header .logo img{width:47%}.wrapper .content .content_up{flex-direction:column}
 .wrapper .content .content_up .myjcarousel{width:100%;height:100%;margin-left:0}.wrapper .content .content_up .sliderBox{height:360px;width:240px;left:0;margin:0 auto;position:relative}
