@@ -20,6 +20,14 @@ $(function(){
 					window.onscroll = function() {
 						$("aside").hide(500);
 					}
+					$(".categories, aside").on("click", function() {
+						if($(".filter_items").css("display") === "none") {
+							$("aside").slideToggle();
+						} else {
+							$(".filter_items").slideToggle();
+							$("aside").slideToggle();
+						}
+					});
 					$(".filter, .filter_button_link").on("click", function() {
 						if($("aside").css("display") === "none") {
 							$(".filter_items").slideToggle();
@@ -34,14 +42,6 @@ $(function(){
 					});
 				}
 
-				$(".categories, aside").on("click", function() {
-					if($(".filter_items").css("display") === "none") {
-						$("aside").slideToggle();
-					} else {
-						$(".filter_items").slideToggle();
-						$("aside").slideToggle();
-					}
-				});
 			}
 
 			// end_of_filter_aside_show_function //

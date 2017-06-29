@@ -16,6 +16,8 @@ ul{list-style:none}a{text-decoration:none;color:#000}.wrapper{width:80%;margin:0
 .wrapper header .menu .menu_link:hover,.wrapper header .menu .menu_link:focus{color:#f22b47}
 .wrapper .main{padding-top:120px;margin-bottom:120px;min-height:300px;position:relative}
 .wrapper .main h1{margin-bottom:40px;margin-left:20%;font-weight:normal}.wrapper .main p{width:60%;text-align:justify;line-height:25px;font-size:14px;margin:10px auto;text-indent:3%;margin-bottom:30px}
+.wrapper .main .photos{margin-left:30px;width:70%;margin:30px auto;display:flex;align-items:center;flex-wrap:wrap}
+.wrapper .main .photos .photo{margin:10px auto}.wrapper .main .photos .photo img{display:block;margin:0 auto;width:80%}
 footer{display:flex;width:100%;height:300px;background:#f5f5f5}footer .footer_links{border-top:3px solid #56d2b1;width:40%}
 footer .footer_links .foot_menu_block{position:relative;display:inline-block;vertical-align:top;top:50px;left:15%}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
