@@ -224,9 +224,11 @@ a.active {
   box-shadow: 0 0 2px #F0EFE7;
 }
 .left_describ{
-  margin-left:60px;
+  margin-left:80px;
 }
 .describsion{
+  margin-left:0;
+  position:relative;
   .menu_crumb li{
     display:inline-block;
     list-style-type: none;
@@ -253,7 +255,8 @@ a.active {
   }
 }
 .size_grid{
- margin-left:80px;
+  width:400px;
+ // margin-left:80px;
  display:none;
  .table{
   margin:20px 0 30px 0;
@@ -945,8 +948,74 @@ footer {
               }
             }
           }
-          .share{
-            margin-left:80px;
+          // .share{
+          //   margin-left:80px;
+          // }
+          .favourites_and_share{
+          display:none;
+        }
+        .share_hidden{
+          text-align:center;
+          margin:0 auto;
+          display:block;
+          p{
+            text-align:center;
+            color:$black;
+            text-transform:uppercase;
+            font-weight:bold;
+            font-size:13px;
+            margin-top:30px;
+          }
+          .share_hid{
+            text-align:center;
+              margin:20px;
+
+              padding:8px 20px 8px 20px;
+              border-radius:20px;
+              display: inline-block;
+              a{
+                color:$black;
+                text-transform:uppercase;
+                font-weight:bold;
+                font-size:13px;
+                img{
+                  width:30px;
+                  margin-top:-7px;
+                }
+              }
+              a{
+                img{
+                  margin:-1px 10px 0 0;
+                  width:22px;
+                }
+              }
+              .rss{
+                display:none;
+              }
+              .share_text{
+                display:none;
+              }
+              .insta{
+               padding: 5px;
+                display:block;
+                float:left;
+              }
+              .pinterest{
+                display:block;
+                float:left;
+                padding: 5px;
+              }
+              .vkontakte{
+                display:block;
+                float:left;
+                    padding:5px;
+              }
+              .facebook{
+                float:left;
+                display:block;
+                padding: 5px;
+              }
+            }
           }
         }
 

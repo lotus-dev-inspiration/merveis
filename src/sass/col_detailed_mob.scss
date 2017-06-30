@@ -150,22 +150,15 @@
 							}
 						}
 					}
-					// .share{
-					// 	margin-left:80px;
-					// 	.share_text{
-					// 		display:none;
-					// 	}
-					// 	.insta,.pinterest,.vkontakte,.facebook{
-					// 		display:block;
-					// 	}
-					// }
 					.favourites_and_share{
 						display:none;
 					}
 					.share_hidden{
 						text-align:center;
+						margin:0 auto;
 						display:block;
 						p{
+							text-align:center;
 							color:$black;
 							text-transform:uppercase;
 							font-weight:bold;
@@ -173,14 +166,12 @@
 							margin-top:30px;
 						}
 						.share_hid{
-							margin:10px 0 0 20px;
+							text-align:center;
+							margin:20px;
 
 							padding:8px 20px 8px 20px;
 							border-radius:20px;
-							// @extend .favourites;
-							display:flex;
-							padding-top:12px;
-							position:relative;
+							display: inline-block;
 							a{
 								color:$black;
 								text-transform:uppercase;
@@ -197,21 +188,31 @@
 									width:22px;
 								}
 							}
+							.rss{
+								display:none;
+							}
 							.share_text{
 								display:none;
 							}
 							.insta{
-								margin-left: 20px;
+								padding: 5px;
 								display:block;
+								float:left;
 							}
 							.pinterest{
 								display:block;
+								float:left;
+								padding: 5px;
 							}
 							.vkontakte{
 								display:block;
+								float:left;
+								padding:5px;
 							}
 							.facebook{
+								float:left;
 								display:block;
+								padding: 5px;
 							}
 						}
 					}
@@ -530,9 +531,9 @@
 						}
 					}
 				}
-				.share{
-					margin-left: 25px;
-				}
+				// .share{
+				// 	margin-left: 25px;
+				// }
 
 			}
 		}

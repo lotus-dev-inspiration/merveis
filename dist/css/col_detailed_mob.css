@@ -21,17 +21,18 @@
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button{text-align:center}
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button{font-size:15px;color:#fff;width:387px;height:45px;text-transform:uppercase;cursor:pointer;letter-spacing:5px}
 .wrapper .content_up .left_describ .hide_box .basket_and_price .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
-.wrapper .content_up .left_describ .hide_box .favourites_and_share{display:none}.wrapper .content_up .left_describ .hide_box .share_hidden{text-align:center;display:block}
-.wrapper .content_up .left_describ .hide_box .share_hidden p{color:#000;text-transform:uppercase;font-weight:bold;font-size:13px;margin-top:30px}
-.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid{margin:10px 0 0 20px;padding:8px 20px 8px 20px;border-radius:20px;display:flex;padding-top:12px;position:relative}
+.wrapper .content_up .left_describ .hide_box .favourites_and_share{display:none}.wrapper .content_up .left_describ .hide_box .share_hidden{text-align:center;margin:0 auto;display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden p{text-align:center;color:#000;text-transform:uppercase;font-weight:bold;font-size:13px;margin-top:30px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid{text-align:center;margin:20px;padding:8px 20px 8px 20px;border-radius:20px;display:inline-block}
 .wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a{color:#000;text-transform:uppercase;font-weight:bold;font-size:13px}
 .wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a img{width:30px;margin-top:-7px}
 .wrapper .content_up .left_describ .hide_box .share_hidden .share_hid a img{margin:-1px 10px 0 0;width:22px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .rss{display:none}
 .wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .share_text{display:none}
-.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .insta{margin-left:20px;display:block}
-.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .pinterest{display:block}
-.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .vkontakte{display:block}
-.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .facebook{display:block}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .insta{padding:5px;display:block;float:left}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .pinterest{display:block;float:left;padding:5px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .vkontakte{display:block;float:left;padding:5px}
+.wrapper .content_up .left_describ .hide_box .share_hidden .share_hid .facebook{float:left;display:block;padding:5px}
 footer{min-height:620px;margin-top:50px;display:flex;flex-direction:column;width:100%;background:#fff;border-top:1px solid #a1a1a1;font-size:14px}
 footer .none{display:none}footer .footer_links{border-top:0;margin:0 auto}footer .footer_links .foot_menu_block{position:static;display:block;vertical-align:top;width:100%;margin:20px auto;text-align:center}
 footer .footer_links .foot_menu_block h3{text-transform:uppercase;margin-bottom:5px}
@@ -74,5 +75,4 @@ footer .leave_call_mob:hover{background:#000;color:#fff;border:1px solid #000}}@
 .wrapper .content .content_up .left_describ .hide_box .basket_and_price .filter_button{text-align:center}
 .wrapper .content .content_up .left_describ .hide_box .basket_and_price .filter_button button{font-size:15px;color:#fff;width:217px;height:45px;text-transform:uppercase;cursor:pointer;letter-spacing:5px}
 .wrapper .content .content_up .left_describ .hide_box .basket_and_price .filter_button button:hover{border:1px solid #000;background:#fff;color:#000}
-.wrapper .content .content_up .left_describ .share{margin-left:25px}footer .footer_subscribe{width:230px}
-footer .leave_call_mob{width:200px}}
+footer .footer_subscribe{width:230px}footer .leave_call_mob{width:200px}}
