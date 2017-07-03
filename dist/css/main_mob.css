@@ -4,9 +4,9 @@
 .wrapper .main #catalogue div.cat_item{display:inline-block;width:46%;margin:0 1% 20px 1%;box-sizing:border-box}
 .wrapper .main #catalogue div.cat_item:hover img{opacity:.8}.wrapper .main #catalogue div.cat_item img{border:1px solid #000;display:block;width:90%;margin:0 auto}
 .wrapper .main #catalogue div.cat_item div.cat_name{margin-top:10px;text-align:center;font-style:italic;font-size:20px}
-.wrapper .main #mi-slider{display:none}.wrapper .main .look_more{margin-top:30px}
-}@media(max-width:800px){.wrapper header{height:50px}.wrapper header .logo{top:22px}
-.wrapper header .logo img{width:25%}.wrapper header .search{top:13px;right:110px}
+.wrapper .main .slick-slider-catalogue{display:none}.wrapper .main #mi-slider{display:none}
+.wrapper .main .look_more{margin-top:30px}}@media(max-width:800px){.wrapper header{height:50px}
+.wrapper header .logo{top:22px}.wrapper header .logo img{width:25%}.wrapper header .search{top:13px;right:110px}
 .wrapper header .search #search_input{width:36%}.wrapper header .busket{right:70px}
 .wrapper header .menu_open{display:block;position:absolute;right:10px;top:21px;cursor:pointer;width:44px}
 .wrapper header .menu_open img{display:block}.wrapper header .menu_open .menu_sign{width:80%}

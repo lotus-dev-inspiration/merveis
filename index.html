@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="dist/css/jssor.slider.css">
 	<link rel="icon" type="image/png" href="dist/img/fav.png" />
+	<link rel="stylesheet" href="dist/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="dist/slick/slick-theme.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script>
 </head>
@@ -71,7 +73,14 @@
 					</div>
 				</div>		
 			</div>
-			<div id="mi-slider" class="mi-slider">
+			<div class="slick-slider-catalogue">
+				<div><img src="dist/img/slider-photo1.jpg" alt=""></div>
+				<div><img src="dist/img/slider-photo2.jpg" alt=""></div>
+				<div><img src="dist/img/slider-photo3.jpg" alt=""></div>
+				<div><img src="dist/img/slider-photo4.jpg" alt=""></div>
+				<div><img src="dist/img/slider-photo5.jpg" alt=""></div>
+			</div>
+<!-- 			<div id="mi-slider" class="mi-slider">
 				<ul>
 					<li><a href="col_detailed.html"><img src="dist/img/005.jpg" alt="img01"><h4>Square T-Shirt Mint </h4></a></li>
 					<li><a href="#"><img src="dist/img/005.jpg" alt="img02"><h4>Square T-Shirt Mint</h4></a></li>
@@ -101,7 +110,7 @@
 					<a href="#">Платья</a>
 					<a href="#">Верхняя одежда</a>
 				</nav>
-			</div>
+			</div> -->
 			<div class="look_more">
 				<a href="collections.html">Cмотреть больше</a>
 			</div>
@@ -158,6 +167,7 @@
 		</div>
 		<a class="leave_call_mob" href="leave_comment.html">Пожалуйста, оставьте свой отзыв</a>
 	</footer>
+	<script type="text/javascript" src="dist/slick/slick.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			var imgArray = ['dist/img/005.jpg','dist/img/006.jpg','dist/img/007.jpg','dist/img/008.jpg'];
@@ -176,6 +186,17 @@
 				}, 4000);
 			}
 			changeImg(elem, imgArray);
+
+			$(".slick-slider-catalogue").slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				infinite: true,
+				speed: 1500,
+				swipeToSlide: true,
+				dots: true
+			});
 		});
 	</script>
 </body>
